@@ -11,6 +11,7 @@ apt remove -y onboard onboard-common
 apt remove -y orca
 apt remove -y xzoom
 rm -rf /usr/share/applications/screensavers
+apt autoremove -y
 
 # BASIC i3
 
