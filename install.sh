@@ -5,21 +5,22 @@ if [ "$EUID" -ne 0 ]
   exit
 fi
 
-apt remove -y plank
-apt remove -y atril
-apt remove -y onboard onboard-common
-apt remove -y orca
-apt remove -y xzoom
+# UNWANTED PACKAGES
+apt remove -y \
+    plank \
+    atril \
+    onboard \
+    onboard-common \
+    orca \
+    xzoom
+
 rm -rf /usr/share/applications/screensavers
 apt autoremove -y
 
 # BASIC i3
-
-apt install -y i3-wm
-apt install -y rofi
+apt install -y i3-wm rofi
 
 # GSETTINGS
-
 gsettings set org.mate.mate-menu hot-key ''
 gsettings set com.solus-project.brisk-menu hot-key ''
 gsettings set org.mate.power-manager kbd-backlight-battery-reduce false
@@ -53,37 +54,38 @@ echo "alias venv=\"source ${USER_HOME}/bin/venv.sh\"" >> ${USER_HOME}/.bashrc
 echo "${SUDO_USER} ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
 
 # BASIC APPLICATIONS
-apt install -y ntp
-apt install -y dconf-editor
-apt install -y arandr
-apt install -y gparted
-apt install -y tlp
-apt install -y syncthing
-apt install -y libreoffice
-apt install -y keepassxc
-apt install -y redshift redshift-gtk
-apt install -y gimp
-apt install -y transmission
-apt install -y vlc
-apt install -y pgcli
-apt install -y vifm
-apt install -y calibre
-apt install -y fuse-zip
-apt install -y archivemount
-apt install -y sshfs
-apt install -y chromium-browser
+apt install -y \
+    ntp \
+    dconf-editor \
+    arandr \
+    gparted \
+    tlp \
+    syncthing \
+    libreoffice \
+    keepassxc \
+    redshift \
+    redshift-gtk \
+    gimp \
+    transmission \
+    vlc \
+    pgcli \
+    vifm \
+    calibre \
+    fuse-zip \
+    archivemount \
+    sshfs \
+    chromium-browser \
+    curl
 
 # SUBLIME
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
 apt-get install apt-transport-https
 echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
 apt-get update
-apt-get install sublime-merge
-apt-get install sublime-text
+apt-get install sublime-merge sublime-text
 
 # PIPSI
 apt install -y python3-venv
-apt install -y curl
 cd /tmp
 curl https://raw.githubusercontent.com/mitsuhiko/pipsi/master/get-pipsi.py | python3 - --src=git+https://github.com/mitsuhiko/pipsi.git\#egg=pipsi
 echo 'export PATH="$USER_HOME/.local/bin:$PATH"' >> ${USER_HOME}/.bashrc
@@ -123,4 +125,3 @@ nohup snap install insomnia &
 
 apt update
 apt upgrade -y
-
