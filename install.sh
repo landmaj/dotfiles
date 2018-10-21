@@ -30,7 +30,7 @@ gsettings set org.mate.session.required-components windowmanager 'i3'
 cp -r ./autostart ${HOME}/.config/
 
 # CONFIG FILES
-cp -r ./config ${HOME}/
+cp -r ./.config ${HOME}/
 
 # SCRIPTS
 cp -r ./bin ${HOME}/
