@@ -43,7 +43,7 @@ cp -r .fonts ${HOME}/
 # ALIASES
 echo "" >> ${HOME}/.bashrc
 echo "alias vifm=\"source ~/bin/vf"
-echo "alias venv=\"source ~/bin/venv.sh\"" >> ${HOME}/.bashrc
+echo "alias venv=\"source ~/bin/venv\"" >> ${HOME}/.bashrc
 
 
 # BASIC APPLICATIONS
