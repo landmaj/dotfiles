@@ -7,7 +7,8 @@ You can find information on how to adapt this repo to a specific
 release in `changelog.md`.
 
 ### Installation
-Install *minimal version* of [Ubuntu Mate](https://ubuntu-mate.org/download/) \(checkbox in the install wizard).
+Install *minimal version* of [Ubuntu Mate](https://ubuntu-mate.org/download/) 
+\(checkbox in the install wizard).
 Git is not pre-installed so fix that and then clone this repository
 and run `install.sh`. A few things have to be done manually when the
 scripts finishes \(and preferably after reboot/relog):
@@ -19,6 +20,11 @@ scripts finishes \(and preferably after reboot/relog):
     so you have to remove unnecessary panel and add aforementioned applet
     manually.
 3. Annoying system sounds can be disabled in sound manager.
+4. `vim` and `vifm` \(if launched from Rofi) will ignore configuration
+file. Modify commands in `/usr/share/applications/vi\[f]m.desktop` from
+`vi\[f]m %F` to `mate-terminal -x vi\[f]m`.
+5. To fix issues with focus in PyCharm with IdeaVim, add
+`suppress.focus.stealing=false` to `Help -> Edit Custom Properties...`
 
 
 ##### Optional (may break your system)
