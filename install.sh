@@ -30,27 +30,27 @@ gsettings set org.mate.session required-components-list "['windowmanager', 'pane
 gsettings set org.mate.session.required-components windowmanager 'i3'
 
 # USER HOME DIRECTORY
-USER_HOME=$(getent passwd $SUDO_USER | cut -d: -f6)
+USER_HOME=$(getent passwd ${SUDO_USER} | cut -d: -f6)
 
 # AUTOSTART
-cp -r ./autostart $USER_HOME/.config/
+cp -r ./autostart ${USER_HOME}/.config/
 
 # CONFIG FILES
-cp -r ./config $USER_HOME/
+cp -r ./config ${USER_HOME}/
 
 # SCRIPTS
-cp -r ./bin $USER_HOME/
+cp -r ./bin ${USER_HOME}/
 
 # FONTS
-cp -r .fonts $USER_HOME/
+cp -r .fonts ${USER_HOME}/
 
 # ALIASES
-echo "\n" >> $USER_HOME/.bashrc
-echo "alias vifm=\"source $USER_HOME/bin/vf"
-echo "alias venv=\"source $USER_HOME/bin/venv.sh\"" >> $USER_HOME/.bashrc
+echo "\n" >> ${USER_HOME}/.bashrc
+echo "alias vifm=\"source ${USER_HOME}/bin/vf"
+echo "alias venv=\"source ${USER_HOME}/bin/venv.sh\"" >> ${USER_HOME}/.bashrc
 
 # SUDO WITHOUT PASSWORD
-echo "$SUDO_USER ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
+echo "${SUDO_USER} ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
 
 # BASIC APPLICATIONS
 apt install -y ntp
@@ -86,7 +86,7 @@ apt install -y python3-venv
 apt install -y curl
 cd /tmp
 curl https://raw.githubusercontent.com/mitsuhiko/pipsi/master/get-pipsi.py | python3 - --src=git+https://github.com/mitsuhiko/pipsi.git\#egg=pipsi
-echo 'export PATH="$USER_HOME/.local/bin:$PATH"' >> $USER_HOME/.bashrc
+echo 'export PATH="$USER_HOME/.local/bin:$PATH"' >> ${USER_HOME}/.bashrc
 
 ${USER_HOME}/.local/bin/pipsi install flake8
 ${USER_HOME}/.local/bin/pipsi install ansible
@@ -95,7 +95,7 @@ ${USER_HOME}/.local/bin/pipsi install gitup
 
 # DOCKER
 addgroup --system docker
-adduser $SUDO_USER docker
+adduser ${SUDO_USER} docker
 newgrp docker
 snap install docker --classic
 docker volume create portainer_data
@@ -103,17 +103,17 @@ docker run -d -p 9000:9000 -v /var/run/docker.sock:/var/run/docker.sock -v porta
 
 # THEFUCK
 apt install -y thefuck
-echo "eval \$(thefuck --alias)" >> $USER_HOME/.bashrc
+echo "eval \$(thefuck --alias)" >> ${USER_HOME}/.bashrc
 
 # VIM
 apt install -y vim-gtk
-git clone --depth=1 https://github.com/amix/vimrc.git $USER_HOME/.vim_runtime
-bash  $USER_HOME/.vim_runtime/install_awesome_vimrc.sh
+git clone --depth=1 https://github.com/amix/vimrc.git ${USER_HOME}/.vim_runtime
+bash  ${USER_HOME}/.vim_runtime/install_awesome_vimrc.sh
 echo 'augroup numbertoggle
   autocmd!
   autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
   autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
-augroup END' >> $USER_HOME/.vimrc
+augroup END' >> ${USER_HOME}/.vimrc
 
 # SNAPS
 nohup snap install spotify &
