@@ -98,12 +98,6 @@ pipsi install ansible
 pipsi install pi3-switch
 pipsi install gitup
 
-# SNAPS
-snap install spotify
-snap install pycharm-professional --classic
-snap install goland --classic
-snap install insomnia
-
 # DOCKER
 addgroup --system docker
 adduser $USER docker
@@ -125,6 +119,12 @@ echo 'augroup numbertoggle
   autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
   autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
 augroup END' >> $USER_HOME/.vimrc
+
+# SNAPS
+nohup snap install spotify &
+nohup snap install pycharm-professional --classic &
+nohup snap install goland --classic &
+nohup snap install insomnia &
 
 apt update
 apt upgrade -y
