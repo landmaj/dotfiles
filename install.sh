@@ -12,6 +12,8 @@ sudo apt remove -y \
     orca \
     xzoom
 sudo rm -rf /usr/share/applications/screensavers
+sudo snap remove ubuntu-mate-welcome
+sudo snap remove software-boutique
 
 # BASIC i3
 sudo apt install -y i3-wm rofi
