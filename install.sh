@@ -111,9 +111,6 @@ sudo add-apt-repository ppa:bluetooth/bluez
 sudo apt update
 sudo apt upgrade -y
 
-# GIT CONFIG
-git config --global credential.helper cache
-
 # KEYBOARD BACKLIGHT
 sudo cp -f ./org.freedesktop.UPower.conf /etc/dbus-1/system.d/
 
