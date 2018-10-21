@@ -8,9 +8,9 @@ Nothing so far.
 -----
 * Bluez 5.48 is bugged. Install 5.50 or newer. You can find PPA in a tagged release of this repo for Bionic Beaver.
 
-17.10
+16.10, 17.04, 17.10
 -----
-I have not used this version.
+I have not used those versions.
 
 16.04
 -----
