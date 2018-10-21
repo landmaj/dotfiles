@@ -86,8 +86,8 @@ apt install -y python3-venv
 apt install -y curl
 cd /tmp
 curl https://raw.githubusercontent.com/mitsuhiko/pipsi/master/get-pipsi.py | python3 - --src=git+https://github.com/mitsuhiko/pipsi.git\#egg=pipsi
-echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc
-source ~/.bashrc
+echo 'export PATH="$USER_HOME/.local/bin:$PATH"' >> ~/.bashrc
+source $USER_HOME/.bashrc
 
 pipsi install flake8
 pipsi install ansible
@@ -96,7 +96,7 @@ pipsi install gitup
 
 # DOCKER
 addgroup --system docker
-adduser $USER docker
+adduser $SUDO_USER docker
 newgrp docker
 snap install docker --classic
 docker volume create portainer_data
