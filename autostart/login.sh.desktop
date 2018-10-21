@@ -1,9 +1,0 @@
-[Desktop Entry]
-Type=Application
-Exec=~/bin/login
-Hidden=false
-X-MATE-Autostart-enabled=true
-Name[en_US]=kbd backlight
-Name=kbd backlight
-Comment[en_US]=
-Comment=

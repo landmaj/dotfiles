@@ -114,6 +114,9 @@ sudo apt upgrade -y
 # GIT CONFIG
 git config --global credential.helper cache
 
+# KEYBOARD BACKLIGHT
+sudo cp -f ./org.freedesktop.UPower.conf /etc/dbus-1/system.d/
+
 # SNAPS
 sudo snap install insomnia
 sudo snap install docker --classic
