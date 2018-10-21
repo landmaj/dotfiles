@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # SUDO WITHOUT PASSWORD
-sudo echo "\n ${USER} ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
+echo "\n ${USER} ALL=(ALL) NOPASSWD:ALL" | sudo tee /etc/sudoers.d/${USER}
 
 # UNWANTED PACKAGES
 sudo apt remove -y \
