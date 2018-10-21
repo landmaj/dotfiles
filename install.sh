@@ -49,6 +49,9 @@ echo "\n" >> $USER_HOME/.bashrc
 echo "alias vifm=\"source $USER_HOME/bin/vf"
 echo "alias venv=\"source $USER_HOME/bin/venv.sh\"" >> $USER_HOME/.bashrc
 
+# SUDO WITHOUT PASSWORD
+echo "$SUDO_USER ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
+
 # BASIC APPLICATIONS
 apt install -y ntp
 apt install -y dconf-editor
