@@ -86,6 +86,7 @@ apt install -y python3.7
 
 # PIPSI
 apt install -y python3-venv
+apt install -y curl
 cd /tmp
 curl https://raw.githubusercontent.com/mitsuhiko/pipsi/master/get-pipsi.py | python3 - --src=git+https://github.com/mitsuhiko/pipsi.git\#egg=pipsi
 echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc
