@@ -86,7 +86,7 @@ apt install -y python3-venv
 apt install -y curl
 cd /tmp
 curl https://raw.githubusercontent.com/mitsuhiko/pipsi/master/get-pipsi.py | python3 - --src=git+https://github.com/mitsuhiko/pipsi.git\#egg=pipsi
-echo 'export PATH="$USER_HOME/.local/bin:$PATH"' >> ~/.bashrc
+echo 'export PATH="$USER_HOME/.local/bin:$PATH"' >> $USER_HOME/.bashrc
 source $USER_HOME/.bashrc
 
 pipsi install flake8
