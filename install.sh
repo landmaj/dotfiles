@@ -105,7 +105,7 @@ sudo addgroup --system docker
 sudo adduser ${USER} docker
 
 # FIX BROKEN BLUETOOTH (bluez 5.48 is bugged)
-add-apt-repository ppa:bluetooth/bluez
+sudo add-apt-repository ppa:bluetooth/bluez
 sudo apt update
 sudo apt upgrade -y
 
