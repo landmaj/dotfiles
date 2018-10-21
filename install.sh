@@ -111,6 +111,9 @@ sudo add-apt-repository ppa:bluetooth/bluez
 sudo apt update
 sudo apt upgrade -y
 
+# GIT CONFIG
+git config --global credential.helper cache
+
 # SNAPS
 sudo snap install insomnia
 sudo snap install docker --classic
