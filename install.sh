@@ -124,9 +124,6 @@ echo 'augroup numbertoggle
   autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
 augroup END' >> $USER_HOME/.vimrc
 
-# FIX BROKEN BLUETOOTH (bluez 5.48 is bugged)
-add-apt-repository ppa:bluetooth/bluez
 apt update
-
 apt upgrade -y
 
