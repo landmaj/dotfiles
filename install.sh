@@ -104,12 +104,14 @@ augroup END' >> ${HOME}/.vimrc
 sudo addgroup --system docker
 sudo adduser ${USER} docker
 
+# FIX BROKEN BLUETOOTH (bluez 5.48 is bugged)
+add-apt-repository ppa:bluetooth/bluez
+sudo apt update
+sudo apt upgrade -y
+
 # SNAPS
 sudo snap install insomnia
 sudo snap install docker --classic
 sudo snap install pycharm-professional --classic
 sudo snap install goland --classic
 sudo snap install spotify
-
-sudo apt update
-sudo apt upgrade -y
