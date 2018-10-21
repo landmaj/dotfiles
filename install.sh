@@ -81,13 +81,6 @@ apt-get update
 apt-get install sublime-merge
 apt-get install sublime-text
 
-# PYTHON
-add-apt-repository ppa:deadsnakes/ppa
-apt update
-apt install -y python3.5
-apt install -y python3.6
-apt install -y python3.7
-
 # PIPSI
 apt install -y python3-venv
 apt install -y curl
