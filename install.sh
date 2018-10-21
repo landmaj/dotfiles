@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # SUDO WITHOUT PASSWORD
-echo "\n ${USER} ALL=(ALL) NOPASSWD:ALL" | sudo tee /etc/sudoers.d/${USER}
+echo "${USER} ALL=(ALL) NOPASSWD:ALL" | sudo tee /etc/sudoers.d/${USER}
 
 # UNWANTED PACKAGES
 sudo apt remove -y \
@@ -40,7 +40,7 @@ cp -r ./bin ${HOME}/
 cp -r .fonts ${HOME}/
 
 # ALIASES
-echo "\n" >> ${HOME}/.bashrc
+echo "" >> ${HOME}/.bashrc
 echo "alias vifm=\"source ~/bin/vf"
 echo "alias venv=\"source ~/bin/venv.sh\"" >> ${HOME}/.bashrc
 
