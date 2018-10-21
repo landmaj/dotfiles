@@ -95,11 +95,6 @@ ${USER_HOME}/.local/bin/pipsi install ansible
 ${USER_HOME}/.local/bin/pipsi install pi3-switch
 ${USER_HOME}/.local/bin/pipsi install gitup
 
-# DOCKER
-addgroup --system docker
-adduser ${SUDO_USER} docker
-snap install docker --classic
-
 # THEFUCK
 apt install -y thefuck
 echo "eval \$(thefuck --alias)" >> ${USER_HOME}/.bashrc
@@ -114,11 +109,16 @@ echo 'augroup numbertoggle
   autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
 augroup END' >> ${USER_HOME}/.vimrc
 
+# DOCKER
+addgroup --system docker
+adduser ${SUDO_USER} docker
+
 # SNAPS
 nohup snap install spotify &
 nohup snap install pycharm-professional --classic &
 nohup snap install goland --classic &
 nohup snap install insomnia &
+nohup snap install docker --classic &
 
 apt update
 apt upgrade -y
