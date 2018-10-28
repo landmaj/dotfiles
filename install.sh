@@ -10,7 +10,9 @@ sudo apt remove -y \
     onboard \
     onboard-common \
     orca \
-    xzoom
+    xzoom \
+    xterm
+
 sudo rm -rf /usr/share/applications/screensavers
 sudo snap remove ubuntu-mate-welcome
 sudo snap remove software-boutique

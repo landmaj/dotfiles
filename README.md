@@ -20,9 +20,6 @@ scripts finishes \(and preferably after reboot/relog):
 2. I have not figured yet how to move Mate layout/panel configuration,
     so you have to remove unnecessary panel and add aforementioned applet
     manually.
-3. `vim` and `vifm` \(if launched from Rofi) will ignore configuration
-file. Modify commands in `/usr/share/applications/vi\[f]m.desktop` from
-`vi\[f]m %F` to `mate-terminal -x vi\[f]m`.
 
 #### Some things will never be automated:
 1. Annoying system sounds can be disabled in sound manager.
