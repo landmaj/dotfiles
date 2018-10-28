@@ -68,7 +68,8 @@ sudo apt install -y \
     archivemount \
     sshfs \
     chromium-browser \
-    curl
+    curl \
+    build-essential
 
 # SUBLIME
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
@@ -119,4 +120,5 @@ sudo snap install insomnia
 sudo snap install docker --classic
 sudo snap install pycharm-professional --classic
 sudo snap install goland --classic
+sudo snap install clion --classic
 sudo snap install spotify
