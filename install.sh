@@ -73,7 +73,8 @@ sudo apt install -y \
     curl \
     build-essential \
     python3-dev \
-    cmake
+    cmake \
+    clang
 
 # SUBLIME
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
@@ -97,16 +98,20 @@ ${HOME}/.local/bin/pipsi install gitup
 sudo apt install -y thefuck
 echo "eval \$(thefuck --alias)" >> ${HOME}/.bashrc
 
-# VIM
-sudo apt install -y vim-gtk
-git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-
 # GOLANG
 cd /tmp
 wget -q https://storage.googleapis.com/golang/getgo/installer_linux
 chmod +x installer_linux
 bash ./installer_linux
-export PATH=${PATH}:/${HOME}/.go/bin
+echo "export PATH=${PATH}:/${HOME}/.go/bin" >> ${HOME}/.bashrc
+
+# VIM
+cp ./.vimrc {HOME}/
+sudo apt install -y vim-gtk
+git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+vim -c VundleUpdate -c quitall
+cd ~/.vim/bundle/YouCompleteMe
+python3 install.py --clang-completer --go-completer
 
 # DOCKER
 sudo addgroup --system docker
