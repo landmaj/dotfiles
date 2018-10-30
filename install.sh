@@ -71,7 +71,9 @@ sudo apt install -y \
     sshfs \
     chromium-browser \
     curl \
-    build-essential
+    build-essential \
+    python3-dev \
+    cmake3
 
 # SUBLIME
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
