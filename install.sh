@@ -97,13 +97,7 @@ echo "eval \$(thefuck --alias)" >> ${HOME}/.bashrc
 
 # VIM
 sudo apt install -y vim-gtk
-git clone --depth=1 https://github.com/amix/vimrc.git ${HOME}/.vim_runtime
-bash  ${HOME}/.vim_runtime/install_awesome_vimrc.sh
-echo 'augroup numbertoggle
-  autocmd!
-  autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
-  autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
-augroup END' >> ${HOME}/.vimrc
+git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 # DOCKER
 sudo addgroup --system docker
