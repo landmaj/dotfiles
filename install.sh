@@ -101,6 +101,13 @@ echo "eval \$(thefuck --alias)" >> ${HOME}/.bashrc
 sudo apt install -y vim-gtk
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
+# GOLANG
+cd /tmp
+wget -q https://storage.googleapis.com/golang/getgo/installer_linux
+chmod +x installer_linux
+bash ./installer_linux
+export PATH=${PATH}:/${HOME}/.go/bin
+
 # DOCKER
 sudo addgroup --system docker
 sudo adduser ${USER} docker
