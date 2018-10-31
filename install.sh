@@ -76,7 +76,8 @@ sudo apt install -y \
     cmake \
     clang \
     xclip \
-    pinta
+    pinta \
+    exuberant-ctags
 
 
 # SUBLIME
