@@ -74,7 +74,8 @@ sudo apt install -y \
     build-essential \
     python3-dev \
     cmake \
-    clang
+    clang \
+    xclip
 
 # SUBLIME
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
@@ -112,6 +113,8 @@ git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 vim -c VundleUpdate -c quitall
 cd ~/.vim/bundle/YouCompleteMe
 python3 install.py --clang-completer --go-completer
+sudo snap install alacritty --classic
+cp -r ./snap ${HOME}/
 
 # DOCKER
 sudo addgroup --system docker

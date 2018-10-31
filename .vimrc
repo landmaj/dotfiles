@@ -18,7 +18,7 @@ Plugin 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'python-mode/python-mode'
 
-Plugin 'altercation/vim-colors-solarized'
+Plugin 'srcery-colors/srcery-vim'
 
 " add all your plugins here 
 
@@ -76,9 +76,7 @@ set laststatus=2
 
 " color scheme
 set t_Co=256
-let g:solarized_termcolors=256
-set background=dark
-colorscheme solarized
+colorscheme srcery
 
 " ctrlp
 let g:ctrlp_max_height = 30
