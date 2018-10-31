@@ -127,6 +127,8 @@ git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 vim -c VundleUpdate -c quitall
 cd ~/.vim/bundle/YouCompleteMe
 python3 install.py --clang-completer --go-completer
+# fix for powerline
+echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
 
 # DOCKER
 sudo addgroup --system docker
