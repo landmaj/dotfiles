@@ -105,7 +105,7 @@ mkdir ~/github
 cd ~/github
 git clone https://github.com/jwilm/alacritty
 cd alacritty
-sudo apt install libfreetype6-dev libfontconfig1-dev
+sudo apt -y install libfreetype6-dev libfontconfig1-dev
 cargo build --release
 sudo cp target/release/alacritty /usr/local/bin
 sudo desktop-file-install alacritty.desktop
