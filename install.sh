@@ -77,6 +77,7 @@ sudo apt install -y \
     clang \
     xclip
 
+
 # SUBLIME
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
 sudo apt install apt-transport-https
@@ -104,7 +105,7 @@ mkdir ~/github
 cd ~/github
 git clone https://github.com/jwilm/alacritty
 cd alacritty
-sudo apt install cmake libfreetype6-dev libfontconfig1-dev xclip
+sudo apt install libfreetype6-dev libfontconfig1-dev
 cargo build --release
 sudo cp target/release/alacritty /usr/local/bin
 sudo desktop-file-install alacritty.desktop
