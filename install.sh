@@ -75,7 +75,8 @@ sudo apt install -y \
     python3-dev \
     cmake \
     clang \
-    xclip
+    xclip \
+    pinta
 
 
 # SUBLIME
