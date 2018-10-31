@@ -95,9 +95,21 @@ ${HOME}/.local/bin/pipsi install ansible
 ${HOME}/.local/bin/pipsi install pi3-switch
 ${HOME}/.local/bin/pipsi install gitup
 
-# THEFUCK
-sudo apt install -y thefuck
-echo "eval \$(thefuck --alias)" >> ${HOME}/.bashrc
+# ALACRITTY
+curl https://sh.rustup.rs -sSf | sh
+source $HOME/.cargo/env
+rustup override set stable
+rustup update stable
+mkdir ~/github
+cd ~/github
+git clone https://github.com/jwilm/alacritty
+cd alacritty
+sudo apt install cmake libfreetype6-dev libfontconfig1-dev xclip
+cargo build --release
+sudo cp target/release/alacritty /usr/local/bin
+sudo desktop-file-install alacritty.desktop
+sudo update-desktop-database
+echo "source $(pwd)/alacritty-completions.bash" >> ~/.bashrc
 
 # GOLANG
 cd /tmp
@@ -113,8 +125,6 @@ git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 vim -c VundleUpdate -c quitall
 cd ~/.vim/bundle/YouCompleteMe
 python3 install.py --clang-completer --go-completer
-sudo snap install alacritty --classic
-cp -r ./snap ${HOME}/
 
 # DOCKER
 sudo addgroup --system docker
