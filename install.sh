@@ -77,7 +77,8 @@ sudo apt install -y \
     clang \
     xclip \
     pinta \
-    exuberant-ctags
+    exuberant-ctags \
+    fonts-powerline
 
 
 # SUBLIME
