@@ -12,6 +12,10 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
+
+" add all your plugins here 
+
+Plugin 'w0rp/ale'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'vim-scripts/indentpython.vim'
 Plugin 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'}
@@ -20,12 +24,9 @@ Plugin 'python-mode/python-mode'
 Plugin 'scrooloose/nerdtree'
 Plugin 'ludovicchabant/vim-gutentags'
 Plugin 'mgedmin/python-imports.vim'
+Plugin 'scrooloose/nerdcommenter'
 
 Plugin 'srcery-colors/srcery-vim'
-
-" add all your plugins here 
-
-Plugin 'w0rp/ale'
 
 " all of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -62,7 +63,7 @@ set splitright
 set tw=79
 set nowrap
 set fo-=t
-set colorcolumn=72,80,88
+set colorcolumn=80
 highlight ColorColumn ctermbg=233
 
 " folding
@@ -102,4 +103,10 @@ nnoremap <C-F5>  :ImportNameHere<CR>
 nnoremap <leader>t :NERDTreeToggle<CR>
 autocmd FileType nerdtree nmap <buffer> <left> u
 autocmd FileType nerdtree nmap <buffer> <right> C
+
+" nerdcommenter
+let g:NERDSpaceDelims = 1
+let g:NERDCommentEmptyLines = 1
+nmap <C-_>   <Plug>NERDCommenterToggle
+vmap <C-_>   <Plug>NERDCommenterToggle<CR>gv
 
