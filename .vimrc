@@ -107,6 +107,7 @@ autocmd FileType nerdtree nmap <buffer> <right> C
 " nerdcommenter
 let g:NERDSpaceDelims = 1
 let g:NERDCommentEmptyLines = 1
+let g:NERDDefaultAlign = 'left'
 nmap <C-_>   <Plug>NERDCommenterToggle
 vmap <C-_>   <Plug>NERDCommenterToggle<CR>gv
 
