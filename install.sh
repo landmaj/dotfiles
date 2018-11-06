@@ -115,6 +115,13 @@ sudo desktop-file-install alacritty.desktop
 sudo update-desktop-database
 echo "source $(pwd)/alacritty-completions.bash" >> ~/.bashrc
 
+# EXA (requires Rust installed in previous step)
+cd ~/github
+git clone https://github.com/ogham/exa.git
+cd exa
+make install PREFIX=${HOME}
+echo "alias ls=\"exa\"" >> ${HOME}/.bashrc
+
 # GOLANG
 cd /tmp
 wget -q https://storage.googleapis.com/golang/getgo/installer_linux
