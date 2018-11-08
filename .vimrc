@@ -113,4 +113,6 @@ vmap <C-_>   <Plug>NERDCommenterToggle<CR>gv
 noremap <leader>y "+y
 noremap <leader>p "+p
 
-
+" exiting insert mode
+inoremap <silent> <Up> <ESC><Up>
+inoremap <silent> <Down> <ESC><Down>
