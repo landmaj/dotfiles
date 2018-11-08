@@ -46,8 +46,6 @@ set mouse=a
 " remove search highlight
 set hlsearch
 noremap <C-n> :nohl<CR>
-vnoremap <C-n> :nohl<CR>
-inoremap <C-n> :nohl<CR>
 
 " split navigations
 nnoremap <C-J> <C-W><C-J>
@@ -110,4 +108,9 @@ let g:NERDCommentEmptyLines = 1
 let g:NERDDefaultAlign = 'left'
 nmap <C-_>   <Plug>NERDCommenterToggle
 vmap <C-_>   <Plug>NERDCommenterToggle<CR>gv
+
+" system clipboard
+noremap <leader>y "+y
+noremap <leader>p "+p
+
 
