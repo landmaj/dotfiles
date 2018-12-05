@@ -120,7 +120,7 @@ cd ~/github
 git clone https://github.com/ogham/exa.git
 cd exa
 make install PREFIX=${HOME}
-echo "alias ls=\"exa\"" >> ${HOME}/.bashrc
+echo "alias ls=\"${HOME}/bin/exa\"" >> ${HOME}/.bashrc
 
 # GOLANG
 cd /tmp
