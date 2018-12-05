@@ -126,7 +126,7 @@ echo "alias ls=\"${HOME}/bin/exa\"" >> ${HOME}/.bashrc
 cd /tmp
 wget -q https://storage.googleapis.com/golang/getgo/installer_linux
 chmod +x installer_linux
-bash ./installer_linux
+./installer_linux
 echo "export PATH=${PATH}:/${HOME}/.go/bin" >> ${HOME}/.bashrc
 
 # VIM
