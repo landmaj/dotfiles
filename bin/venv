@@ -16,7 +16,7 @@ venv=(
 
 )
 
-if [[ ""$VIRTUAL_ENV"" == "" ]]
+if [[ ""$VIRTUAL_ENV"" == "" ]] || [[ $* == *--activate*  ]]
 then
     for dir in ${venv[@]}
     do
