@@ -26,6 +26,9 @@ scripts finishes \(and preferably after reboot/relog):
 2. To fix issues with focus in PyCharm with IdeaVim, add
 `suppress.focus.stealing=false` to `Help -> Edit Custom Properties...`
 3. Configure spellchecking in Firefox.
+4. Keyboard shortcuts (lock screen, Mod+f#)
+5. KeePassXC browser integration settings
+6. GPU drivers on PC
 
 ##### Optional \(may break your system):
 ```
