@@ -7,6 +7,13 @@ venv=(
     $PWD/.VENV
     /home/$USER/.virtualenv/${PWD##*/}
     /home/$USER/.virtualenvs/${PWD##*/}
+    $PWD/../venv
+    $PWD/../VENV
+    $PWD/../.venv
+    $PWD/../.VENV
+    /home/$USER/.virtualenv/$(basename $(dirname ${PWD}))
+    /home/$USER/.virtualenvs/$(basename $(dirname ${PWD}))
+
 )
 
 if [[ ""$VIRTUAL_ENV"" == "" ]]
