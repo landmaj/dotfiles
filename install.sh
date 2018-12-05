@@ -30,6 +30,9 @@ gsettings set org.mate.power-manager backlight-battery-reduce false
 gsettings set org.mate.session required-components-list "['windowmanager', 'panel']"
 gsettings set org.mate.session.required-components windowmanager 'i3'
 
+# ANNOYING POPUPS
+sudo systemctl disable apport.service
+
 # AUTOSTART
 cp -r ./autostart ${HOME}/.config/
 
