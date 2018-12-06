@@ -133,7 +133,8 @@ chmod +x installer_linux
 echo "export PATH=${PATH}:/${HOME}/.go/bin" >> ${HOME}/.bashrc
 
 # VIM
-cp ./.vimrc {HOME}/
+cp ./.vimrc ${HOME}/
+cp ./.ideavimrc ${HOME}/
 sudo apt install -y vim-gtk
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 vim -c VundleUpdate -c quitall
