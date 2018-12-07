@@ -91,16 +91,16 @@ echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sou
 sudo apt update
 sudo apt install -y sublime-merge sublime-text
 
-# PIPSI
+# PIPX
 sudo apt install -y python3-venv
 cd /tmp
-curl https://raw.githubusercontent.com/mitsuhiko/pipsi/master/get-pipsi.py | python3 - --src=git+https://github.com/mitsuhiko/pipsi.git\#egg=pipsi
+curl https://raw.githubusercontent.com/cs01/pipx/master/get-pipx.py | python3
 echo 'export PATH="${HOME}/.local/bin:$PATH"' >> ${HOME}/.bashrc
 
-${HOME}/.local/bin/pipsi install flake8
-${HOME}/.local/bin/pipsi install ansible
-${HOME}/.local/bin/pipsi install pi3-switch
-${HOME}/.local/bin/pipsi install gitup
+${HOME}/.local/bin/pipx install flake8
+${HOME}/.local/bin/pipx install ansible
+${HOME}/.local/bin/pipx install pi3-switch
+${HOME}/.local/bin/pipx install gitup
 
 # ALACRITTY
 curl https://sh.rustup.rs -sSf | sh
