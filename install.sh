@@ -101,6 +101,7 @@ ${HOME}/.local/bin/pipx install flake8
 ${HOME}/.local/bin/pipx install ansible
 ${HOME}/.local/bin/pipx install pi3-switch
 ${HOME}/.local/bin/pipx install gitup
+${HOME}/.local/bin/pipx install pre-commit
 
 # ALACRITTY
 curl https://sh.rustup.rs -sSf | sh
