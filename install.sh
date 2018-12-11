@@ -50,6 +50,8 @@ echo "" >> ${HOME}/.bashrc
 echo "alias vifm=\"source ~/bin/vf" >> $(HOME)/.bashrc
 echo "alias venv=\"source ~/bin/venv\"" >> ${HOME}/.bashrc
 
+# KEEPASSXC PPA
+sudo add-apt-repository ppa:phoerious/keepassxc
 
 # BASIC APPLICATIONS
 sudo apt install -y \
