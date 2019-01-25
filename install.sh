@@ -84,7 +84,8 @@ sudo apt install -y \
     pinta \
     exuberant-ctags \
     fonts-powerline \
-    htop
+    htop \
+    ncdu
 
 # SUBLIME
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
