@@ -25,6 +25,9 @@ cp -r .fonts ${HOME}/
 # BACKLIGHT
 sudo cp ./xorg.conf /etc/X11/xorg.conf
 
+# GIT CONFIG
+git config --global url."git@github.com:".insteadOf "https://github.com/"
+
 # ALIASES
 echo "" >> ${HOME}/.bashrc
 echo "alias vifm=\"source ~/bin/vf" >> $(HOME)/.bashrc
