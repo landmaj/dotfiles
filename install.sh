@@ -110,6 +110,11 @@ cd /tmp
 wget https://github.com/jwilm/alacritty/releases/download/v0.2.7/Alacritty-v0.2.7_amd64.deb
 sudo dpkg -i Alacritty-*.deb
 
+# BAT
+cd /tmp
+wget https://github.com/sharkdp/bat/releases/download/v0.9.0/bat_0.9.0_amd64.deb
+sudo dpkg -i bat_*.deb
+
 # FIX BROKEN BLUETOOTH (bluez 5.48 is bugged)
 sudo add-apt-repository ppa:bluetooth/bluez
 sudo apt update
