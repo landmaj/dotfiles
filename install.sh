@@ -86,9 +86,7 @@ sudo apt update
 sudo apt install -y sublime-text
 
 # PIPX
-sudo apt install -y python3-venv
-curl https://raw.githubusercontent.com/cs01/pipx/master/get-pipx.py | python3
-echo 'export PATH="${HOME}/.local/bin:$PATH"' >> ${HOME}/.bashrc
+curl https://raw.githubusercontent.com/pipxproject/pipx-bootstrap/master/pipxbootstrap/main.py | python3
 
 ${HOME}/.local/bin/pipx install flake8
 ${HOME}/.local/bin/pipx install ansible
