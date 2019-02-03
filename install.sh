@@ -4,7 +4,8 @@
 echo "${USER} ALL=(ALL) NOPASSWD:ALL" | sudo tee /etc/sudoers.d/${USER}
 
 # BASIC i3
-sudo apt install -y i3-wm rofi
+sudo apt install -y i3-wm i3blocks rofi compton
+git clone https://github.com/vivien/i3blocks-contrib ~/.config/i3blocks
 
 # CONFIG FILES
 cp -r ./.config ${HOME}/
@@ -12,8 +13,17 @@ cp -r ./.config ${HOME}/
 # SCRIPTS
 cp -r ./bin ${HOME}/
 
+# i3blocks
+cd /tmp
+wget https://github.com/acrisci/playerctl/releases/download/v2.0.1/playerctl-2.0.1_amd64.deb
+sudo dpkg -i playerctl*.deb
+cp -r ./local ${HOME}/
+
 # FONTS
 cp -r .fonts ${HOME}/
+
+# BACKLIGHT
+sudo cp ./xorg.conf /etc/X11/xorg.conf
 
 # ALIASES
 echo "" >> ${HOME}/.bashrc
@@ -25,21 +35,25 @@ sudo add-apt-repository ppa:phoerious/keepassxc
 
 # BASIC APPLICATIONS
 sudo apt install -y \
+    xbacklight \
+    xss-lock \
+    feh \
     ntp \
+    policykit-desktop-privileges \
+    policykit-1-gnome \
     arandr \
     gparted \
+    fonts-font-fontawesome \
     tlp \
     syncthing \
     libreoffice \
     keepassxc \
     redshift \
-    redshift-gtk \
     gimp \
     transmission \
     vlc \
     pgcli \
     vifm \
-    calibre \
     fuse-zip \
     archivemount \
     sshfs \
@@ -54,7 +68,9 @@ sudo apt install -y \
     exuberant-ctags \
     fonts-powerline \
     htop \
-    ncdu
+    ncdu \
+    blueman \
+    pavucontrol
 
 # SUBLIME
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
@@ -71,9 +87,9 @@ echo 'export PATH="${HOME}/.local/bin:$PATH"' >> ${HOME}/.bashrc
 
 ${HOME}/.local/bin/pipx install flake8
 ${HOME}/.local/bin/pipx install ansible
-${HOME}/.local/bin/pipx install pi3-switch
 ${HOME}/.local/bin/pipx install gitup
 ${HOME}/.local/bin/pipx install pre-commit
+${HOME}/.local/bin/pipx install tldr
 
 # VIM
 cp ./.vimrc ${HOME}/
@@ -96,9 +112,6 @@ sudo add-apt-repository ppa:bluetooth/bluez
 sudo apt update
 sudo apt upgrade -y
 
-# KEYBOARD BACKLIGHT
-sudo cp -f ./org.freedesktop.UPower.conf /etc/dbus-1/system.d/
-
 # SNAPS
 sudo snap install pycharm-professional --classic
 sudo snap install insomnia
@@ -109,3 +122,8 @@ sudo snap install discord
 sudo addgroup --system docker
 sudo adduser ${USER} docker
 sudo snap install docker --classic
+
+# PYTHON
+sudo add-apt-repository ppa:deadsnakes/ppa
+sudo apt install python3.5 python3.5-dev python3.7-dev
+

@@ -1,0 +1,39 @@
+color=#f3f4f5
+separator_block_width=15
+markup=none
+
+[volume]
+command=~/.local/src/i3blocks-contrib/volume/volume
+label=♪
+interval=once
+signal=10
+
+[mediaplayer]
+command=~/.local/src/i3blocks-contrib/mediaplayer/mediaplayer
+instance=spotify
+interval=5
+signal=10
+
+[essid]
+command=~/.local/src/i3blocks-contrib/essid/essid
+interval=60
+
+[ram]
+command=echo -n "  "; ~/.local/src/i3blocks-contrib/memory/memory | grep -E -o '[0-9]+.[0-9]?G'
+interval=30
+
+[disk-home]
+command=echo -n "  "; df -h -P -l "$HOME" | awk '/\/.*/ { print $3; exit 0 }'
+interval=30
+
+[batterybar]
+command=~/.local/src/i3blocks-contrib/batterybar/batterybar
+label= 
+interval=5
+markup=pango
+min_width=bat: ■■■■■
+
+[time]
+command=echo -n "  "; date '+%a, %d %b %H:%M'
+interval=5
+

@@ -3,25 +3,41 @@
 
 set $mod Mod4
 
-# Use Mouse+$mod to drag floating windows to their wanted position
-floating_modifier $mod
+# define names for workspaces
+set $ws1    "1:Default"
+set $ws2    "2:Firefox"
+set $ws3    "3:PyCharm"
+set $ws4    "4"
+set $ws5    "5"
+set $ws6    "6"
+set $ws7    "7"
+set $ws8    "8"
+set $ws9    "9"
+set $ws10   "10:Spotify"
+#
+# switch to workspace
+bindsym $mod+1 workspace $ws1
+bindsym $mod+2 workspace $ws2
+bindsym $mod+3 workspace $ws3
+bindsym $mod+4 workspace $ws4
+bindsym $mod+5 workspace $ws5
+bindsym $mod+6 workspace $ws6
+bindsym $mod+7 workspace $ws7
+bindsym $mod+8 workspace $ws8
+bindsym $mod+9 workspace $ws9
+bindsym $mod+0 workspace $ws10
 
-# start a terminal
-bindsym $mod+Return exec alacritty
+# use Mouse+$mod to drag floating windows to their wanted position
+floating_modifier $mod
 
 # kill focused window
 bindsym $mod+Shift+q kill
 
-# start rofi (a program launcher)
-bindsym $mod+d exec --no-startup-id rofi -show drun -show-icons -theme onedark
 # change focus:
 bindsym $mod+Left focus left
 bindsym $mod+Down focus down
 bindsym $mod+Up focus up
 bindsym $mod+Right focus right
-
-# disable mouse focus
-focus_follows_mouse no
 
 # move window:
 bindsym $mod+Shift+Left move left
@@ -53,18 +69,6 @@ bindsym $mod+space focus mode_toggle
 # focus the parent container
 bindsym $mod+a focus parent
 
-# switch to workspace
-bindsym $mod+1 exec pi3-switch -m 1
-bindsym $mod+2 exec pi3-switch -m 2
-bindsym $mod+3 exec pi3-switch -m 3
-bindsym $mod+4 exec pi3-switch -m 4
-bindsym $mod+5 exec pi3-switch -m 5
-bindsym $mod+6 exec pi3-switch -m 6
-bindsym $mod+7 exec pi3-switch -m 7
-bindsym $mod+8 exec pi3-switch -m 8
-bindsym $mod+9 exec pi3-switch -m 9
-bindsym $mod+0 exec pi3-switch -m 10
-
 # move workspace
 bindsym $mod+Ctrl+Left move workspace to output left
 bindsym $mod+Ctrl+Right move workspace to output right
@@ -72,16 +76,16 @@ bindsym $mod+Ctrl+Up move workspace to output up
 bindsym $mod+Ctrl+Down move workspace to output down
 
 # move focused container to workspace
-bindsym $mod+Shift+1 move container to workspace 1
-bindsym $mod+Shift+2 move container to workspace 2
-bindsym $mod+Shift+3 move container to workspace 3
-bindsym $mod+Shift+4 move container to workspace 4
-bindsym $mod+Shift+5 move container to workspace 5
-bindsym $mod+Shift+6 move container to workspace 6
-bindsym $mod+Shift+7 move container to workspace 7
-bindsym $mod+Shift+8 move container to workspace 8
-bindsym $mod+Shift+9 move container to workspace 9
-bindsym $mod+Shift+0 move container to workspace 10
+bindsym $mod+Shift+1 move container to workspace $ws1
+bindsym $mod+Shift+2 move container to workspace $ws2
+bindsym $mod+Shift+3 move container to workspace $ws3
+bindsym $mod+Shift+4 move container to workspace $ws4
+bindsym $mod+Shift+5 move container to workspace $ws5
+bindsym $mod+Shift+6 move container to workspace $ws6
+bindsym $mod+Shift+7 move container to workspace $ws7
+bindsym $mod+Shift+8 move container to workspace $ws8
+bindsym $mod+Shift+9 move container to workspace $ws9
+bindsym $mod+Shift+0 move container to workspace $ws10
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -93,7 +97,6 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 # resize window (you can also use the mouse for that)
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
-
         bindsym Left resize shrink width 10 px or 10 ppt
         bindsym Down resize grow height 10 px or 10 ppt
         bindsym Up resize shrink height 10 px or 10 ppt
@@ -120,20 +123,84 @@ mode "move" {
     bindsym Escape mode "default"
 }
 
-# set colors
-set $bg-color 	         #2f343f
-set $inactive-bg-color   #2f343f
-set $text-color          #f3f4f5
-set $inactive-text-color #676E7D
-set $urgent-bg-color     #E53935
+# start a terminal
+bindsym $mod+Return exec alacritty
 
-# window colors
-#                       border              background         text                 indicator
-client.focused          $bg-color           $bg-color          $text-color          #00ff00
-client.unfocused        $inactive-bg-color  $inactive-bg-color $inactive-text-color #00ff00
-client.focused_inactive $inactive-bg-color  $inactive-bg-color $inactive-text-color #00ff00
-client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color          #00ff00
+# start rofi (a program launcher)
+bindsym $mod+d exec --no-startup-id rofi -show drun
 
-# disable window title bar
+# function keys
+bindsym $mod+F2 exec firefox
+bindsym $mod+F3 exec nautilus
+
+# lock screen
+bindsym $mod+l exec i3lock-fancy
+
+# screen brightness
+bindsym XF86MonBrightnessUp exec xbacklight -inc 10 # increase screen brightness
+bindsym XF86MonBrightnessDown exec xbacklight -dec 10 # decrease screen brightness
+
+# change volume or toggle mute
+bindsym XF86AudioRaiseVolume exec amixer -q -D pulse sset Master 5%+ && pkill -RTMIN+10 i3blocks 
+bindsym XF86AudioLowerVolume exec amixer -q -D pulse sset Master 5%- && pkill -RTMIN+10 i3blocks
+bindsym XF86AudioMute exec amixer -q -D pulse sset Master toggle && pkill -RTMIN+10 i3blocks
+
+# disable mouse focus
+focus_follows_mouse no
+
+# startup applications
+exec --no-startup-id compton
+exec --no-startup-id redshift
+exec --no-startup-id nm-applet
+exec --no-startup-id syncthing --no-browser
+exec --no-startuo-id xss-lock -- i3lock-fancy
+exec --no-startup-id feh --bg-max ~/wallpaper.*
+
+# font for window titles and bar
+font pango:Source Sans Pro 10
+
+# disable window title bar and borders
 for_window [class="^.*"] border pixel 1
-new_window 1pixel
+hide_edge_borders smart
+
+# class                 border  backgr. text    indicator child_border
+client.focused          #2b83a6 #2b83a6 #ffffff #dddddd   #2b83a6
+client.focused_inactive #212121 #212121 #86888c #292d2e   #5a5a5a
+client.unfocused        #212121 #212121 #86888c #292d2e   #5a5a5a
+client.urgent           #d64e4e #d64e4e #ffffff #d64e4e   #d64e4e
+client.placeholder      #212121 #0c0c0c #ffffff #212121   #262626
+client.background #212121
+
+# start i3bar to display a workspace bar
+bar {
+    status_command          i3blocks
+    bindsym button4         nop
+    bindsym button5         nop
+    position                bottom
+    tray_output             primary
+    separator_symbol        "·"
+    workspace_buttons       yes
+    strip_workspace_numbers yes
+
+    colors {
+        background  #212121
+        statusline  #dddddd
+        separator   #666666
+        # class             border  backgr. text
+        focused_workspace   #2b83a6 #2b83a6 #ffffff
+        active_workspace    #212121 #212121 #ffffff
+        inactive_workspace  #212121 #212121 #86888c
+        urgent_workspace    #d64e4e #d64e4e #ffffff
+        binding_mode        #229c56 #229c56 #ffffff
+    }
+}
+
+# set specific windows to floating mode
+for_window [window_role="app"]		floating enable
+for_window [window_role="pop-up"]	floating enable
+for_window [window_role="task_dialog"]	floating enable
+for_window [class="Gnome-calculator"]	floating enable
+
+# assign program to workspace
+assign [class="Firefox"] → $ws2
+for_window [class="Spotify"] move to workspace $ws10
