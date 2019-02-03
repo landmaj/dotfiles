@@ -203,4 +203,5 @@ for_window [class="Gnome-calculator"]	floating enable
 
 # assign program to workspace
 assign [class="Firefox"] → $ws2
+assign [class="jetbrains-pycharm"] → $ws3
 for_window [class="Spotify"] move to workspace $ws10
