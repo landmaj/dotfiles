@@ -155,6 +155,7 @@ exec --no-startup-id nm-applet
 exec --no-startup-id syncthing --no-browser
 exec --no-startuo-id xss-lock -- i3lock-fancy
 exec --no-startup-id feh --bg-max ~/wallpaper.*
+exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
 
 # font for window titles and bar
 font pango:Source Sans Pro 10
