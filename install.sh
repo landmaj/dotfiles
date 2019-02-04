@@ -7,7 +7,6 @@ echo "${USER} ALL=(ALL) NOPASSWD:ALL" | sudo tee /etc/sudoers.d/${USER}
 
 # BASIC i3
 sudo apt install -y i3-wm i3blocks rofi compton
-git clone https://github.com/vivien/i3blocks-contrib ~/.config/i3blocks
 
 # CONFIG FILES
 cp -r ./.config ${HOME}/
@@ -20,7 +19,7 @@ cd /tmp
 wget https://github.com/acrisci/playerctl/releases/download/v2.0.1/playerctl-2.0.1_amd64.deb
 sudo dpkg -i playerctl*.deb
 cd ${cwd}
-cp -r ./local ${HOME}/
+cp -r ./.local ${HOME}/
 
 # FONTS
 cp -r .fonts ${HOME}/
@@ -49,7 +48,7 @@ sudo apt install -y \
     policykit-1-gnome \
     arandr \
     gparted \
-    fonts-font-fontawesome \
+    fonts-font-awesome \
     tlp \
     syncthing \
     libreoffice \
