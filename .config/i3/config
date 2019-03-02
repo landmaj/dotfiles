@@ -153,10 +153,9 @@ exec --no-startup-id compton
 exec --no-startup-id redshift
 exec --no-startup-id nm-applet
 exec --no-startup-id syncthing --no-browser
-exec --no-startuo-id xss-lock -- i3lock-fancy
+exec --no-startup-id xss-lock -- i3lock -i /home/landmaj/lockscreen.png
 exec --no-startup-id feh --bg-max ~/wallpaper.*
 exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
-exec --no-startup-id xfce4-power-manager
 
 # font for window titles and bar
 font pango:Source Sans Pro 10

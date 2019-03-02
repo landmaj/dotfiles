@@ -76,7 +76,6 @@ sudo apt install -y \
     ncdu \
     blueman \
     pavucontrol \
-    xfce4-power-manager
 
 # SUBLIME
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
