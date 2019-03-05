@@ -34,6 +34,7 @@ git config --global url."git@github.com:".insteadOf "https://github.com/"
 echo "" >> ${HOME}/.bashrc
 echo "alias vifm=\"source ~/bin/vf" >> $(HOME)/.bashrc
 echo "alias venv=\"source ~/bin/venv\"" >> ${HOME}/.bashrc
+echo "alias ee=\"exa -lagH\"" >> ${HOME}/.bashrc
 
 # KEEPASSXC PPA
 sudo add-apt-repository ppa:phoerious/keepassxc
@@ -111,9 +112,15 @@ cd ${cwd}
 
 # BAT
 cd /tmp
-wget https://github.com/sharkdp/bat/releases/download/v0.9.0/bat_0.9.0_amd64.deb
+wget https://github.com/sharkdp/bat/releases/download/v0.10.0/bat_0.10.0_amd64.deb
 sudo dpkg -i bat_*.deb
 cd ${cwd}
+
+# EXA
+cd /tmp
+wget -O exa.zip https://github.com/ogham/exa/releases/download/v0.8.0/exa-linux-x86_64-0.8.0.zip
+unzip exa.zip
+sudo mv exa-linux-x86_64 /usr/local/bin/exa
 
 # FIX BROKEN BLUETOOTH (bluez 5.48 is bugged)
 sudo add-apt-repository ppa:bluetooth/bluez
