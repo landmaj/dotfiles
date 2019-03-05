@@ -36,6 +36,9 @@ echo "alias vifm=\"source ~/bin/vf" >> $(HOME)/.bashrc
 echo "alias venv=\"source ~/bin/venv\"" >> ${HOME}/.bashrc
 echo "alias ee=\"exa -lagH\"" >> ${HOME}/.bashrc
 
+# AUTOJUMP
+echo ". /usr/share/autojump/autojump.sh" >> ${HOME}/.bashrc
+
 # KEEPASSXC PPA
 sudo add-apt-repository ppa:phoerious/keepassxc
 
@@ -77,6 +80,7 @@ sudo apt install -y \
     ncdu \
     blueman \
     pavucontrol \
+    autojump
 
 # SUBLIME
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
