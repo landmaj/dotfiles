@@ -105,7 +105,7 @@ echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo s
 
 # ALACRITTY
 cd /tmp
-wget https://github.com/jwilm/alacritty/releases/download/v0.2.7/Alacritty-v0.2.7_amd64.deb
+wget https://github.com/jwilm/alacritty/releases/download/v0.2.9/Alacritty-v0.2.9_amd64.deb
 sudo dpkg -i Alacritty-*.deb
 cd ${cwd}
 
