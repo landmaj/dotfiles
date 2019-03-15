@@ -146,3 +146,7 @@ sudo snap install docker --classic
 sudo add-apt-repository ppa:deadsnakes/ppa
 sudo apt install python3.5 python3.5-dev python3.7-dev
 
+# ELM
+sudo apt install -y npm
+sudo npm install -g elm
+
