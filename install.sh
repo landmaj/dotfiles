@@ -148,6 +148,6 @@ sudo apt install python3.5 python3.5-dev python3.7-dev
 
 # ELM
 sudo apt install -y npm
-sudo npm install -g elm
+sudo npm install -g elm elm-format elm-test
 ln -s /lib/terminfo ~/.terminfo # fix Ctrl + L in REPL
 
