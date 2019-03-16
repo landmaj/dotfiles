@@ -82,13 +82,6 @@ sudo apt install -y \
     pavucontrol \
     autojump
 
-# SUBLIME
-wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
-sudo apt install apt-transport-https
-echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
-sudo apt update
-sudo apt install -y sublime-text
-
 # PIPX
 curl https://raw.githubusercontent.com/pipxproject/pipx-bootstrap/master/pipxbootstrap/main.py | python3
 
@@ -133,6 +126,7 @@ sudo apt upgrade -y
 
 # SNAPS
 sudo snap install pycharm-professional --classic
+sudo snap install vscode --classic
 sudo snap install insomnia
 sudo snap install spotify
 sudo snap install discord
