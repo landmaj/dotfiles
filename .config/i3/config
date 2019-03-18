@@ -134,11 +134,14 @@ bindsym $mod+F2 exec firefox
 bindsym $mod+F3 exec nautilus
 
 # lock screen
-bindsym $mod+l exec i3lock-fancy
+bindsym $mod+l exec i3lock -i /home/landmaj/lockscreen.png
 
 # screen brightness
 bindsym XF86MonBrightnessUp exec xbacklight -inc 10 # increase screen brightness
 bindsym XF86MonBrightnessDown exec xbacklight -dec 10 # decrease screen brightness
+
+# toggle display
+bindsym $mod+Shift+s exec ~/bin/monitor
 
 # change volume or toggle mute
 bindsym XF86AudioRaiseVolume exec amixer -q -D pulse sset Master 5%+ && pkill -RTMIN+10 i3blocks 
@@ -153,9 +156,9 @@ exec --no-startup-id compton
 exec --no-startup-id redshift
 exec --no-startup-id nm-applet
 exec --no-startup-id syncthing --no-browser
-exec --no-startup-id xss-lock -- i3lock -i /home/landmaj/lockscreen.png
 exec --no-startup-id feh --bg-max ~/wallpaper.*
 exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
+exec --no-startup-id xss-lock -- i3lock -i /home/landmaj/lockscreen.png
 
 # font for window titles and bar
 font pango:Source Sans Pro 10
