@@ -15,15 +15,9 @@ Plugin 'gmarik/Vundle.vim'
 
 " add all your plugins here 
 
-Plugin 'w0rp/ale'
-Plugin 'Valloric/YouCompleteMe'
 Plugin 'vim-scripts/indentpython.vim'
-Plugin 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'python-mode/python-mode'
-Plugin 'scrooloose/nerdtree'
-Plugin 'ludovicchabant/vim-gutentags'
-Plugin 'mgedmin/python-imports.vim'
 Plugin 'scrooloose/nerdcommenter'
 
 Plugin 'srcery-colors/srcery-vim'
@@ -69,14 +63,6 @@ set foldmethod=indent
 set foldlevel=99
 nnoremap <space> za
 
-" YouCompleteMe
-let g:ycm_autoclose_preview_window_after_completion=1
-map <leader>g :YcmCompleter GoToDefinitionElseDeclaration<CR>
-
-" powerline
-set laststatus=2
-set noshowmode
-
 " color scheme
 set t_Co=256
 colorscheme srcery
@@ -93,15 +79,6 @@ set wildignore+=*/coverage/*
 let g:pymode_syntax = 1
 let g:pymode_virtualenv = 1
 
-" python imports
-nnoremap <F5>    :ImportName<CR>
-nnoremap <C-F5>  :ImportNameHere<CR>
-
-" nerdtree
-nnoremap <leader>t :NERDTreeToggle<CR>
-autocmd FileType nerdtree nmap <buffer> <left> u
-autocmd FileType nerdtree nmap <buffer> <right> C
-
 " nerdcommenter
 let g:NERDSpaceDelims = 1
 let g:NERDCommentEmptyLines = 1
@@ -116,3 +93,4 @@ noremap <leader>p "+p
 " exiting insert mode
 inoremap <silent> <Up> <ESC><Up>
 inoremap <silent> <Down> <ESC><Down>
+
