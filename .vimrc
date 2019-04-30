@@ -19,6 +19,7 @@ Plugin 'vim-scripts/indentpython.vim'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'python-mode/python-mode'
 Plugin 'scrooloose/nerdcommenter'
+Plugin 'vim-airline/vim-airline'
 
 Plugin 'srcery-colors/srcery-vim'
 
