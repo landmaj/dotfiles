@@ -159,7 +159,7 @@ exec --no-startup-id syncthing --no-browser
 exec --no-startup-id feh --bg-max ~/wallpaper.*
 exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
 exec --no-startup-id xss-lock -- i3lock -i /home/landmaj/lockscreen.png
-exec-always --no-startup-id setxkbmap -option caps:swapescape
+exec_always --no-startup-id setxkbmap -option caps:swapescape
 
 # font for window titles and bar
 font pango:Source Sans Pro 10
