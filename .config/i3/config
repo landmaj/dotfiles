@@ -141,7 +141,7 @@ bindsym XF86MonBrightnessUp exec xbacklight -inc 10 # increase screen brightness
 bindsym XF86MonBrightnessDown exec xbacklight -dec 10 # decrease screen brightness
 
 # toggle display
-bindsym $mod+Shift+s exec ~/bin/monitor
+bindsym $mod+Shift+s exec ~/bin/switch_display
 
 # change volume or toggle mute
 bindsym XF86AudioRaiseVolume exec amixer -q -D pulse sset Master 5%+ && pkill -RTMIN+10 i3blocks 
