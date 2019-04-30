@@ -16,22 +16,18 @@ if [ $monitor_mode = "ALL" ]; then
         monitor_mode="EXTERNAL"
 	notify-send -t $TIMEOUT "DISPLAY" "HDMI"
         xrandr --output $INTERNAL_OUTPUT --off --output $EXTERNAL_OUTPUT --auto --primary
-	i3-msg reload
 elif [ $monitor_mode = "EXTERNAL" ]; then
         monitor_mode="INTERNAL"
 	notify-send -t $TIMEOUT "DISPLAY" "eDP1"
         xrandr --output $INTERNAL_OUTPUT --auto --primary --output $EXTERNAL_OUTPUT --off
-	i3-msg reload
 elif [ $monitor_mode = "INTERNAL" ]; then
         monitor_mode="CLONES"
 	notify-send -t $TIMEOUT "DISPLAY" "MIRROR"
         xrandr --output $INTERNAL_OUTPUT --auto --primary --output $EXTERNAL_OUTPUT --auto --same-as $INTERNAL_OUTPUT
-	i3-msg reload
 else
         monitor_mode="ALL"
 	notify-send -t $TIMEOUT "DISPLAY" "ALL"
         xrandr --output $INTERNAL_OUTPUT --auto --output $EXTERNAL_OUTPUT --auto --primary --left-of $INTERNAL_OUTPUT
-	i3-msg reload
 fi
 echo "${monitor_mode}" > /tmp/monitor_mode.dat
 
