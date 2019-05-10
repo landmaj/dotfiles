@@ -125,8 +125,6 @@ sudo apt update
 sudo apt upgrade -y
 
 # SNAPS
-sudo snap install pycharm-professional --classic
-sudo snap install vscode --classic
 sudo snap install insomnia
 sudo snap install spotify
 sudo snap install discord
@@ -138,7 +136,8 @@ sudo snap install docker --classic
 
 # PYTHON
 sudo add-apt-repository ppa:deadsnakes/ppa
-sudo apt install python3.5 python3.5-dev python3.7-dev
+sudo apt install python3.5-dev python3.7-dev
+sudo snap install pycharm-professional --classic
 
 # ELM
 sudo apt install -y npm
