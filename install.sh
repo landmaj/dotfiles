@@ -145,3 +145,10 @@ sudo apt install -y npm
 sudo npm install -g elm elm-format elm-test
 ln -s /lib/terminfo ~/.terminfo # fix Ctrl + L in REPL
 
+# GO
+sudo snap install go --classic
+echo "export PATH=\"\${HOME}/go/bin:\$PATH\"" >> ${HOME}/.bashrc
+sudo snap install golang --classic
+go get -u golang.org/x/lint/golint
+go get -u github.com/motemen/gore/cmd/gore
+
