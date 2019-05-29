@@ -139,11 +139,6 @@ sudo add-apt-repository ppa:deadsnakes/ppa
 sudo apt install python3.5-dev python3.7-dev
 sudo snap install pycharm-professional --classic
 
-# ELM
-sudo apt install -y npm
-sudo npm install -g elm elm-format elm-test
-ln -s /lib/terminfo ~/.terminfo # fix Ctrl + L in REPL
-
 # GO
 sudo snap install go --classic
 echo "export PATH=\"\${HOME}/go/bin:\$PATH\"" >> ${HOME}/.bashrc
