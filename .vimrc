@@ -95,3 +95,6 @@ noremap <leader>p "+p
 inoremap <silent> <Up> <ESC><Up>
 inoremap <silent> <Down> <ESC><Down>
 
+" disable Shift+Up/Down
+map <S-Up> <Up>
+map <S-Down> <Down>
