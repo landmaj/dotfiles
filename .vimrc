@@ -1,7 +1,8 @@
+source ${HOME}/.ideavimrc
+
 autocmd! bufwritepost .vimrc source %
 
 set encoding=utf-8
-let mapleader = ","
 
 set nocompatible              " required
 filetype off                  " required
@@ -38,10 +39,6 @@ augroup END
 " enable mouse support
 set mouse=a
 
-" remove search highlight
-set hlsearch
-noremap <C-n> :nohl<CR>
-
 " split navigations
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
@@ -58,11 +55,6 @@ set nowrap
 set fo-=t
 set colorcolumn=80
 highlight ColorColumn ctermbg=233
-
-" folding
-set foldmethod=indent
-set foldlevel=99
-nnoremap <space> za
 
 " color scheme
 set t_Co=256
@@ -87,14 +79,3 @@ let g:NERDDefaultAlign = 'left'
 nmap <C-_>   <Plug>NERDCommenterToggle
 vmap <C-_>   <Plug>NERDCommenterToggle<CR>gv
 
-" system clipboard
-noremap <leader>y "+y
-noremap <leader>p "+p
-
-" exiting insert mode
-inoremap <silent> <Up> <ESC><Up>
-inoremap <silent> <Down> <ESC><Down>
-
-" disable Shift+Up/Down
-map <S-Up> <Up>
-map <S-Down> <Down>

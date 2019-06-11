@@ -9,5 +9,16 @@ inoremap <silent> <Up> <ESC><Up>
 inoremap <silent> <Down> <ESC><Down>
 
 " disable Shift+Up/Down
-map <S-Up> <Up>
-map <S-Down> <Down>
+noremap <S-Up> <Up>
+noremap <S-Down> <Down>
+
+" remove search highlight
+set hlsearch
+noremap <C-n> :nohl<CR>
+
+" folding
+set foldmethod=indent
+set foldlevel=99
+nnoremap <space> zc
+nnoremap <C-space> zo
+
