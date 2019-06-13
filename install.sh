@@ -42,6 +42,10 @@ echo ". /usr/share/autojump/autojump.sh" >> ${HOME}/.bashrc
 # KEEPASSXC PPA
 sudo add-apt-repository ppa:phoerious/keepassxc
 
+# SYNCTHING
+curl -s https://syncthing.net/release-key.txt | sudo apt-key add -
+echo "deb https://apt.syncthing.net/ syncthing stable" | sudo tee /etc/apt/sources.list.d/syncthing.list
+
 # BASIC APPLICATIONS
 sudo apt install -y \
     xbacklight \
