@@ -132,6 +132,7 @@ sudo apt upgrade -y
 sudo snap install insomnia
 sudo snap install spotify
 sudo snap install discord
+sudo snap install code
 
 # DOCKER
 sudo addgroup --system docker
