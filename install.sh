@@ -47,6 +47,7 @@ curl -s https://syncthing.net/release-key.txt | sudo apt-key add -
 echo "deb https://apt.syncthing.net/ syncthing stable" | sudo tee /etc/apt/sources.list.d/syncthing.list
 
 # BASIC APPLICATIONS
+sudo apt update
 sudo apt install -y \
     xbacklight \
     xss-lock \
