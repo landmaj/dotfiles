@@ -6,7 +6,7 @@ cwd=$(pwd)
 echo "${USER} ALL=(ALL) NOPASSWD:ALL" | sudo tee /etc/sudoers.d/${USER}
 
 # BASIC i3
-sudo apt install -y i3-wm i3blocks rofi compton
+sudo apt install -y i3-wm i3lock i3blocks rofi compton
 
 # CONFIG FILES
 cp -r ./.config ${HOME}/
