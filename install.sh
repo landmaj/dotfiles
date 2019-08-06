@@ -87,7 +87,8 @@ sudo apt install -y \
     autojump
 
 # PIPX
-curl https://raw.githubusercontent.com/pipxproject/pipx-bootstrap/master/pipxbootstrap/main.py | python3
+python3 -m pip install --user pipx
+python3 -m pipx ensurepath
 
 ${HOME}/.local/bin/pipx install flake8
 ${HOME}/.local/bin/pipx install ansible
@@ -132,7 +133,7 @@ sudo apt upgrade -y
 sudo snap install insomnia
 sudo snap install spotify
 sudo snap install discord
-sudo snap install code
+sudo snap install code --classic
 
 # DOCKER
 sudo addgroup --system docker
