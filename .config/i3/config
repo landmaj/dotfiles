@@ -134,7 +134,7 @@ bindsym $mod+F2 exec firefox
 bindsym $mod+F3 exec nautilus
 
 # lock screen
-bindsym $mod+l exec SDL_VIDEO_FULLSCREEN_HEAD=0 i3lock -c 000000 -i /home/landmaj/lockscreen.png
+bindsym $mod+l exec SDL_VIDEO_FULLSCREEN_HEAD=0 i3lock -c 000000 -i ~/lockscreen.png
 
 # screen brightness
 bindsym XF86MonBrightnessUp exec xbacklight -inc 10 # increase screen brightness
@@ -158,7 +158,7 @@ exec --no-startup-id nm-applet
 exec --no-startup-id syncthing --no-browser
 exec --no-startup-id feh --bg-max ~/wallpaper.*
 exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
-exec --no-startup-id xss-lock -- SDL_VIDEO_FULLSCREEN_HEAD=0 i3lock -c 000000 -i /home/landmaj/lockscreen.png
+exec --no-startup-id xss-lock -- SDL_VIDEO_FULLSCREEN_HEAD=0 i3lock -c 000000 -i ~/lockscreen.png
 exec_always --no-startup-id setxkbmap -option caps:swapescape
 
 # font for window titles and bar
