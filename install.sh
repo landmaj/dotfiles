@@ -5,6 +5,9 @@ cwd=$(pwd)
 # SUDO WITHOUT PASSWORD
 echo "${USER} ALL=(ALL) NOPASSWD:ALL" | sudo tee /etc/sudoers.d/${USER}
 
+# Git over SSH
+git config --global --add url."git@github.com:".insteadOf "https://github.com/"
+
 # BASIC i3
 sudo apt install -y i3-wm i3lock i3blocks rofi compton
 
