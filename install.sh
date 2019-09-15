@@ -30,6 +30,9 @@ cp -r .fonts ${HOME}/
 # BACKLIGHT
 sudo cp ./xorg.conf /etc/X11/xorg.conf
 
+# Cursor size
+cp ./.Xresources ${HOME}/
+
 # GIT CONFIG
 git config --global url."git@github.com:".insteadOf "https://github.com/"
 
