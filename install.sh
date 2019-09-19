@@ -149,7 +149,7 @@ sudo snap install docker --classic
 
 # PYTHON
 sudo add-apt-repository ppa:deadsnakes/ppa
-sudo apt install python3.5-dev python3.7-dev
+sudo apt install python3.7-dev python3.7-venv
 sudo snap install pycharm-professional --classic
 
 # GO
