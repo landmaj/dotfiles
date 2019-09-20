@@ -1,18 +1,18 @@
 #!/bin/bash
 EXTERNAL_OUTPUT="HDMI2"
 INTERNAL_OUTPUT="eDP1"
-TIMEOUT=3000
+TIMEOUT=6000
 
 # if we don't have a file, start at zero
 if [ ! -f "/tmp/monitor_mode.dat" ] ; then
-  monitor_mode="ALL"
+  monitor_mode="INTERNAL"
 
 # otherwise read the value from the file
 else
   monitor_mode=`cat /tmp/monitor_mode.dat`
 fi
 
-if [ $monitor_mode = "ALL" ]; then
+if [ $monitor_mode = "INTERNAL" ]; then
         monitor_mode="EXTERNAL"
 	notify-send -t $TIMEOUT "DISPLAY" "HDMI"
         xrandr --output $INTERNAL_OUTPUT --off --output $EXTERNAL_OUTPUT --auto --primary
@@ -20,14 +20,6 @@ elif [ $monitor_mode = "EXTERNAL" ]; then
         monitor_mode="INTERNAL"
 	notify-send -t $TIMEOUT "DISPLAY" "eDP1"
         xrandr --output $INTERNAL_OUTPUT --auto --primary --output $EXTERNAL_OUTPUT --off
-elif [ $monitor_mode = "INTERNAL" ]; then
-        monitor_mode="CLONES"
-	notify-send -t $TIMEOUT "DISPLAY" "MIRROR"
-        xrandr --output $INTERNAL_OUTPUT --auto --primary --output $EXTERNAL_OUTPUT --auto --same-as $INTERNAL_OUTPUT
-else
-        monitor_mode="ALL"
-	notify-send -t $TIMEOUT "DISPLAY" "ALL"
-        xrandr --output $INTERNAL_OUTPUT --auto --output $EXTERNAL_OUTPUT --auto --primary --left-of $INTERNAL_OUTPUT
 fi
 echo "${monitor_mode}" > /tmp/monitor_mode.dat
 
