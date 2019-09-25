@@ -1,0 +1,12 @@
+name: test
+
+on: [push]
+
+jobs:
+  test:
+    runs-on: ubuntu-18.04
+    steps:
+    - uses: actions/checkout@v1
+    - name: Run script
+      run: |
+        ./install.sh
