@@ -55,43 +55,38 @@ echo "deb https://apt.syncthing.net/ syncthing stable" | sudo tee /etc/apt/sourc
 # BASIC APPLICATIONS
 sudo apt update
 sudo apt install -y \
-    xbacklight \
-    xss-lock \
-    feh \
-    ntp \
-    policykit-desktop-privileges \
-    policykit-1-gnome \
-    arandr \
-    gparted \
-    fonts-font-awesome \
-    tlp \
-    syncthing \
-    libreoffice \
-    keepassxc \
-    redshift \
-    gimp \
-    transmission \
-    vlc \
-    pgcli \
-    vifm \
-    fuse-zip \
-    archivemount \
-    sshfs \
-    chromium-browser \
-    curl \
-    build-essential \
-    python3-dev \
-    cmake \
-    clang \
-    xclip \
-    pinta \
-    exuberant-ctags \
-    fonts-powerline \
-    htop \
-    ncdu \
-    blueman \
-    pavucontrol \
-    autojump
+  arandr \
+  archivemount \
+  autojump \
+  blueman \
+  build-essential \
+  curl \
+  feh \
+  fonts-font-awesome \
+  fonts-powerline \
+  fuse-zip \
+  gimp \
+  gparted \
+  htop \
+  keepassxc \
+  libreoffice \
+  ncdu \
+  ntp \
+  pavucontrol \
+  pgcli \
+  pinta \
+  policykit-1-gnome \
+  policykit-desktop-privileges \
+  redshift \
+  sshfs \
+  syncthing \
+  tlp \
+  transmission \
+  vifm \
+  vlc \
+  xbacklight \
+  xclip \
+  xss-lock
 
 # PIPX
 python3 -m pip install --user pipx
