@@ -38,3 +38,8 @@ Mainline kernel:
 ```
 https://github.com/GM-Script-Writer-62850/Ubuntu-Mainline-Kernel-Updater
 ```
+
+Backlight fix (only needed for my Asus Zenbook UX310UA):
+```
+sudo cp ./xorg.conf /etc/X11/xorg.conf
+```

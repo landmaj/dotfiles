@@ -2,57 +2,25 @@
 
 cwd=$(pwd)
 
-# SUDO WITHOUT PASSWORD
-echo "${USER} ALL=(ALL) NOPASSWD:ALL" | sudo tee /etc/sudoers.d/${USER}
+sudo apt install -y curl wget
 
-# Git over SSH
-git config --global --add url."git@github.com:".insteadOf "https://github.com/"
+# sudo without password
+echo "${USER} ALL=(ALL) NOPASSWD:ALL" | sudo tee /etc/sudoers.d/"${USER}"
 
-# BASIC i3
-sudo apt install -y i3-wm i3lock i3blocks rofi compton
+# config files, etc
+cp -r "${cwd}"/.local "${HOME}"/
+cp -r "${cwd}"/.config "${HOME}"/
+cp -r "${cwd}"/bin "${HOME}"/
+cp -r "${cwd}"fonts "${HOME}"/
 
-# CONFIG FILES
-cp -r ./.config ${HOME}/
-
-# SCRIPTS
-cp -r ./bin ${HOME}/
-
-# i3blocks
-cd /tmp
-wget https://github.com/acrisci/playerctl/releases/download/v2.0.1/playerctl-2.0.1_amd64.deb
-sudo dpkg -i playerctl*.deb
-cd ${cwd}
-cp -r ./.local ${HOME}/
-
-# FONTS
-cp -r .fonts ${HOME}/
-
-# BACKLIGHT
-sudo cp ./xorg.conf /etc/X11/xorg.conf
-
-# Cursor size
-cp ./.Xresources ${HOME}/
-
-# GIT CONFIG
-git config --global url."git@github.com:".insteadOf "https://github.com/"
-
-# ALIASES
-echo "" >> ${HOME}/.bashrc
-echo "alias vifm=\"source ~/bin/vf" >> $(HOME)/.bashrc
-echo "alias venv=\"source ~/bin/venv\"" >> ${HOME}/.bashrc
-echo "alias ee=\"exa -lagH\"" >> ${HOME}/.bashrc
-
-# AUTOJUMP
-echo ". /usr/share/autojump/autojump.sh" >> ${HOME}/.bashrc
-
-# KEEPASSXC PPA
+# external repositories
 sudo add-apt-repository ppa:phoerious/keepassxc
-
-# SYNCTHING
+sudo add-apt-repository ppa:bluetooth/bluez  # fix for broken bluetooth in Ubuntu 18.04
+sudo add-apt-repository ppa:deadsnakes/ppa
+# syncthing
 curl -s https://syncthing.net/release-key.txt | sudo apt-key add -
 echo "deb https://apt.syncthing.net/ syncthing stable" | sudo tee /etc/apt/sources.list.d/syncthing.list
 
-# BASIC APPLICATIONS
 sudo apt update
 sudo apt install -y \
   arandr \
@@ -60,7 +28,8 @@ sudo apt install -y \
   autojump \
   blueman \
   build-essential \
-  curl \
+  compton \
+  dunst \
   feh \
   fonts-font-awesome \
   fonts-powerline \
@@ -68,6 +37,9 @@ sudo apt install -y \
   gimp \
   gparted \
   htop \
+  i3-wm \
+  i3blocks \
+  i3lock \
   keepassxc \
   libreoffice \
   ncdu \
@@ -78,79 +50,65 @@ sudo apt install -y \
   policykit-1-gnome \
   policykit-desktop-privileges \
   redshift \
+  rofi \
   sshfs \
   syncthing \
   tlp \
   transmission \
   vifm \
+  vim-gtk \
   vlc \
   xbacklight \
   xclip \
   xss-lock
 
-# PIPX
+sudo apt install -y \
+  python3.6-dev \
+  python3.6-venv \
+  python3.7-dev \
+  python3.7-venv
+
+# pipx
 python3 -m pip install --user pipx
 python3 -m pipx ensurepath
+"${HOME}"/.local/bin/pipx install flake8
+"${HOME}"/.local/bin/pipx install ansible
+"${HOME}"/.local/bin/pipx install gitup
+"${HOME}"/.local/bin/pipx install pre-commit
+"${HOME}"/.local/bin/pipx install tldr
 
-${HOME}/.local/bin/pipx install flake8
-${HOME}/.local/bin/pipx install ansible
-${HOME}/.local/bin/pipx install gitup
-${HOME}/.local/bin/pipx install pre-commit
-${HOME}/.local/bin/pipx install tldr
+# miescellaneous
+echo ". /usr/share/autojump/autojump.sh" >> "${HOME}"/.bashrc  # required by autojump
+git config --global --add url."git@github.com:".insteadOf "https://github.com/"
+cp "${cwd}"/.Xresources "${HOME}"/  # fix cursor size
+# currently playing song on status bar
+wget -O /tmp/playerctl.deb https://github.com/altdesktop/playerctl/releases/download/v2.0.2/playerctl-2.0.2_amd64.deb && sudo dpkg -i /tmp/playerctl.deb
+wget -O /tmp/alacritty.deb https://github.com/jwilm/alacritty/releases/download/v0.3.3/Alacritty-v0.3.3-ubuntu_18_04_amd64.deb && sudo dpkg -i /tmp/alacritty.deb
+wget -O /tmp/bat.deb https://github.com/sharkdp/bat/releases/download/v0.12.1/bat_0.12.1_amd64.deb && sudo dpkg -i /tmp/bat.deb
+wget -O /tmp/exa.zip https://github.com/ogham/exa/releases/download/v0.9.0/exa-linux-x86_64-0.9.0.zip && unzip /tmp/exa.zip && sudo mv exa-linux-x86_64 /usr/local/bin/exa
 
-# VIM
+# bash aliases
+echo "" >> "${HOME}"/.bashrc
+echo "alias vifm=\"source ~/bin/vf" >> "${HOME}"/.bashrc
+echo "alias venv=\"source ~/bin/venv\"" >> "${HOME}"/.bashrc
+echo "alias ee=\"exa -lagH\"" >> "${HOME}"/.bashrc
+
+# Vim
 cp ./.vimrc ${HOME}/
 cp ./.ideavimrc ${HOME}/
-sudo apt install -y vim-gtk
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 vim -c VundleUpdate -c quitall
-python3 i~/.vim/bundle/YouCompleteMe/install.py --clang-completer
-# fix for powerline
-echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
+echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p  # fix for powerline
 
-# ALACRITTY
-cd /tmp
-wget https://github.com/jwilm/alacritty/releases/download/v0.3.2/Alacritty-v0.3.2-ubuntu_18_04_amd64.deb
-sudo dpkg -i Alacritty-*.deb
-cd ${cwd}
-
-# BAT
-cd /tmp
-wget https://github.com/sharkdp/bat/releases/download/v0.10.0/bat_0.10.0_amd64.deb
-sudo dpkg -i bat_*.deb
-cd ${cwd}
-
-# EXA
-cd /tmp
-wget -O exa.zip https://github.com/ogham/exa/releases/download/v0.8.0/exa-linux-x86_64-0.8.0.zip
-unzip exa.zip
-sudo mv exa-linux-x86_64 /usr/local/bin/exa
-
-# FIX BROKEN BLUETOOTH (bluez 5.48 is bugged)
-sudo add-apt-repository ppa:bluetooth/bluez
-sudo apt update
-sudo apt upgrade -y
-
-# SNAPS
+# Snaps
 sudo snap install insomnia
 sudo snap install spotify
-sudo snap install discord
 sudo snap install code --classic
-
-# DOCKER
-sudo addgroup --system docker
-sudo adduser ${USER} docker
-sudo snap install docker --classic
-
-# PYTHON
-sudo add-apt-repository ppa:deadsnakes/ppa
-sudo apt install python3.7-dev python3.7-venv
 sudo snap install pycharm-professional --classic
-
-# GO
 sudo snap install go --classic
-echo "export PATH=\"\${HOME}/go/bin:\$PATH\"" >> ${HOME}/.bashrc
 sudo snap install golang --classic
-go get -u golang.org/x/lint/golint
-go get -u github.com/motemen/gore/cmd/gore
 
+# Docker
+sudo addgroup --system docker
+sudo adduser "${USER}" docker
+sudo snap install docker --classic
