@@ -11,7 +11,7 @@ echo "${USER} ALL=(ALL) NOPASSWD:ALL" | sudo tee /etc/sudoers.d/"${USER}"
 cp -r "${cwd}"/.local "${HOME}"/
 cp -r "${cwd}"/.config "${HOME}"/
 cp -r "${cwd}"/bin "${HOME}"/
-cp -r "${cwd}"fonts "${HOME}"/
+cp -r "${cwd}"/.fonts "${HOME}"/
 
 # external repositories
 sudo add-apt-repository ppa:phoerious/keepassxc
