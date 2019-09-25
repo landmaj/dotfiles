@@ -2,10 +2,11 @@
 
 cwd=$(pwd)
 
-sudo apt install -y curl wget
-
 # sudo without password
 echo "${USER} ALL=(ALL) NOPASSWD:ALL" | sudo tee /etc/sudoers.d/"${USER}"
+
+# required for later commands
+sudo apt install -y curl wget
 
 # config files, etc
 cp -r "${cwd}"/.local "${HOME}"/
