@@ -77,7 +77,7 @@ python3 -m pipx ensurepath
 "${HOME}"/.local/bin/pipx install pre-commit
 "${HOME}"/.local/bin/pipx install tldr
 
-# miescellaneous
+# miscellaneous
 echo ". /usr/share/autojump/autojump.sh" >> "${HOME}"/.bashrc  # required by autojump
 git config --global --add url."git@github.com:".insteadOf "https://github.com/"
 cp "${cwd}"/.Xresources "${HOME}"/  # fix cursor size
@@ -93,14 +93,14 @@ echo "alias vifm=\"source ~/bin/vf" >> "${HOME}"/.bashrc
 echo "alias venv=\"source ~/bin/venv\"" >> "${HOME}"/.bashrc
 echo "alias ee=\"exa -lagH\"" >> "${HOME}"/.bashrc
 
-# Vim
+# vim
 cp ./.vimrc ${HOME}/
 cp ./.ideavimrc ${HOME}/
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 vim -c VundleUpdate -c quitall
 echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p  # fix for powerline
 
-# Snaps
+# snaps
 sudo snap install insomnia
 sudo snap install spotify
 sudo snap install code --classic
@@ -108,7 +108,7 @@ sudo snap install pycharm-professional --classic
 sudo snap install go --classic
 sudo snap install golang --classic
 
-# Docker
+# docker
 sudo addgroup --system docker
 sudo adduser "${USER}" docker
 sudo snap install docker --classic
