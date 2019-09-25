@@ -21,25 +21,22 @@ and run `install.sh`.
 1. [Nautilus - open in
    terminal](https://askubuntu.com/questions/1030940/nautilus-actions-in-18-04)
 
-##### Optional (may break your system):
-```
-Rainbow Bash:
+#### Optional:
+Rainbow Bash: 
+```bash
 ./install-rainbow-bash.sh
 ```
 
-Fan speed control:
-```
-NBFC
-./nbfc.sh
-https://github.com/hirschmann/nbfc/wiki/First-steps
+Git over SSH instead of HTTPS:
+```bash
+git config --global --add url."git@github.com:".insteadOf "https://github.com/"
 ```
 
-Mainline kernel:
-```
-https://github.com/GM-Script-Writer-62850/Ubuntu-Mainline-Kernel-Updater
-```
-
-Backlight fix (only needed for my Asus Zenbook UX310UA):
-```
+Specific for my Zenbook UX310UA:
+```bash
+# Backlight fix:
 sudo cp ./xorg.conf /etc/X11/xorg.conf
+
+# Fan speed control (https://github.com/hirschmann/nbfc/wiki/First-steps)
+./nbfc.sh
 ```
