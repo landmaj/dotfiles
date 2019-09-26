@@ -1,6 +1,6 @@
 #!/bin/bash
-EXTERNAL_OUTPUT="HDMI2"
-INTERNAL_OUTPUT="eDP1"
+EXTERNAL_OUTPUT="HDMI-A-0"
+INTERNAL_OUTPUT="eDP"
 TIMEOUT=6000
 
 # if we don't have a file, start at zero
