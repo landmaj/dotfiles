@@ -137,8 +137,8 @@ bindsym $mod+F3 exec nautilus
 bindsym $mod+l exec SDL_VIDEO_FULLSCREEN_HEAD=0 i3lock -c 000000 -i ~/lockscreen.png
 
 # screen brightness
-bindsym XF86MonBrightnessUp exec xbacklight -inc 10 # increase screen brightness
-bindsym XF86MonBrightnessDown exec xbacklight -dec 10 # decrease screen brightness
+bindsym XF86MonBrightnessUp exec sudo light -s sysfs/backlight/amdgpu_bl0 -A 5
+bindsym XF86MonBrightnessDown exec sudo light -s sysfs/backlight/amdgpu_bl0 -U 5
 
 # toggle display
 bindsym $mod+Shift+s exec ~/bin/switch_display

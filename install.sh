@@ -60,7 +60,6 @@ sudo apt install -y \
   vifm \
   vim-gtk \
   vlc \
-  xbacklight \
   xclip \
   xss-lock
 
@@ -83,6 +82,8 @@ python3 -m pipx ensurepath
 # miscellaneous
 echo ". /usr/share/autojump/autojump.sh" >> "${HOME}"/.bashrc  # required by autojump
 cp "${cwd}"/.Xresources "${HOME}"/  # fix cursor and font size
+#backlight
+wget -O /tmp/light.deb https://github.com/haikarainen/light/releases/download/v1.2/light_1.2_amd64.deb && sudo dpkg -i /tmp/light.deb
 # currently playing song on status bar
 wget -O /tmp/playerctl.deb https://github.com/altdesktop/playerctl/releases/download/v2.0.2/playerctl-2.0.2_amd64.deb && sudo dpkg -i /tmp/playerctl.deb
 wget -O /tmp/alacritty.deb https://github.com/jwilm/alacritty/releases/download/v0.3.3/Alacritty-v0.3.3-ubuntu_18_04_amd64.deb && sudo dpkg -i /tmp/alacritty.deb
