@@ -17,6 +17,7 @@ cp -r "${cwd}"/.fonts "${HOME}"/
 # external repositories
 sudo add-apt-repository ppa:phoerious/keepassxc
 sudo add-apt-repository ppa:bluetooth/bluez  # fix for broken bluetooth in Ubuntu 18.04
+sudo add-apt-repository ppa:paulo-miguel-dias/pkppa  # fix for HDMI on my Matebook D14
 sudo add-apt-repository ppa:deadsnakes/ppa
 # syncthing
 curl -s https://syncthing.net/release-key.txt | sudo apt-key add -
