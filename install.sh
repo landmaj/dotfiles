@@ -66,6 +66,7 @@ sudo apt install -y \
 sudo apt install -y \
   python3.6-dev \
   python3.6-venv \
+  python3.6-pip \
   python3.7-dev \
   python3.7-venv
 
@@ -106,7 +107,8 @@ sudo snap install spotify
 sudo snap install code --classic
 sudo snap install pycharm-professional --classic
 sudo snap install go --classic
-sudo snap install golang --classic
+sudo snap install goland --classic
+sudo snap install slack --classic
 
 # docker
 sudo addgroup --system docker

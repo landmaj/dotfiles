@@ -18,13 +18,18 @@ and run `install.sh`.
 1. KeePassXC browser integration settings
 1. [Disable close button in
    Firefox](https://www.reddit.com/r/firefox/comments/7fa3y8/removing_close_tab_button_on_each_tab_in_quantum/)
-1. [Nautilus - open in
-   terminal](https://askubuntu.com/questions/1030940/nautilus-actions-in-18-04)
 
 #### Optional:
+Disable close tab button in Firefox. Add this to
+[userChrome.css](https://www.reddit.com/r/firefox/wiki/userchrome).
+```
+/* Hide all tab Close buttons */
+.tabbrowser-tab .tab-close-button { display: none !important; }
+```
+
 Rainbow Bash: 
 ```bash
-./install-rainbow-bash.sh
+./rainbow-bash.sh
 ```
 
 Git over SSH instead of HTTPS:
@@ -32,11 +37,3 @@ Git over SSH instead of HTTPS:
 git config --global --add url."git@github.com:".insteadOf "https://github.com/"
 ```
 
-Specific for my Zenbook UX310UA:
-```bash
-# Backlight fix:
-sudo cp ./xorg.conf /etc/X11/xorg.conf
-
-# Fan speed control (https://github.com/hirschmann/nbfc/wiki/First-steps)
-./nbfc.sh
-```
