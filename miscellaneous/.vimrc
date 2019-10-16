@@ -18,7 +18,6 @@ Plugin 'gmarik/Vundle.vim'
 
 Plugin 'vim-scripts/indentpython.vim'
 Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'python-mode/python-mode'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'vim-airline/vim-airline'
 
@@ -67,10 +66,6 @@ set wildignore+=*build/*
 set wildignore+=*dist/*
 set wildignore+=*.egg-info/*
 set wildignore+=*/coverage/*
-
-" python-mode
-let g:pymode_syntax = 1
-let g:pymode_virtualenv = 1
 
 " nerdcommenter
 let g:NERDSpaceDelims = 1

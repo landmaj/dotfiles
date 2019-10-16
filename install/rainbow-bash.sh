@@ -62,14 +62,3 @@ fc-cache -f -v
 # Remove temp files
 cd
 rm -rf $TMP
-
-echo ""
-echo ""
-echo "FILES DOWNLOADED"
-echo ""
-echo "Instructions:"
-echo "- Set your terminal emulator to use Source Code Pro Regular (11)"
-echo "- (optional) change ~/.bashrc to load a different theme (rbw_load_theme THEME)"
-echo "- Restart your terminal emulator"
-
-
