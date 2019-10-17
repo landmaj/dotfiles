@@ -11,7 +11,7 @@ cp "${cwd}"/miscellaneous/.Xresources "${HOME}"/  # fix cursor and font size
 
 # git configuration
 cp "${cwd}"/miscellaneous/.gitignore "${HOME}"/
-git config --global core.excludesfile ~/.gitignore_global
+git config --global core.excludesfile ~/.gitignore
 git config --global --add url."git@github.com:".insteadOf "https://github.com/"
 
 # bash aliases
