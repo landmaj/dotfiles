@@ -64,6 +64,7 @@ sudo apt install -y \
   python3-venv \
   python3-pip \
   redshift \
+  restic \
   rofi \
   sshfs \
   tlp \
