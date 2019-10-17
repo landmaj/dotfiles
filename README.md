@@ -20,7 +20,3 @@ Disable close tab button in Firefox. Add this to
 .tabbrowser-tab .tab-close-button { display: none !important; }
 ```
 
-Git over SSH instead of HTTPS:
-```bash
-git config --global --add url."git@github.com:".insteadOf "https://github.com/"
-```

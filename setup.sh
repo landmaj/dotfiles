@@ -9,6 +9,11 @@ cp -r "${cwd}"/bin "${HOME}"/
 cp -r "${cwd}"/.fonts "${HOME}"/
 cp "${cwd}"/miscellaneous/.Xresources "${HOME}"/  # fix cursor and font size
 
+# git configuration
+cp "${cwd}"/miscellaneous/.gitignore "${HOME}"/
+git config --global core.excludesfile ~/.gitignore_global
+git config --global --add url."git@github.com:".insteadOf "https://github.com/"
+
 # bash aliases
 echo "alias vifm=\"source ~/bin/vf\"" >> "${HOME}"/.bashrc
 echo "alias venv=\"source ~/bin/venv\"" >> "${HOME}"/.bashrc
