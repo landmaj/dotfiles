@@ -134,7 +134,7 @@ bindsym $mod+F2 exec firefox
 bindsym $mod+F3 exec nautilus
 
 # lock screen
-bindsym $mod+l exec SDL_VIDEO_FULLSCREEN_HEAD=0 i3lock -c 000000 -i ~/lockscreen.png
+bindsym $mod+l exec i3lockmore --image-fill ~/lockscreen.jpg --grayscale
 
 # screen brightness
 bindsym XF86MonBrightnessUp exec sudo light -s sysfs/backlight/amdgpu_bl0 -A 5
@@ -157,7 +157,7 @@ exec --no-startup-id redshift
 exec --no-startup-id nm-applet
 exec --no-startup-id syncthing --no-browser
 exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
-exec --no-startup-id SDL_VIDEO_FULLSCREEN_HEAD=0 xss-lock -- i3lock -c 000000 -i ~/lockscreen.png
+exec --no-startup-id xss-lock -- i3lockmore --image-fill ~/lockscreen.jpg --grayscale
 exec_always --no-startup-id setxkbmap -option caps:swapescape
 exec_always --no-startup-id feh --bg-fill ~/wallpaper.*
 
