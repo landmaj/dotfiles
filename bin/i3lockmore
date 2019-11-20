@@ -236,4 +236,5 @@ if [[ "$USE_DPMS" == true ]]; then
 fi
 
 
-i3lock "${PARAMS[@]}"
+killall compton
+i3lock "${PARAMS[@]}" -n; compton -b

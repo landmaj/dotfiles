@@ -2,6 +2,7 @@
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
 set $mod Mod4
+set $lock_cmd "i3lockmore --image-fill ~/wallpaper.jpg --grayscale"
 
 # define names for workspaces
 set $ws1    "1:Default"
@@ -134,7 +135,7 @@ bindsym $mod+F2 exec firefox
 bindsym $mod+F3 exec nautilus
 
 # lock screen
-bindsym $mod+l exec i3lockmore --image-fill ~/lockscreen.jpg --grayscale
+bindsym $mod+l exec $lock_cmd
 
 # screen brightness
 bindsym XF86MonBrightnessUp exec sudo light -s sysfs/backlight/amdgpu_bl0 -A 5
@@ -152,12 +153,12 @@ bindsym XF86AudioMute exec amixer -q -D pulse sset Master toggle && pkill -RTMIN
 focus_follows_mouse no
 
 # startup applications
-exec --no-startup-id compton
+exec --no-startup-id compton -b
 exec --no-startup-id redshift
 exec --no-startup-id nm-applet
 exec --no-startup-id syncthing --no-browser
 exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
-exec --no-startup-id xss-lock -- i3lockmore --image-fill ~/lockscreen.jpg --grayscale
+exec --no-startup-id xss-lock -- $lock_cmd
 exec_always --no-startup-id setxkbmap -option caps:swapescape
 exec_always --no-startup-id feh --bg-fill ~/wallpaper.*
 
