@@ -21,9 +21,15 @@ Disable close tab button in Firefox. Add this to
 ```
 
 #### Huawei Matebook D14
+`/etc/default/grub`
 ```
-sudo vim /etc/default/grub
 GRUB_CMDLINE_LINUX="vga=current ivrs_ioapic[4]=00:14.0 ivrs_ioapic[5]=00:00.2 iommu=pt idle=nomwait acpi_backlight=vendor acpi_enforce_resources=lax scsi_mod.use_blk_mq=1"
-sudo update-grub
 ```
+`sudo update-grub`
+
+`/etc/initramfs-tools/modules`
+```
+amdgpu
+```
+`sudo update-initramfs -u`
 
