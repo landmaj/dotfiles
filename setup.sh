@@ -20,7 +20,7 @@ echo "alias venv=\"source ~/bin/venv\"" >> "${HOME}"/.bashrc
 
 # external repositories
 sudo add-apt-repository -y ppa:bluetooth/bluez  # fix for broken bluetooth in Ubuntu 18.04
-sudo add-apt-repository -y ppa:paulo-miguel-dias/pkppa  # fix for HDMI on Matebook D14
+sudo add-apt-repository -y ppa:oibaf/graphics-drivers  # newest graphics drivers
 
 # snap versions take forever to launch
 sudo snap remove --purge gnome-calculator
