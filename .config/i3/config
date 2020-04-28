@@ -140,9 +140,6 @@ bindsym $mod+l exec lockscreen
 bindsym XF86MonBrightnessUp exec sudo light -s sysfs/backlight/amdgpu_bl0 -A 5
 bindsym XF86MonBrightnessDown exec sudo light -s sysfs/backlight/amdgpu_bl0 -U 5
 
-# toggle display
-bindsym $mod+Shift+s exec ~/bin/switch_display
-
 # change volume or toggle mute
 bindsym XF86AudioRaiseVolume exec amixer -q -D pulse sset Master 5%+ && pkill -RTMIN+10 i3blocks 
 bindsym XF86AudioLowerVolume exec amixer -q -D pulse sset Master 5%- && pkill -RTMIN+10 i3blocks

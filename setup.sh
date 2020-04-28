@@ -23,6 +23,7 @@ wget -O /tmp/light.deb https://github.com/haikarainen/light/releases/download/v1
 wget -O /tmp/playerctl.deb https://github.com/altdesktop/playerctl/releases/download/v2.0.2/playerctl-2.0.2_amd64.deb && sudo dpkg -i /tmp/playerctl.deb  # i3blocks
 
 sudo apt install -y \
+  snapd \
   alacritty \
   arandr \
   archivemount \
