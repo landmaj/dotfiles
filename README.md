@@ -1,10 +1,9 @@
 i3 on Ubuntu
 --------------------------------
-Tested only on the Ubuntu version I'm currently using (18.04). When a new
-LTS version is released, I will most probably swithc to it.
+Tested Pop_OS! 18.04. When a new LTS version is released, I will most probably swithc to it.
 
 ### Installation
-Install *minimal version* of Ubuntu 18.04 LTS and run `make install`.
+Install Pop_OS! run `make install`.
 
 #### Some things will never be automated:
 1. Annoying system sounds can be disabled in sound manager.

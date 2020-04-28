@@ -18,19 +18,12 @@ git config --global --add url."git@github.com:".insteadOf "https://github.com/"
 echo "alias vifm=\"source ~/bin/vf\"" >> "${HOME}"/.bashrc
 echo "alias venv=\"source ~/bin/venv\"" >> "${HOME}"/.bashrc
 
-# external repositories
-sudo add-apt-repository -y ppa:bluetooth/bluez  # fix for broken bluetooth in Ubuntu 18.04
-sudo add-apt-repository -y ppa:oibaf/graphics-drivers  # newest graphics drivers
-
-# snap versions take forever to launch
-sudo snap remove gnome-calculator
-sudo snap remove gnome-system-monitor
-
 # required for my i3wm config
 wget -O /tmp/light.deb https://github.com/haikarainen/light/releases/download/v1.2/light_1.2_amd64.deb && sudo dpkg -i /tmp/light.deb  # backlight
 wget -O /tmp/playerctl.deb https://github.com/altdesktop/playerctl/releases/download/v2.0.2/playerctl-2.0.2_amd64.deb && sudo dpkg -i /tmp/playerctl.deb  # i3blocks
 
 sudo apt install -y \
+  alacritty \
   arandr \
   archivemount \
   autojump \
