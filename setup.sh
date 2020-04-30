@@ -23,8 +23,6 @@ wget -O /tmp/light.deb https://github.com/haikarainen/light/releases/download/v1
 wget -O /tmp/playerctl.deb https://github.com/altdesktop/playerctl/releases/download/v2.0.2/playerctl-2.0.2_amd64.deb && sudo dpkg -i /tmp/playerctl.deb  # i3blocks
 
 sudo apt install -y \
-  imagemagick \
-  snapd \
   alacritty \
   arandr \
   archivemount \
@@ -45,6 +43,7 @@ sudo apt install -y \
   i3-wm \
   i3blocks \
   i3lock \
+  imagemagick \
   keepassxc \
   libpq-dev \
   libreoffice \
@@ -56,15 +55,17 @@ sudo apt install -y \
   policykit-1-gnome \
   policykit-desktop-privileges \
   python3-dev \
-  python3-venv \
   python3-pip \
+  python3-venv \
   redshift \
   restic \
   rofi \
+  snapd \
   sshfs \
   tlp \
   transmission \
   vifm \
   vlc \
   xclip \
+  xfce4-power-manager \
   xss-lock
