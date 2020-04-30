@@ -149,7 +149,7 @@ bindsym XF86AudioMute exec amixer -q -D pulse sset Master toggle && pkill -RTMIN
 focus_follows_mouse no
 
 # startup applications
-exec --no-startup-id compton -b
+exec --no-startup-id compton
 exec --no-startup-id redshift
 exec --no-startup-id nm-applet
 exec --no-startup-id syncthing --no-browser
