@@ -60,7 +60,6 @@ sudo apt install -y \
   redshift \
   restic \
   rofi \
-  snapd \
   sshfs \
   tlp \
   transmission \
@@ -69,3 +68,8 @@ sudo apt install -y \
   xclip \
   xfce4-power-manager \
   xss-lock
+
+# JetBrains
+curl -s https://s3.eu-central-1.amazonaws.com/jetbrains-ppa/0xA6E8698A.pub.asc | sudo apt-key add -
+echo "deb http://jetbrains-ppa.s3-website.eu-central-1.amazonaws.com bionic main" | sudo tee /etc/apt/sources.list.d/jetbrains-ppa.list > /dev/null
+sudo apt update
