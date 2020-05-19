@@ -2,6 +2,9 @@
 
 cwd=$(pwd)
 
+# sudo without password
+echo "${USER} ALL=(ALL) NOPASSWD:ALL" | sudo tee /etc/sudoers.d/"${USER}"
+
 # config files, etc
 cp -r "${cwd}"/.local "${HOME}"/
 cp -r "${cwd}"/.config "${HOME}"/
