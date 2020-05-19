@@ -50,6 +50,7 @@ sudo apt install -y \
   keepassxc \
   libpq-dev \
   libreoffice \
+  lutris \
   ncdu \
   ntp \
   pavucontrol \
