@@ -64,6 +64,7 @@ sudo apt install -y \
   redshift \
   restic \
   rofi \
+  spotify-client \
   sshfs \
   tlp \
   transmission \
