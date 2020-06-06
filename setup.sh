@@ -11,6 +11,7 @@ cp -r "${cwd}"/.config "${HOME}"/
 cp -r "${cwd}"/bin "${HOME}"/
 cp -r "${cwd}"/.fonts "${HOME}"/
 cp "${cwd}"/miscellaneous/.Xresources "${HOME}"/  # fix cursor and font size
+cp "${cwd}"/miscellaneous/10-bluetooth.conf /etc/tlp.d/
 
 # git configuration
 cp "${cwd}"/miscellaneous/.gitignore "${HOME}"/
