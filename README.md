@@ -1,12 +1,11 @@
 i3 on Ubuntu
 --------------------------------
-Tested Pop_OS! 18.04. When a new LTS version is released, I will most probably swithc to it.
+Tested on Pop_OS! 20.04. When a new LTS version is released, I will most probably switch to it.
 
 ### Installation
-Install Pop_OS! run `make install`.
+Install Pop_OS! and run `make install`.
 
 #### Some things will never be automated:
-1. Annoying system sounds can be disabled in sound manager.
 1. To fix issues with focus in PyCharm with IdeaVim, add
 `suppress.focus.stealing=false` to `Help -> Edit Custom Properties...`
 1. KeePassXC browser integration settings

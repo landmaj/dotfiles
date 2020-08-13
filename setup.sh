@@ -11,12 +11,11 @@ cp -r "${cwd}"/.config "${HOME}"/
 cp -r "${cwd}"/bin "${HOME}"/
 cp -r "${cwd}"/.fonts "${HOME}"/
 cp "${cwd}"/miscellaneous/.Xresources "${HOME}"/  # fix cursor and font size
-cp "${cwd}"/miscellaneous/10-bluetooth.conf /etc/tlp.d/
+mkdir /etc/tlp.d && cp "${cwd}"/miscellaneous/10-bluetooth.conf /etc/tlp.d/
 
 # git configuration
 cp "${cwd}"/miscellaneous/.gitignore "${HOME}"/
 git config --global core.excludesfile ~/.gitignore
-git config --global --add url."git@github.com:".insteadOf "https://github.com/"
 
 # bash aliases
 echo "alias vifm=\"source ~/bin/vf\"" >> "${HOME}"/.bashrc
