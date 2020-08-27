@@ -156,7 +156,6 @@ exec --no-startup-id syncthing --no-browser
 exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
 exec --no-startup-id xfce4-power-manager
 exec_always --no-startup-id killall xss-lock ; xss-lock --transfer-sleep-lock -- lockscreen
-exec_always --no-startup-id setxkbmap -option caps:swapescape
 exec_always --no-startup-id feh --bg-fill ~/wallpaper.*
 exec_always for id in $(xinput list | grep "pointer" | cut -d '=' -f 2 | cut -f 1); do xinput --set-prop $id 'libinput Accel Profile Enabled' 0, 1; done
 
