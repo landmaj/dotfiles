@@ -14,12 +14,10 @@ sudo make install
 
 
 cd /tmp
-git clone https://gitlab.com/interception/linux/plugins/caps2esc.git
-cd caps2esc
-mkdir build && cd build
-cmake ..
-make
-sudo make install
+git clone https://github.com/zsugabubus/interception-k2k
+cd interception-k2k
+make CONFIG_DIR=caps2esc
+sudo make install CONFIG_DIR=caps2esc
 
 sudo cp "${cwd}"/miscellaneous/udevmon.yaml /etc/udevmon.yaml
 sudo cp "${cwd}"/miscellaneous/udevmon.service /etc/systemd/system/udevmon.service
