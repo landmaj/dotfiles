@@ -39,6 +39,7 @@ sudo apt install -y \
   fonts-powerline \
   fuse-zip \
   gimp \
+  git-crypt \
   gnome-calculator \
   gnome-system-monitor \
   gparted \
