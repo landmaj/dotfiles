@@ -9,3 +9,8 @@ python3 -m pipx ensurepath
 
 "${HOME}"/.local/bin/pipx install ansible
 "${HOME}"/.local/bin/pipx install docker-compose
+
+
+"${HOME}"/.local/bin/pipx install gitup
+echo "alias up=\"gitup --prune ~/github/\"" >> "${HOME}"/.bashrc
+
