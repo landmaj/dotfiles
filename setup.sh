@@ -52,6 +52,7 @@ sudo apt install -y \
   libpq-dev \
   libreoffice \
   lutris \
+  lxappearance \
   ncdu \
   ntp \
   pavucontrol \
