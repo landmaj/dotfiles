@@ -30,6 +30,7 @@ sudo apt install -y \
   arandr \
   archivemount \
   autojump \
+  autossh \
   blueman \
   build-essential \
   compton \
@@ -54,6 +55,8 @@ sudo apt install -y \
   lutris \
   lxappearance \
   ncdu \
+  network-manager-vpnc \
+  network-manager-vpnc-gnome \
   ntp \
   pavucontrol \
   pgcli \
