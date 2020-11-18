@@ -10,4 +10,4 @@ sudo apt install -y \
   python3.8-dev \
   python3.8-venv
 
-sudo apt install pycharm-professional
+sudo apt install -y pycharm-professional
