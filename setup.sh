@@ -54,6 +54,7 @@ sudo apt install -y \
   libreoffice \
   lutris \
   lxappearance \
+  mpv \
   ncdu \
   network-manager-vpnc \
   network-manager-vpnc-gnome \
@@ -74,7 +75,6 @@ sudo apt install -y \
   tlp \
   transmission \
   vifm \
-  vlc \
   xclip \
   xfce4-power-manager \
   xss-lock
