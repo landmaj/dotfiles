@@ -18,6 +18,9 @@ git config --global core.excludesfile ~/.gitignore
 echo "alias vifm=\"source ~/bin/vf\"" >> "${HOME}"/.bashrc
 echo "alias venv=\"source ~/bin/venv\"" >> "${HOME}"/.bashrc
 
+# QT themes
+echo "QT_QPA_PLATFORMTHEME=gtk2" | sudo tee -a /etc/environment
+
 # required for my i3wm config
 wget -O /tmp/light.deb https://github.com/haikarainen/light/releases/download/v1.2/light_1.2_amd64.deb && sudo dpkg -i /tmp/light.deb  # backlight
 wget -O /tmp/playerctl.deb https://github.com/altdesktop/playerctl/releases/download/v2.0.2/playerctl-2.0.2_amd64.deb && sudo dpkg -i /tmp/playerctl.deb  # i3blocks
@@ -64,6 +67,7 @@ sudo apt install -y \
   python3-dev \
   python3-pip \
   python3-venv \
+  qt5-style-plugins \
   redshift \
   restic \
   rofi \
