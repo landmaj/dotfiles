@@ -32,6 +32,7 @@ sudo apt install -y \
   autojump \
   autossh \
   blueman \
+  breeze-icon-theme \
   build-essential \
   compton \
   dunst \
