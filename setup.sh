@@ -60,6 +60,7 @@ sudo apt install -y \
   network-manager-vpnc \
   network-manager-vpnc-gnome \
   ntp \
+  okular \
   pavucontrol \
   pgcli \
   pinta \
