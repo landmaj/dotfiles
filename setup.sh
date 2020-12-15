@@ -32,6 +32,9 @@ sudo apt install -y \
   autojump \
   autossh \
   blueman \
+  breeze \
+  breeze-cursor-theme \
+  breeze-gtk-theme \
   breeze-icon-theme \
   build-essential \
   compton \
