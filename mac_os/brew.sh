@@ -49,5 +49,6 @@ brew install \
   --cask slack \
   --cask spotify \
   --cask steam \
+  --cask switchresx \
   --cask transmission \
   ;
