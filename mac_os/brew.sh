@@ -8,6 +8,7 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 brew install \
   bat \
   coreutils \
+  direnv \
   docker \
   exa \
   pipx \
