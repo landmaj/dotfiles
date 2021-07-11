@@ -13,6 +13,7 @@ brew install \
   exa \
   pipx \
   pre-commit \
+  tldr \
   ;
 
 brew install syncthing
