@@ -48,6 +48,7 @@ brew install \
   --cask karabiner-elements \
   --cask keepassxc \
   --cask messenger \
+  --cask obsidian \
   --cask prusaslicer \
   --cask pycharm \
   --cask slack \
