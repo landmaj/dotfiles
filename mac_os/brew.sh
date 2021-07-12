@@ -6,11 +6,13 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # CLI
 brew install \
+  ansible \
   bat \
   coreutils \
   direnv \
   docker \
   exa \
+  kubectl \
   pipx \
   pre-commit \
   tldr \
