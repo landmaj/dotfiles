@@ -45,12 +45,14 @@ brew install \
   --cask gog-galaxy \
   --cask goland \
   --cask insomnia \
+  --cask jettison \
   --cask karabiner-elements \
   --cask keepassxc \
   --cask messenger \
   --cask obsidian \
   --cask prusaslicer \
   --cask pycharm \
+  --cask raspberry-pi-imager \
   --cask slack \
   --cask spotify \
   --cask steam \
