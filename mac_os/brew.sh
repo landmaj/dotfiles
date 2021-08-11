@@ -11,6 +11,7 @@ brew install \
   coreutils \
   direnv \
   docker \
+  docker-compose \
   exa \
   kubectl \
   pipx \
