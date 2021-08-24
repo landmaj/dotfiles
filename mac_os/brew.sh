@@ -17,6 +17,7 @@ brew install \
   ;
 
 brew install \
+  --cask android-file-transfer \
   --cask autodesk-fusion360 \
   --cask docker \
   --cask firefox \
