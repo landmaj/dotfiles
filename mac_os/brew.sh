@@ -10,9 +10,11 @@ brew install \
   coreutils \
   direnv \
   exa \
+  git-crypt \
   kubectl \
   pipx \
   pre-commit \
+  terraform \
   tldr \
   ;
 
