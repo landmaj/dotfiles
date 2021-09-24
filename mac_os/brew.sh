@@ -6,16 +6,19 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 
 brew install \
   ansible \
+  autojump \
   bat \
   coreutils \
   direnv \
   exa \
   git-crypt \
-  kubectl \
   pipx \
   pre-commit \
+  pure \
   terraform \
   tldr \
+  wget
+  zsh-completions \
   ;
 
 brew install \
@@ -44,19 +47,10 @@ brew install \
 
 # PROGRAMMING LANGUAGES
 brew install \
-  go@1.16 \
+  go \
   python@3.9 \
   ;
 
 brew install syncthing
 brew services start syncthing
-
-brew install autojump
-echo "[ -f /opt/homebrew/etc/profile.d/autojump.sh ] && . /opt/homebrew/etc/profile.d/autojump.sh" >>"${HOME}"/.zshrc
-echo "" >> "${HOME}"/.zshrc
-
-brew install pure
-echo "autoload -U promptinit; promptinit" >>"${HOME}"/.zshrc
-echo "prompt pure" >>"${HOME}"/.zshrc
-echo "" >> "${HOME}"/.zshrc
 
