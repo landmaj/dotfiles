@@ -12,6 +12,7 @@ brew install \
   direnv \
   exa \
   git-crypt \
+  gitup \ 
   pipx \
   pre-commit \
   pure \
