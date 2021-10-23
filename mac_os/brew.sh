@@ -26,6 +26,7 @@ brew install \
   --cask android-file-transfer \
   --cask autodesk-fusion360 \
   --cask docker \
+  --cask elmedia-player \
   --cask firefox \
   --cask gog-galaxy \
   --cask goland \
