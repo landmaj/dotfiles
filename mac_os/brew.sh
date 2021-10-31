@@ -35,6 +35,7 @@ brew install \
   --cask karabiner-elements \
   --cask keepassxc \
   --cask messenger \
+  --cask monitorcontrol \
   --cask obsidian \
   --cask prusaslicer \
   --cask pycharm \
