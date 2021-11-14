@@ -8,4 +8,5 @@ cp "${cwd}"/miscellaneous/.zshrc "${HOME}"/
 
 cp "${cwd}"/miscellaneous/.gitignore "${HOME}"/
 git config --global core.excludesfile ~/.gitignore
+git config --global pull.ff only
 

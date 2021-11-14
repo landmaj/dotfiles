@@ -5,7 +5,6 @@ echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >>"${HOME}"/.zprofile
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 brew install \
-  ansible \
   autojump \
   bat \
   coreutils \
@@ -16,7 +15,6 @@ brew install \
   pipx \
   pre-commit \
   pure \
-  terraform \
   tldr \
   wget
   zsh-completions \
@@ -25,6 +23,7 @@ brew install \
 brew install \
   --cask android-file-transfer \
   --cask autodesk-fusion360 \
+  --cask datagrip \
   --cask docker \
   --cask elmedia-player \
   --cask firefox \
@@ -39,6 +38,7 @@ brew install \
   --cask obsidian \
   --cask prusaslicer \
   --cask pycharm \
+  --cask qnapi \
   --cask raspberry-pi-imager \
   --cask slack \
   --cask spotify \
