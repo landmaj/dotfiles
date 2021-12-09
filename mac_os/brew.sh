@@ -27,7 +27,6 @@ brew install \
   --cask docker \
   --cask elmedia-player \
   --cask firefox \
-  --cask gog-galaxy \
   --cask goland \
   --cask insomnia \
   --cask jettison \
@@ -40,9 +39,7 @@ brew install \
   --cask pycharm \
   --cask qnapi \
   --cask raspberry-pi-imager \
-  --cask slack \
   --cask spotify \
-  --cask steam \
   --cask switchresx \
   --cask transmission \
   ;
