@@ -9,7 +9,6 @@ brew install \
   bat \
   coreutils \
   direnv \
-  exa \
   git-crypt \
   gitup \ 
   pipx \

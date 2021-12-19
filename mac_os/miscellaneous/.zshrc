@@ -1,5 +1,5 @@
 alias venv="source ~/bin/venv"
-alias ee="exa -lagH"
+alias ll="ls -lahF --color=always"
 
 [ -f /opt/homebrew/etc/profile.d/autojump.sh ] && . /opt/homebrew/etc/profile.d/autojump.sh
 
