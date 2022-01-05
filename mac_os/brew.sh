@@ -20,10 +20,8 @@ brew install \
   ;
 
 brew install \
-  --cask android-file-transfer \
   --cask autodesk-fusion360 \
   --cask datagrip \
-  --cask docker \
   --cask elmedia-player \
   --cask firefox \
   --cask goland \
@@ -41,6 +39,7 @@ brew install \
   --cask spotify \
   --cask switchresx \
   --cask transmission \
+  --cask utm \
   ;
 
 
