@@ -10,12 +10,12 @@ brew install \
   coreutils \
   direnv \
   git-crypt \
-  gitup \ 
+  gitup \
   pipx \
   pre-commit \
   pure \
   tldr \
-  wget
+  wget \
   zsh-completions \
   ;
 
@@ -24,8 +24,8 @@ brew install \
   --cask datagrip \
   --cask elmedia-player \
   --cask firefox \
-  --cask goland \
   --cask insomnia \
+  --cask intellij-idea \
   --cask jettison \
   --cask karabiner-elements \
   --cask keepassxc \
@@ -33,7 +33,6 @@ brew install \
   --cask monitorcontrol \
   --cask obsidian \
   --cask prusaslicer \
-  --cask pycharm \
   --cask qnapi \
   --cask raspberry-pi-imager \
   --cask spotify \
@@ -45,8 +44,9 @@ brew install \
 
 # PROGRAMMING LANGUAGES
 brew install \
+  elixir \
   go \
-  python@3.9 \
+  python@3 \
   ;
 
 brew install syncthing
