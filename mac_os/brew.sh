@@ -21,7 +21,6 @@ brew install \
 
 brew install \
   --cask autodesk-fusion360 \
-  --cask datagrip \
   --cask elmedia-player \
   --cask firefox \
   --cask insomnia \
