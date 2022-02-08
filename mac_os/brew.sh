@@ -15,6 +15,7 @@ brew install \
   pre-commit \
   pure \
   tldr \
+  vdirsyncer \
   wget \
   zsh-completions \
   ;
