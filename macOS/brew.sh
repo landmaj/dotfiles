@@ -34,6 +34,10 @@ brew install --cask \
   homebrew/cask-drivers/steelseries-exactmouse-tool \
   ;
 
+brew install \
+  font-jetbrains-mono \
+  ;
+
 brew install --cask \
   autodesk-fusion360 \
   elmedia-player \
