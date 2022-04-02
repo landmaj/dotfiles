@@ -53,6 +53,7 @@ brew install --cask \
   prusaslicer \
   qnapi \
   raspberry-pi-imager \
+  rectangle-pro \
   spotify \
   switchresx \
   temurin \
