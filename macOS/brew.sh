@@ -7,8 +7,10 @@
 brew install \
   autojump \
   bat \
+  buildkit \
   coreutils \
   direnv \
+  docker \
   exercism \
   git-crypt \
   gitup \
@@ -16,6 +18,9 @@ brew install \
   pipx \
   poetry \
   pre-commit \
+  protobuf \
+  protoc-gen-go \
+  protoc-gen-go-grpc \
   pure \
   tldr \
   vdirsyncer \
@@ -55,6 +60,7 @@ brew install --cask \
   postgres-unofficial \
   prusaslicer \
   qnapi \
+  rancher \
   raspberry-pi-imager \
   rectangle-pro \
   spotify \
