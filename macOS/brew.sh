@@ -14,6 +14,7 @@ brew install \
   gitup \
   graphviz \
   pipx \
+  poetry \
   pre-commit \
   pure \
   tldr \
@@ -21,6 +22,8 @@ brew install \
   wget \
   zsh-completions \
   ;
+
+poetry config virtualenvs.in-project true
 
 brew install syncthing && brew services start syncthing
 
