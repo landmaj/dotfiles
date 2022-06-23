@@ -15,7 +15,6 @@ brew install \
   git-crypt \
   gitup \
   graphviz \
-  pipx \
   poetry \
   pre-commit \
   protobuf \
@@ -47,7 +46,6 @@ brew install \
   ;
 
 brew install --cask \
-  autodesk-fusion360 \
   elmedia-player \
   firefox \
   insomnia \
@@ -61,7 +59,6 @@ brew install --cask \
   prusaslicer \
   qnapi \
   rancher \
-  raspberry-pi-imager \
   rectangle-pro \
   spotify \
   switchresx \
