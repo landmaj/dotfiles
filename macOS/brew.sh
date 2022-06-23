@@ -15,6 +15,7 @@ brew install \
   git-crypt \
   gitup \
   graphviz \
+  grpcui \
   poetry \
   pre-commit \
   protobuf \
