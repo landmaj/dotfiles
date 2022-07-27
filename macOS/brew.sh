@@ -55,6 +55,7 @@ brew install --cask \
   keepassxc \
   messenger \
   monitorcontrol \
+  mos \
   obsidian \
   postgres-unofficial \
   prusaslicer \
