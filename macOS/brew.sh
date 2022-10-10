@@ -38,10 +38,6 @@ brew install \
   python@3 \
   ;
 
-brew install --cask \
-  homebrew/cask-drivers/steelseries-exactmouse-tool \
-  ;
-
 brew install \
   font-jetbrains-mono \
   ;
@@ -68,4 +64,5 @@ brew install --cask \
   transmission \
   utm \
   visual-studio-code \
+  unnaturalscrollwheels \
   ;
