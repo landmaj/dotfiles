@@ -49,6 +49,7 @@ brew install --cask \
   jettison \
   karabiner-elements \
   keepassxc \
+  linearmouse \
   messenger \
   monitorcontrol \
   mos \
@@ -64,5 +65,4 @@ brew install --cask \
   transmission \
   utm \
   visual-studio-code \
-  unnaturalscrollwheels \
   ;
