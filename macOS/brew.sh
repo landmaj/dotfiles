@@ -46,7 +46,6 @@ brew install --cask \
   elmedia-player \
   firefox \
   insomnia \
-  jettison \
   karabiner-elements \
   keepassxc \
   linearmouse \
@@ -57,10 +56,8 @@ brew install --cask \
   postgres-unofficial \
   prusaslicer \
   qnapi \
-  rancher \
   rectangle-pro \
   spotify \
-  switchresx \
   temurin \
   transmission \
   utm \
