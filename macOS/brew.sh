@@ -1,8 +1,8 @@
 #!/bin/zsh -e
 
-# /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-# echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >>"${HOME}"/.zprofile
-# eval "$(/opt/homebrew/bin/brew shellenv)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >>"${HOME}"/.zprofile
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
 brew install \
   autojump \
@@ -13,6 +13,7 @@ brew install \
   docker \
   exercism \
   git-crypt \
+  gitbackup \
   gitup \
   graphviz \
   grpcui \
@@ -22,6 +23,7 @@ brew install \
   protoc-gen-go \
   protoc-gen-go-grpc \
   pure \
+  restic \
   tldr \
   vdirsyncer \
   wget \
@@ -39,7 +41,7 @@ brew install \
   ;
 
 brew install \
-  font-jetbrains-mono \
+  homebrew/cask-fonts/font-jetbrains-mono \
   ;
 
 brew install --cask \
