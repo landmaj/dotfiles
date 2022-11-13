@@ -2,6 +2,8 @@
 
 cwd=$(pwd)
 
+defaults write -g ApplePressAndHoldEnabled -bool false
+
 cp -r "${cwd}"/bin "${HOME}"/
 
 cp "${cwd}"/miscellaneous/.zshrc "${HOME}"/
