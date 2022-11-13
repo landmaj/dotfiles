@@ -8,6 +8,9 @@ cp -r "${cwd}"/bin "${HOME}"/
 
 cp "${cwd}"/miscellaneous/.zshrc "${HOME}"/
 
+mkdir -p "${HOME}"/.config/karabiner
+cp "${cwd}"/miscellaneous/karabiner.json "${HOME}"/.config/karabiner.json
+
 cp "${cwd}"/miscellaneous/.gitignore "${HOME}"/
 git config --global core.excludesfile ~/.gitignore
 git config --global pull.ff only
