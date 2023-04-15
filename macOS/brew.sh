@@ -10,18 +10,12 @@ brew install \
   buildkit \
   coreutils \
   direnv \
-  docker \
   exercism \
   git-crypt \
   gitbackup \
   gitup \
   graphviz \
-  grpcui \
-  poetry \
   pre-commit \
-  protobuf \
-  protoc-gen-go \
-  protoc-gen-go-grpc \
   pure \
   restic \
   tldr \
@@ -30,6 +24,11 @@ brew install \
   zsh-completions \
   ;
 
+brew install docker docker-buildx
+mkdir -p "${HOME}"/.docker/cli-plugins
+ln -sfn /opt/homebrew/opt/docker-buildx/bin/docker-buildx "${HOME}"/.docker/cli-plugins/docker-buildx
+
+brew install poetry
 poetry config virtualenvs.in-project true
 
 brew install syncthing && brew services start syncthing
@@ -38,11 +37,10 @@ brew install \
   elixir \
   go \
   python@3 \
+  ruby \
   ;
 
-brew install \
-  homebrew/cask-fonts/font-jetbrains-mono \
-  ;
+brew install homebrew/cask-fonts/font-jetbrains-mono
 
 brew install --cask \
   elmedia-player \
