@@ -24,20 +24,12 @@ brew install \
   zsh-completions \
   ;
 
-brew install docker docker-buildx
-mkdir -p "${HOME}"/.docker/cli-plugins
-ln -sfn /opt/homebrew/opt/docker-buildx/bin/docker-buildx "${HOME}"/.docker/cli-plugins/docker-buildx
-
-brew install poetry
-poetry config virtualenvs.in-project true
-
 brew install syncthing && brew services start syncthing
 
 brew install \
   elixir \
   go \
   python@3 \
-  ruby \
   ;
 
 brew install homebrew/cask-fonts/font-jetbrains-mono
@@ -53,13 +45,12 @@ brew install --cask \
   monitorcontrol \
   mos \
   obsidian \
+  orbstack \
   postgres-unofficial \
   prusaslicer \
   qnapi \
   rectangle-pro \
   spotify \
-  temurin \
   transmission \
-  utm \
   visual-studio-code \
   ;
