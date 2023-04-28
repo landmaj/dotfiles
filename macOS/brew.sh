@@ -50,6 +50,7 @@ brew install --cask \
   prusaslicer \
   qnapi \
   rectangle-pro \
+  sonos \
   spotify \
   transmission \
   visual-studio-code \
