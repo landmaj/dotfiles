@@ -12,7 +12,6 @@ brew install \
   direnv \
   exercism \
   git-crypt \
-  gitbackup \
   gitup \
   graphviz \
   pre-commit \
