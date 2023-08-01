@@ -1,0 +1,13 @@
+[core]
+	excludesfile = /Users/landmaj/.gitignore
+[pull]
+	ff = only
+[user]
+	email = michal@wielunski.net
+	name = Michał Wieluński
+[init]
+	defaultBranch = master
+
+[url "ssh://git@github.com/"]
+	insteadOf = https://github.com/
+

@@ -20,3 +20,4 @@ export CPPFLAGS="-I/opt/homebrew/opt/openssl@1.1/include"
 
 export PATH=$HOME/go/bin:$PATH
 export PATH=/opt/homebrew/opt/ruby/bin:$PATH
+

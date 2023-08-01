@@ -10,7 +10,6 @@ brew install \
   buildkit \
   coreutils \
   direnv \
-  exercism \
   git-crypt \
   gitup \
   graphviz \
@@ -22,8 +21,6 @@ brew install \
   wget \
   zsh-completions \
   ;
-
-brew install syncthing && brew services start syncthing
 
 brew install \
   elixir \
