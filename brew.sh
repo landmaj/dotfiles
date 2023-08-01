@@ -31,6 +31,7 @@ brew install \
 brew install homebrew/cask-fonts/font-jetbrains-mono
 
 brew install --cask \
+  beekeeper-studio \
   elmedia-player \
   firefox \
   insomnia \
