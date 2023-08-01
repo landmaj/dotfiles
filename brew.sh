@@ -50,5 +50,6 @@ brew install --cask \
   sonos \
   spotify \
   transmission \
+  utm \
   visual-studio-code \
   ;
