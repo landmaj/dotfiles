@@ -9,9 +9,11 @@ brew install \
   bat \
   buildkit \
   coreutils \
+  d2 \
   direnv \
   git-crypt \
   gitup \
+  httpie \
   pre-commit \
   pure \
   restic \
@@ -30,6 +32,7 @@ brew install \
 brew install homebrew/cask-fonts/font-jetbrains-mono
 
 brew install --cask \
+  autodesk-fusion360 \
   beekeeper-studio \
   elmedia-player \
   firefox \
@@ -46,8 +49,10 @@ brew install --cask \
   prusaslicer \
   qnapi \
   rectangle-pro \
+  slack \
   sonos \
   spotify \
+  steam \
   transmission \
   utm \
   visual-studio-code \
