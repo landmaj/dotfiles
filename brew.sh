@@ -12,7 +12,6 @@ brew install \
   direnv \
   git-crypt \
   gitup \
-  graphviz \
   pre-commit \
   pure \
   restic \
