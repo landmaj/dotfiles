@@ -6,13 +6,14 @@ defaults write -g ApplePressAndHoldEnabled -bool false
 
 cp -r "${cwd}"/bin "${HOME}"/
 
-cp "${cwd}"/miscellaneous/.zshrc "${HOME}"/
-
 mkdir -p "${HOME}"/.config/karabiner
 cp "${cwd}"/miscellaneous/karabiner.json "${HOME}"/.config/karabiner.json
 
+cp "${cwd}"/miscellaneous/.zshrc "${HOME}"/
 cp "${cwd}"/miscellaneous/.gitconfig "${HOME}"/
 cp "${cwd}"/miscellaneous/.gitignore "${HOME}"/
-cp "${cwd}"/miscellaneous/.vimrc "${HOME}"/
-cp "${cwd}"/miscellaneous/.ideavimrc "${HOME}"/
 
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >>"${HOME}"/.zprofile
+eval "$(/opt/homebrew/bin/brew shellenv)"
+brew bundle

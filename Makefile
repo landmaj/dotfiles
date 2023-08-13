@@ -4,4 +4,3 @@ prerequisites:
 install: prerequisites
 	./setup.sh
 	./vim.sh
-	./brew.sh
