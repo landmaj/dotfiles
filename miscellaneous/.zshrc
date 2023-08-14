@@ -14,6 +14,9 @@ eval "$(direnv hook zsh)"
 
 unsetopt NOMATCH
 
+export LC_ALL=en_US.UTF-8  
+export LANG=en_US.UTF-8
+
 export LDFLAGS="-L/opt/homebrew/opt/openssl@1.1/lib"
 export CPPFLAGS="-I/opt/homebrew/opt/openssl@1.1/include"
 
@@ -24,3 +27,4 @@ export HOMEBREW_BUNDLE_FILE=~/Documents/GitHub/dotfiles/Brewfile
 
 alias venv="source ~/bin/venv"
 alias ll="ls -lahF --color=always"
+
