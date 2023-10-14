@@ -1,11 +1,19 @@
 [core]
-	excludesfile = /Users/landmaj/.gitignore
+	excludesfile = ~/.gitignore
 [pull]
 	ff = only
+[init]
+	defaultBranch = master
+[gpg]
+	format = ssh
+[commit]
+	gpgsign = true
+
 [user]
 	email = michal@wielunski.net
 	name = Michał Wieluński
-[init]
-	defaultBranch = master
+	signingkey = ~/.ssh/michal@wielunski.net.pub
+
 [url "ssh://git@github.com/"]
 	insteadOf = https://github.com/
+
