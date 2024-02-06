@@ -25,6 +25,7 @@ brew "wget"
 brew "zsh-completions"
 
 cask "bruno"
+cask "cyberduck"
 cask "datagrip"
 cask "firefox"
 cask "font-jetbrains-mono"
