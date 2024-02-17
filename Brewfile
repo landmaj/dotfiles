@@ -35,6 +35,7 @@ cask "font-jetbrains-mono"
 cask "karabiner-elements"
 cask "keepassxc"
 cask "livebook"
+cask "mactex-no-gui"
 cask "messenger"
 cask "monitorcontrol"
 cask "mos"
@@ -51,6 +52,7 @@ cask "slack"
 cask "sonos"
 cask "spotify"
 cask "sublime-merge"
+cask "swimat"
 cask "switchresx"
 cask "transmission"
 cask "visual-studio-code"
@@ -59,3 +61,4 @@ mas "Brother iPrint&Scan", id: 1193539993
 mas "Keynote", id: 409183694
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
+mas "Xcode", id: 497799835
