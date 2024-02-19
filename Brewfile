@@ -28,6 +28,7 @@ brew "zsh-completions"
 
 cask "beekeeper-studio"
 cask "bruno"
+cask "copilot-for-xcode"
 cask "cyberduck"
 cask "elmedia-player"
 cask "firefox"
