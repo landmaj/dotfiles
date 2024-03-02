@@ -14,6 +14,3 @@
 	name = Michał Wieluński
 	signingkey = ~/.ssh/michal@wielunski.net.pub
 
-[url "ssh://git@github.com/"]
-	insteadOf = https://github.com/
-
