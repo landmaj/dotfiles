@@ -63,7 +63,6 @@ cask "switchresx"
 cask "transmission"
 cask "visual-studio-code"
 
-mas "Brother iPrint&Scan", id: 1193539993
 mas "Keynote", id: 409183694
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
