@@ -23,7 +23,7 @@ export CPPFLAGS="-I$(brew --prefix)/opt/openssl@1.1/include"
 export PATH=$HOME/go/bin:$PATH
 export PATH=$(brew --prefix)/opt/ruby/bin:$PATH
 
-export HOMEBREW_BUNDLE_FILE=~/Documents/GitHub/dotfiles/Brewfile
+export HOMEBREW_BUNDLE_FILE=~/GitHub/dotfiles/Brewfile
 
 alias venv="source ~/bin/venv"
 alias ll="ls -lahF --color=always"
