@@ -62,6 +62,7 @@ cask "swiftformat-for-xcode"
 cask "switchresx"
 cask "transmission"
 cask "visual-studio-code"
+cask "xnviewmp"
 
 mas "Keynote", id: 409183694
 mas "Numbers", id: 409203825
