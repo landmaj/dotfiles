@@ -20,3 +20,5 @@ venv/
 xcuserdata/
 
 .DS_Store
+.env
+.envrc

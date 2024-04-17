@@ -14,10 +14,6 @@
           packages = with pkgs; [
             # add packages here
           ];
-          shellHook = ''
-            echo "Entering dev shell"
-            exec zsh
-          '';
         };
       }
     );
