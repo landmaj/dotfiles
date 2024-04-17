@@ -4,13 +4,13 @@
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs";
 
-    home-manager = {
-      url = "github:nix-community/home-manager";
+    darwin = {
+      url = "github:LnL7/nix-darwin";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    darwin = {
-      url = "github:LnL7/nix-darwin";
+    home-manager = {
+      url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
@@ -30,7 +30,7 @@
           home-manager.darwinModules.home-manager
           {
             home-manager = {
-              users.landmaj = import ./home.nix;
+              users.landmaj = import ./home/home.nix;
             };
             users.users.landmaj.home = "/Users/landmaj";
           }
@@ -46,7 +46,7 @@
           home-manager.darwinModules.home-manager
           {
             home-manager = {
-              users.mwielunski = import ./home.nix;
+              users.mwielunski = import ./home/home.nix;
             };
             users.users.mwielunski.home = "/Users/mwielunski";
           }

@@ -1,6 +1,7 @@
-{ config, pkgs, lib, ... }:
+{ config, pkgs, lib, inputs, ... }:
 
 {
+
   home = {
     stateVersion = "23.11";
 
@@ -23,13 +24,13 @@
     ];
 
     file = {
-      ".gitignore".source = ./config/git/.gitignore;
-      ".gitconfig".source = ./config/git/.gitconfig;
+      ".gitignore".source = ../config/git/.gitignore;
+      ".gitconfig".source = ../config/git/.gitconfig;
 
-      ".vimrc".source = ./config/vim/.vimrc;
-      ".ideavimrc".source = ./config/vim/.ideavimrc;
+      ".vimrc".source = ../config/vim/.vimrc;
+      ".ideavimrc".source = ../config/vim/.ideavimrc;
 
-      ".config/karabiner/karabiner.json".source = ./config/karabiner/karabiner.json;
+      ".config/karabiner/karabiner.json".source = ../config/karabiner/karabiner.json;
     };
 
   };
@@ -75,5 +76,6 @@
     autojump = {
       enable = true;
     };
+
   };
 }
