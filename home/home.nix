@@ -8,14 +8,11 @@
     packages = with pkgs; [
       bat
       d2
-      elixir
       git
       git-repo-updater
-      go
       httpie
       nil
       nodejs-slim
-      python3
       restic
       tldr
       vdirsyncer
@@ -49,6 +46,9 @@
         gg = "git log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all";
 
         mkshell = "nix flake init --template ~/GitHub/dotfiles#blank";
+        mkelixir = "nix flake init --template ~/GitHub/dotfiles#elixir";
+        mkgo = "nix flake init --template ~/GitHub/dotfiles#go";
+        mkpython = "nix flake init --template ~/GitHub/dotfiles#python";
       };
     };
 

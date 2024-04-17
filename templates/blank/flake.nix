@@ -12,7 +12,7 @@
       {
         devShells.default = with pkgs; mkShell {
           packages = with pkgs; [
-            # add packages here
+            # SYSTEM PACKAGES
           ];
         };
       }

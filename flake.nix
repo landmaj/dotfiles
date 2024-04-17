@@ -57,8 +57,16 @@
 
     templates = {
         blank = {
-          path = ./template;
-          description = "Blank template";
+          path = ./templates/blank;
+        };
+        elixir = {
+          path = ./templates/elixir;
+        };
+        go = {
+          path = ./templates/go;
+        };
+        python = {
+          path = ./templates/python;
         };
     };
   };
