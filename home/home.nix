@@ -10,7 +10,6 @@
       d2
       elixir
       git
-      git-crypt
       git-repo-updater
       go
       httpie
