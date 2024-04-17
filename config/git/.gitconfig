@@ -8,7 +8,7 @@
 [user]
     email = michal@wielunski.net
     name = Michał Wieluński
-    signingkey = ~/.ssh/michal@wielunski.net.pub
+    signingkey = ~/.ssh/wielunski.net.pub
 [commit]
     gpgsign = true
 [gpg]

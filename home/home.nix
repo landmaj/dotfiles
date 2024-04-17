@@ -30,6 +30,8 @@
       ".vimrc".source = ../config/vim/.vimrc;
       ".ideavimrc".source = ../config/vim/.ideavimrc;
 
+      ".ssh/wielunski.net.pub".source = ../config/ssh/wielunski.net.pub;
+
       ".config/karabiner/karabiner.json".source = ../config/karabiner/karabiner.json;
     };
 
