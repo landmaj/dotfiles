@@ -1,6 +1,5 @@
-prerequisites:
-	softwareupdate --install-rosetta --agree-to-license
+bootstrap:
+	nix run nix-darwin -- switch --flake .
 
-install: prerequisites
-	./setup.sh
-	./vim.sh
+update:
+	darwin-rebuild switch --flake .

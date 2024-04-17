@@ -194,11 +194,11 @@
 	AAAZAAAAAAAAAAAAAAAAAAAA2Q==
 	</data>
 	<key>columnCount</key>
-	<integer>90</integer>
+	<integer>100</integer>
 	<key>name</key>
 	<string>Afterglow</string>
 	<key>rowCount</key>
-	<integer>50</integer>
+	<integer>45</integer>
 	<key>type</key>
 	<string>Window Settings</string>
 </dict>

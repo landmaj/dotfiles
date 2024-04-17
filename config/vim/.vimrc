@@ -21,3 +21,14 @@ set foldmethod=indent
 set foldlevel=99
 nnoremap <space> za
 nnoremap <space> zf
+
+" automatic line numbers
+set number relativenumber
+augroup numbertoggle
+  autocmd!
+  autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
+  autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
+augroup END
+
+" enable mouse support
+set mouse=a
