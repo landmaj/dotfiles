@@ -54,5 +54,12 @@
         specialArgs = { inherit inputs; };
       };
     };
+
+    templates = {
+        blank = {
+          path = ./template;
+          description = "Blank template";
+        };
+    };
   };
 }

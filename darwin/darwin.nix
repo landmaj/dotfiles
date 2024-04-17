@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ pkgs, ... }:
 
 {
   environment.systemPackages = with pkgs; [
@@ -9,7 +9,7 @@
 
   services.nix-daemon.enable = true;
   nix = {
-    package = pkgs.nix;
+    package = pkgs.nixFlakes;
     settings = {
       "extra-experimental-features" = [ "nix-command" "flakes" ];
     };

@@ -1,4 +1,4 @@
-{ config, pkgs, lib, inputs, ... }:
+{ pkgs, ... }:
 
 {
 
@@ -47,6 +47,10 @@
 
       shellAliases = {
         ll = "ls -lahF --color=always";
+        gg = "git log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all";
+
+        mkshell = "nix flake init --template ~/GitHub/dotfiles#blank";
+        shell = "nix develop";
       };
     };
 
