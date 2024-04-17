@@ -15,6 +15,7 @@
       go
       httpie
       nil
+      nodejs-slim
       python3
       restic
       tldr
