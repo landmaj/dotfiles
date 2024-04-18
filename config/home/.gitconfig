@@ -5,11 +5,12 @@
     ff = only
 [init]
     defaultBranch = master
-[user]
-    email = michal@wielunski.net
-    name = Michał Wieluński
-    signingkey = ~/.ssh/wielunski.net.pub
 [commit]
     gpgsign = true
 [gpg]
     format = ssh
+
+[user]
+    email = michal@wielunski.net
+    name = Michał Wieluński
+    signingkey = ~/.ssh/key.pub

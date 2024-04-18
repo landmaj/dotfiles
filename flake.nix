@@ -25,8 +25,8 @@
       "Shandris" = darwin.lib.darwinSystem {
         system = "aarch64-darwin";
         modules = [
-          ./darwin/darwin.nix
-          ./darwin/brew-personal.nix
+          ./darwin/base.nix
+          ./darwin/home.nix
           home-manager.darwinModules.home-manager
           {
             home-manager = {
@@ -41,12 +41,12 @@
       "Valtrois" = darwin.lib.darwinSystem {
         system = "x86_64-darwin";
         modules = [
-          ./darwin/darwin.nix
-          ./darwin/brew-work.nix
+          ./darwin/base.nix
+          ./darwin/work.nix
           home-manager.darwinModules.home-manager
           {
             home-manager = {
-              users.mwielunski = import ./home/home.nix;
+              users.mwielunski = import ./home/work.nix;
             };
             users.users.mwielunski.home = "/Users/mwielunski";
           }
