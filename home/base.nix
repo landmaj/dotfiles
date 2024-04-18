@@ -37,8 +37,13 @@
       oh-my-zsh.enable = true;
 
       shellAliases = {
-        ll = "ls -lahF --color=always";
+        gs = "git status";
+        ga = "git add *";
+        gm = "git commit -m";
+        gp = "git push";
         gg = "git log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all";
+
+        j = "z";
 
         mkshell = "nix flake init --template ~/GitHub/dotfiles#blank";
         mkelixir = "nix flake init --template ~/GitHub/dotfiles#elixir";
@@ -49,22 +54,9 @@
 
     starship = {
       enable = true;
-
+      enableZshIntegration = true;
       settings = {
-        command_timeout = 100;
-        format = "[$all](dimmed white)";
-
-        character = {
-          success_symbol = "[❯](dimmed green)";
-          error_symbol = "[❯](dimmed red)";
-        };
-
-        git_status = {
-          style = "bold yellow";
-          format = "([$all_status$ahead_behind]($style) )";
-        };
-
-        jobs.disabled = true;
+        git_status.style = "bold yellow";
       };
     };
 
@@ -74,8 +66,19 @@
       nix-direnv.enable = true;
     };
 
-    autojump = {
+    zoxide = {
       enable = true;
+      enableZshIntegration = true;
+    };
+
+    eza = {
+      enable = true;
+      enableZshIntegration = true;
+      git = true;
+      icons = true;
+      extraOptions = [
+        "--group-directories-first"
+      ];
     };
 
   };

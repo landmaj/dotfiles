@@ -20,8 +20,9 @@
   fonts = {
     fontDir.enable = true;
     fonts = with pkgs; [
-      jetbrains-mono
-    ];
+     recursive
+     (nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
+   ];
   };
 
   programs.zsh.enable = true;
