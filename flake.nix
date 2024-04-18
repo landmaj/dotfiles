@@ -2,10 +2,12 @@
   description = "Landmaj's Nix System Configuration";
 
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs";
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
 
     darwin = {
-      url = "github:LnL7/nix-darwin";
+      url = "github:wegank/nix-darwin/mddoc-remove";
+      # TODO: restore when https://github.com/LnL7/nix-darwin/pull/932 gets merged
+      # url = "github:LnL7/nix-darwin";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
