@@ -21,5 +21,8 @@ venv/
 xcuserdata/
 
 .DS_Store
+
 .env
 .envrc
+flake.nix
+flake.lock
