@@ -1,10 +1,14 @@
 {
+  imports = [
+    ./base.nix
+  ];
+
   homebrew = {
     enable = true;
 
     onActivation = {
-      autoUpdate = true;
-      upgrade = true;
+      autoUpdate = false;
+      upgrade = false;
       cleanup = "zap";
     };
 
@@ -18,13 +22,11 @@
       "microsoft-teams"
       "monitorcontrol"
       "mos"
-      "onyx"
       "openvpn-connect"
       "orbstack"
       "proxy-audio-device"
       "rectangle-pro"
       "sublime-merge"
-      "switchresx"
       "visual-studio-code"
     ];
   };

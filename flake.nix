@@ -46,7 +46,6 @@
         "Shandris" = darwin.lib.darwinSystem {
           system = "aarch64-darwin";
           modules = [
-            ./darwin/base.nix
             ./darwin/home.nix
             home-manager.darwinModules.home-manager
             {
@@ -62,7 +61,6 @@
         "Valtrois" = darwin.lib.darwinSystem {
           system = "x86_64-darwin";
           modules = [
-            ./darwin/base.nix
             ./darwin/work.nix
             home-manager.darwinModules.home-manager
             {
