@@ -9,9 +9,7 @@
       d2
       git
       git-repo-updater
-      go
       httpie
-      nil
       nodejs-slim
       restic
       tldr
