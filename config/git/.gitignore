@@ -1,28 +1,24 @@
-# Byte-compiled / optimized / DLL files
-__pycache__/
-*.py[cod]
-
-# Distribution / packaging
+# Python
 *.egg-info/
-pip-wheel-metadata/
-
-# Unit test / coverage reports
+*.py[cod]
 .coverage
 .pytest_cache/
-
-# Environments
-.direnv/
 .venv/
-venv/
+__pycache__/
+pip-wheel-metadata/
+
+# Environment
+.direnv/
+.env
+.envrc
+flake.lock
+flake.nix
 
 # IDE
+*.code-workspace
 .idea/
 .vscode/
 xcuserdata/
 
+# macOS
 .DS_Store
-
-.env
-.envrc
-flake.nix
-flake.lock
