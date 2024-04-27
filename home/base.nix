@@ -10,10 +10,7 @@
       git
       git-repo-updater
       httpie
-      nodejs-slim
-      restic
       tldr
-      vdirsyncer
       vim
       wget
     ];

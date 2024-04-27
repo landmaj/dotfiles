@@ -21,6 +21,7 @@
       "discord"
       "elmedia-player"
       "firefox"
+      "handbrake"
       "karabiner-elements"
       "keepassxc"
       "livebook"
