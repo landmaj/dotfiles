@@ -87,6 +87,9 @@
         python = {
           path = ./templates/python;
         };
+        swift = {
+          path = ./templates/swift;
+        };
       };
     };
 }

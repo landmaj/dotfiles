@@ -38,13 +38,16 @@
         log = "git log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all";
         pull = "git pull";
         push = "git push";
+        grc = "git rm -r --cached";
 
         j = "z";
 
         mkshell = "nix flake init --template ~/GitHub/dotfiles#blank";
+        # language specific templates
         mkelixir = "nix flake init --template ~/GitHub/dotfiles#elixir";
         mkgo = "nix flake init --template ~/GitHub/dotfiles#go";
         mkpython = "nix flake init --template ~/GitHub/dotfiles#python";
+        mkswift = "nix flake init --template ~/GitHub/dotfiles#swift";
       };
     };
 

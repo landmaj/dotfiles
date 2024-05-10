@@ -40,6 +40,7 @@
       "sf-symbols"
       "slack"
       "spotify"
+      "steam"
       "sublime-merge"
       "swiftformat-for-xcode"
       "switchresx"
