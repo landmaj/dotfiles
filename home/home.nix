@@ -18,5 +18,14 @@
       ".gitconfig".source = ../config/home/.gitconfig;
       ".ssh/key.pub".source = ../config/home/key.pub;
     };
+
+  };
+
+  programs = {
+    zsh.shellAliases = {
+      mkelixir = "nix flake init --template ~/GitHub/dotfiles#elixir";
+      mkswift = "nix flake init --template ~/GitHub/dotfiles#swift";
+      swtest = "swift test | xcbeautify";
+    };
   };
 }

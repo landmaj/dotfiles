@@ -43,11 +43,8 @@
         j = "z";
 
         mkshell = "nix flake init --template ~/GitHub/dotfiles#blank";
-        # language specific templates
-        mkelixir = "nix flake init --template ~/GitHub/dotfiles#elixir";
         mkgo = "nix flake init --template ~/GitHub/dotfiles#go";
         mkpython = "nix flake init --template ~/GitHub/dotfiles#python";
-        mkswift = "nix flake init --template ~/GitHub/dotfiles#swift";
       };
     };
 

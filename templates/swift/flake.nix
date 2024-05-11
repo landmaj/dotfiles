@@ -8,9 +8,7 @@
     let
       forAllSystems = function:
         nixpkgs.lib.genAttrs [
-          "x86_64-linux"
           "x86_64-darwin"
-          "aarch64-linux"
           "aarch64-darwin"
         ]
           (system: function nixpkgs.legacyPackages.${system});
@@ -19,7 +17,8 @@
       devShells = forAllSystems (pkgs: {
         default = pkgs.mkShell {
           packages = with pkgs; [
-            swift
+            swift-format
+            xcbeautify
           ];
         };
       });
