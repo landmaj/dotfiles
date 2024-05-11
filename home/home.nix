@@ -7,6 +7,7 @@
 
   home = {
     packages = with pkgs; [
+      exercism
       nodejs-slim
       restic
       vdirsyncer
