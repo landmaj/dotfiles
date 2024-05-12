@@ -7,9 +7,11 @@
     packages = with pkgs; [
       bat
       d2
+      gh
       git
       git-repo-updater
       httpie
+      jq
       tldr
       vim
       wget
