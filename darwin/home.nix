@@ -15,8 +15,6 @@
     casks = [
       "beekeeper-studio"
       "bruno"
-      "copilot-for-xcode"
-      "cryptomator"
       "cyberduck"
       "discord"
       "elmedia-player"
@@ -33,7 +31,6 @@
       "onyx"
       "orbstack"
       "platypus"
-      "postgres-unofficial"
       "proxy-audio-device"
       "prusaslicer"
       "rectangle-pro"
