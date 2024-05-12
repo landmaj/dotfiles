@@ -7,7 +7,6 @@
     packages = with pkgs; [
       bat
       d2
-      gh
       git
       git-repo-updater
       httpie
@@ -81,6 +80,13 @@
       extraOptions = [
         "--group-directories-first"
       ];
+    };
+
+    gh = {
+      enable = true;
+      settings = {
+        git_protocol = "ssh";
+      };
     };
 
   };
