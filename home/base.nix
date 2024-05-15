@@ -13,7 +13,6 @@
       jq
       tldr
       vim
-      websocat
       wget
     ];
 
