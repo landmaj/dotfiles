@@ -27,7 +27,12 @@
       "proxy-audio-device"
       "rectangle-pro"
       "sublime-merge"
+      "swiftformat-for-xcode"
       "visual-studio-code"
     ];
+
+    masApps = {
+      "Xcode" = 497799835;
+    };
   };
 }
