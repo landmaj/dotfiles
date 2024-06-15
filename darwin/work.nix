@@ -25,15 +25,9 @@
       "openvpn-connect"
       "orbstack"
       "proxy-audio-device"
-      "rectangle-pro"
       "sf-symbols"
       "sublime-merge"
-      "swiftformat-for-xcode"
       "visual-studio-code"
     ];
-
-    masApps = {
-      "Xcode" = 497799835;
-    };
   };
 }

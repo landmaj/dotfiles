@@ -21,7 +21,6 @@
       ".vimrc".source = ../config/vim/.vimrc;
       ".ideavimrc".source = ../config/vim/.ideavimrc;
       ".config/karabiner/karabiner.json".source = ../config/karabiner/karabiner.json;
-      "Library/Developer/Xcode/UserData/KeyBindings/Default.idekeybindings".source = ../config/xcode/Default.idekeybindings;
     };
 
   };

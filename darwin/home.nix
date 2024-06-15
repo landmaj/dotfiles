@@ -13,7 +13,7 @@
     };
 
     casks = [
-      "beekeeper-studio"
+      # "beekeeper-studio"
       "bruno"
       "cyberduck"
       "discord"
@@ -26,21 +26,18 @@
       "messenger"
       "monitorcontrol"
       "mos"
-      "nvidia-geforce-now"
       "obsidian"
-      "onyx"
+      # "onyx"
       "orbstack"
       "platypus"
       "proxy-audio-device"
       "prusaslicer"
-      "rectangle-pro"
       "sf-symbols"
       "slack"
       "spotify"
       "steam"
       "sublime-merge"
       "swiftformat-for-xcode"
-      "switchresx"
       "transmission"
       "visual-studio-code"
     ];
