@@ -49,8 +49,8 @@ killall Dock`.
 - Open `Afterglow.terminal` file and set it as default profile.
 - Enable browser integration, ssh agent, minimize instead of exit and minimize
   to system tray in KeePassXC.
-- Install Firefox extensions: KeePassXC-Browser, uBlock Origin, SponsorBlock.
-- Disable password saving in Firefox.
+- Install Firefox extensions: KeePassXC-Browser, uBlock Origin, SponsorBlock, Kill Sticky.
+- Disable password saving and picture-in-picture in Firefox.
 - Open and configure Mos.
 - Open and configure Monitor Control.
 - Open and configure Proxy Audio Device.
