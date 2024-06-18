@@ -46,7 +46,9 @@ darwin-rebuild switch --flake .
 
 - Remove everything from Dock: `defaults write "com.apple.dock" "persistent-apps" -array
 killall Dock`.
-- Open `Afterglow.terminal` file and set it as default profile.
+- Terminal:
+  - Install theme by opening `Afterglow.terminal` file and setting it as default profile.
+  - Change font to JetBrainsMono Nerd Font Regular 12pt.
 - KeePassXC:
   - browser integration
   - ssh agent
