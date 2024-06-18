@@ -13,7 +13,7 @@
     };
 
     casks = [
-      # "beekeeper-studio"
+      "beekeeper-studio"
       "bruno"
       "cyberduck"
       "discord"
@@ -27,7 +27,7 @@
       "monitorcontrol"
       "mos"
       "obsidian"
-      # "onyx"
+      "onyx"
       "orbstack"
       "platypus"
       "proxy-audio-device"
@@ -46,7 +46,7 @@
       "Keynote" = 409183694;
       "Numbers" = 409203825;
       "Pages" = 409201541;
-      # "Xcode" = 497799835;
+      "Xcode" = 497799835;
     };
   };
 }

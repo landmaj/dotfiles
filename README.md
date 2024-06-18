@@ -47,10 +47,15 @@ darwin-rebuild switch --flake .
 - Remove everything from Dock: `defaults write "com.apple.dock" "persistent-apps" -array
 killall Dock`.
 - Open `Afterglow.terminal` file and set it as default profile.
-- Enable browser integration, ssh agent, minimize instead of exit and minimize
-  to system tray in KeePassXC.
-- Install Firefox extensions: KeePassXC-Browser, uBlock Origin, SponsorBlock, Kill Sticky.
-- Disable password saving and picture-in-picture in Firefox.
+- KeePassXC:
+  - browser integration
+  - ssh agent
+  - minimize instead of exit
+  - minimize to system tray
+- Firefox:
+  - KeePassXC-Browser, uBlock Origin, SponsorBlock, Kill Sticky
+  - disable password saving
+  - disable picture-in-picture
 - Open and configure Mos.
 - Open and configure Monitor Control.
 - Open and configure Proxy Audio Device.
@@ -59,8 +64,11 @@ killall Dock`.
 
 #### System Settings
 
-- Default browser
-- Spotlight
-- Store in iCloud
-- Disable emoji key
-- Disable pointer acceleration
+- Change default browser to Firefox.
+- Select Spotlight search results.
+- Enable storing Documents and Desktop in iCloud.
+- Keyboard:
+  - disable 🌐 key
+  - turn backlight off after 10 seconds
+- Mouse:
+  - disable pointer acceleration
