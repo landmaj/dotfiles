@@ -63,3 +63,4 @@ killall Dock`.
 - Spotlight
 - Store in iCloud
 - Disable emoji key
+- Disable pointer acceleration

@@ -2,8 +2,8 @@
 
 {
   environment.systemPackages = with pkgs; [
-      home-manager
-    ];
+    home-manager
+  ];
 
   environment.darwinConfig = "$HOME/GitHub/dotfiles";
 
@@ -17,13 +17,10 @@
 
   system.stateVersion = 4;
 
-  fonts = {
-    fontDir.enable = true;
-    fonts = with pkgs; [
-     recursive
-     (nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
-   ];
-  };
+  fonts.packages = with pkgs; [
+    recursive
+    (nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
+  ];
 
   programs.zsh.enable = true;
 
