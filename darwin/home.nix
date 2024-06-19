@@ -32,12 +32,10 @@
       "platypus"
       "proxy-audio-device"
       "prusaslicer"
-      "sf-symbols"
       "slack"
       "spotify"
       "steam"
       "sublime-merge"
-      "swiftformat-for-xcode"
       "transmission"
       "visual-studio-code"
     ];
@@ -46,7 +44,6 @@
       "Keynote" = 409183694;
       "Numbers" = 409203825;
       "Pages" = 409201541;
-      "Xcode" = 497799835;
     };
   };
 }
