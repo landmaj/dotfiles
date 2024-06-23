@@ -30,6 +30,7 @@
       "onyx"
       "orbstack"
       "platypus"
+      "postgres-unofficial"
       "proxy-audio-device"
       "prusaslicer"
       "slack"
