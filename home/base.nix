@@ -9,6 +9,7 @@
       d2
       git
       git-repo-updater
+      graphviz
       httpie
       jq
       tldr
@@ -30,7 +31,12 @@
     zsh = {
       enable = true;
       enableCompletion = true;
+      syntaxHighlighting.enable = true;
       oh-my-zsh.enable = true;
+
+      sessionVariables = {
+        LESS = "FRX";
+      };
 
       shellAliases = {
         gs = "git status";
