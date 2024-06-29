@@ -33,7 +33,6 @@
       "postgres-unofficial"
       "proxy-audio-device"
       "prusaslicer"
-      "slack"
       "spotify"
       "steam"
       "sublime-merge"
