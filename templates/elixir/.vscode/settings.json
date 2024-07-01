@@ -1,3 +1,8 @@
 {
-    "files.exclude": {},
+    "files.exclude": {
+        ".bin/": true,
+        ".elixir_ls/": true,
+        "_build/": true,
+        "deps/": true,
+    },
 }
