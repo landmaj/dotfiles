@@ -21,6 +21,15 @@
           packages = with pkgs; [
             elixir
           ];
+          shellHook = ''
+          if [ "$(uname)" == "Darwin" ]; then
+            # `clang` must point to `/usr/bin/clang` on macOS for 
+            # `mix deps.compile file_system` to work 
+            mkdir -p .bin
+            ln -sf /usr/bin/clang .bin/clang
+            export PATH=$PWD/.bin:$PATH
+          fi
+          '';
         };
       });
     };
