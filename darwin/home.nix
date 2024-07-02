@@ -20,6 +20,7 @@
       "elmedia-player"
       "firefox"
       "handbrake"
+      "heynote"
       "karabiner-elements"
       "keepassxc"
       "livebook"

@@ -17,6 +17,7 @@
       "cyberduck"
       "datagrip"
       "firefox"
+      "heynote"
       "karabiner-elements"
       "keepassxc"
       "microsoft-teams"
@@ -25,7 +26,6 @@
       "openvpn-connect"
       "orbstack"
       "proxy-audio-device"
-      "sf-symbols"
       "sublime-merge"
       "visual-studio-code"
     ];
