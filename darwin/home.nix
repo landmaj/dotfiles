@@ -35,6 +35,7 @@
       "postgres-unofficial"
       "proxy-audio-device"
       "prusaslicer"
+      "rectangle-pro"
       "spotify"
       "steam"
       "sublime-merge"

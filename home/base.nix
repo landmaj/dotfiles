@@ -22,6 +22,7 @@
       ".vimrc".source = ../config/vim/.vimrc;
       ".ideavimrc".source = ../config/vim/.ideavimrc;
       ".config/karabiner/karabiner.json".source = ../config/karabiner/karabiner.json;
+      "Library/Application Support/Rectangle Pro/RectangleProConfig.json".source = ../config/rectangle/RectangleProConfig.json;
     };
 
   };
@@ -48,6 +49,7 @@
         status = "git status";
 
         j = "z";
+
 
         mkshell = "nix flake init --template ~/GitHub/dotfiles#blank";
         mkgo = "nix flake init --template ~/GitHub/dotfiles#go";
