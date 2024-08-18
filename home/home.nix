@@ -24,8 +24,6 @@
   programs = {
     zsh.shellAliases = {
       mkelixir = "nix flake init --template ~/GitHub/dotfiles#elixir";
-      mkswift = "nix flake init --template ~/GitHub/dotfiles#swift";
-      swtest = "swift test | xcbeautify";
     };
   };
 }

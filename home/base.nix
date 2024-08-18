@@ -54,6 +54,9 @@
         mkshell = "nix flake init --template ~/GitHub/dotfiles#blank";
         mkgo = "nix flake init --template ~/GitHub/dotfiles#go";
         mkpython = "nix flake init --template ~/GitHub/dotfiles#python";
+
+        cleanup = "nix-collect-garbage && /opt/homebrew/bin/brew cleanup --prune=all";
+        smerge = "/opt/homebrew/bin/smerge";
       };
     };
 
