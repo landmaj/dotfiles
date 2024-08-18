@@ -39,15 +39,13 @@
       };
 
       shellAliases = {
-        gs = "git status";
-        ga = "git add *";
-        gm = "git commit -m";
-        gc = "git checkout";
-        gb = "git checkout -b";
+        add = "git add";
+        checkout = "git checkout";
+        commit = "git commit";
         log = "git log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all";
         pull = "git pull";
         push = "git push";
-        grc = "git rm -r --cached";
+        status = "git status";
 
         j = "z";
 
