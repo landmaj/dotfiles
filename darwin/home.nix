@@ -21,7 +21,6 @@
       "firefox"
       "handbrake"
       "heynote"
-      "iina"
       "karabiner-elements"
       "keepassxc"
       "livebook"

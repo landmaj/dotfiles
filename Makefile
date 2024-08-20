@@ -12,9 +12,12 @@ ifeq ($(shell uname -m),arm64)
 endif
 
 update-brew:
-	$(BREW) update && $(BREW) upgrade && $(BREW) cleanup --prune=all
+	$(BREW) update && $(BREW) upgrade
 
 update-flake:
 	nix flake update
 
 update: update-flake build update-brew
+
+cleanup:
+	nix-collect-garbage && $(BREW) cleanup --prune=all

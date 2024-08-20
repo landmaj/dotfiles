@@ -5,6 +5,7 @@
     stateVersion = "23.11";
 
     packages = with pkgs; [
+      atool
       bat
       d2
       git
@@ -50,14 +51,12 @@
 
         j = "z";
 
-
         mkshell = "nix flake init --template ~/GitHub/dotfiles#blank";
         mkgo = "nix flake init --template ~/GitHub/dotfiles#go";
         mkpython = "nix flake init --template ~/GitHub/dotfiles#python";
-
-        cleanup = "nix-collect-garbage && /opt/homebrew/bin/brew cleanup --prune=all";
-        smerge = "/opt/homebrew/bin/smerge";
       };
+
+      initExtra = "chpwd() ls";
     };
 
     starship = {
