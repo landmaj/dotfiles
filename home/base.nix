@@ -50,13 +50,14 @@
         status = "git status";
 
         j = "z";
+        tree = "eza -T";
 
         mkshell = "nix flake init --template ~/GitHub/dotfiles#blank";
         mkgo = "nix flake init --template ~/GitHub/dotfiles#go";
         mkpython = "nix flake init --template ~/GitHub/dotfiles#python";
       };
 
-      initExtra = "chpwd() ls";
+      initExtra = "chpwd() eza --group-directories-first --icons=auto";
     };
 
     starship = {
