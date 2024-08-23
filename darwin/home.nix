@@ -12,6 +12,10 @@
       cleanup = "zap";
     };
 
+    taps = [
+      "macos-fuse-t/homebrew-cask"
+    ];
+
     casks = [
       "beekeeper-studio"
       "bruno"
@@ -19,6 +23,7 @@
       "discord"
       "elmedia-player"
       "firefox"
+      "fuse-t"
       "handbrake"
       "heynote"
       "karabiner-elements"
