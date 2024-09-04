@@ -24,6 +24,7 @@
       "elmedia-player"
       "firefox"
       "fuse-t"
+      "google-chrome"
       "handbrake"
       "heynote"
       "karabiner-elements"

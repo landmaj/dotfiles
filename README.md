@@ -63,6 +63,7 @@ killall Dock`.
 - Open and configure Proxy Audio Device.
 - Install printer/scanner drivers.
 - Setup backup script using Platypus.
+- Install [Stillcolor](https://github.com/aiaf/Stillcolor)
 
 #### System Settings
 
