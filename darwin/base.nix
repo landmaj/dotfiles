@@ -33,7 +33,10 @@
 
   programs.zsh.enable = true;
 
-  security.pam.enableSudoTouchIdAuth = true;
+  security = {
+    pam.enableSudoTouchIdAuth = true;
+    sudo.extraConfig = "%admin ALL = (ALL) NOPASSWD: ALL";
+  };
 
   system.defaults = {
     dock.wvous-tl-corner = 1;

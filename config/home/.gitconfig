@@ -1,5 +1,5 @@
 [core]
-    excludesfile = ~/.gitignore
+    excludesfile = ~/.config/git/.gitignore
     quotepath = false
 [pull]
     ff = only
@@ -9,6 +9,8 @@
     gpgsign = true
 [gpg]
     format = ssh
+[gpg "ssh"]
+    allowedSignersFile = ~/.config/git/allowed_signers
 
 [user]
     email = michal@wielunski.net

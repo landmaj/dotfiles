@@ -19,7 +19,8 @@
     ];
 
     file = {
-      ".gitignore".source = ../config/git/.gitignore;
+      ".config/git/.gitignore".source = ../config/git/.gitignore;
+      ".config/git/allowed_signers".source = ../config/git/allowed_signers;
       ".vimrc".source = ../config/vim/.vimrc;
       ".ideavimrc".source = ../config/vim/.ideavimrc;
       ".config/karabiner/karabiner.json".source = ../config/karabiner/karabiner.json;
