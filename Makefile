@@ -6,13 +6,8 @@ bootstrap:
 build:
 	darwin-rebuild switch --flake .
 
-BREW = /usr/local/bin/brew
-ifeq ($(shell uname -m),arm64)
-	BREW = /opt/homebrew/bin/brew
-endif
-
 update-brew:
-	$(BREW) update && $(BREW) upgrade
+	brew update && brew upgrade
 
 update-flake:
 	nix flake update
@@ -20,4 +15,4 @@ update-flake:
 update: update-flake build update-brew
 
 cleanup:
-	nix-collect-garbage && $(BREW) cleanup --prune=all
+	nix-collect-garbage && brew cleanup --prune=all

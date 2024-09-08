@@ -59,7 +59,13 @@
         mkpython = "nix flake init --template ~/GitHub/dotfiles#python";
       };
 
-      initExtra = "chpwd() eza --group-directories-first --icons=auto";
+      initExtra = ''
+        chpwd() eza --group-directories-first --icons=auto
+
+        if [[ $(uname -m) == 'arm64' ]]; then
+          eval "$(/opt/homebrew/bin/brew shellenv)"
+        fi
+      '';
     };
 
     starship = {

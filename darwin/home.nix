@@ -16,6 +16,12 @@
       "macos-fuse-t/homebrew-cask"
     ];
 
+    brews = [
+      # https://github.com/NixOS/nixpkgs/issues/297655
+      "swift-format"
+      "xcbeautify"
+    ];
+
     casks = [
       "beekeeper-studio"
       "bruno"
