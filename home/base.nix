@@ -55,6 +55,7 @@
         j = "z";
         tree = "eza -T";
         pip = "uv pip";
+        ldd = "otool -L";
 
         mkshell = "nix flake init --template ~/GitHub/dotfiles#blank";
         mkgo = "nix flake init --template ~/GitHub/dotfiles#go";
