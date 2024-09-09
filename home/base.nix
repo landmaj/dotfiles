@@ -8,6 +8,7 @@
       atool
       bat
       d2
+      dive
       git
       git-repo-updater
       graphviz
