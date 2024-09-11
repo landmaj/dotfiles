@@ -24,9 +24,7 @@
 
     casks = [
       "beekeeper-studio"
-      "bruno"
       "cyberduck"
-      "discord"
       "elmedia-player"
       "firefox"
       "fuse-t"
@@ -36,7 +34,6 @@
       "karabiner-elements"
       "keepassxc"
       "livebook"
-      "messenger"
       "monitorcontrol"
       "mos"
       "obsidian"
@@ -48,10 +45,10 @@
       "prusaslicer"
       "rectangle-pro"
       "spotify"
-      "steam"
       "sublime-merge"
       "transmission"
       "visual-studio-code"
+      "yaak"
     ];
 
     masApps = {
