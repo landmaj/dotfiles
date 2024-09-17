@@ -44,10 +44,12 @@
       "proxy-audio-device"
       "prusaslicer"
       "rectangle-pro"
+      "sf-symbols"
       "spotify"
       "sublime-merge"
       "transmission"
       "visual-studio-code"
+      "x-swiftformat"
       "yaak"
     ];
 
