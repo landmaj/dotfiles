@@ -26,7 +26,6 @@
       "openvpn-connect"
       "orbstack"
       "proxy-audio-device"
-      "rectangle-pro"
       "redisinsight"
       "sublime-merge"
       "visual-studio-code"

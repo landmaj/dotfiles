@@ -18,7 +18,6 @@
 
     brews = [
       # https://github.com/NixOS/nixpkgs/issues/297655
-      "swift-format"
       "xcbeautify"
     ];
 
@@ -30,7 +29,6 @@
       "fuse-t"
       "google-chrome"
       "handbrake"
-      "heynote"
       "karabiner-elements"
       "keepassxc"
       "livebook"
@@ -43,13 +41,11 @@
       "postgres-unofficial"
       "proxy-audio-device"
       "prusaslicer"
-      "rectangle-pro"
       "sf-symbols"
       "spotify"
       "sublime-merge"
       "transmission"
       "visual-studio-code"
-      "x-swiftformat"
       "yaak"
     ];
 

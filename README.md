@@ -75,3 +75,4 @@ killall Dock`.
   - turn backlight off after 10 seconds
 - Mouse:
   - disable pointer acceleration
+- Enable window tiling
