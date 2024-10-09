@@ -13,6 +13,6 @@
     allowedSignersFile = ~/.config/git/allowed_signers
 
 [user]
-    email = michal@wielunski.net
     name = Michał Wieluński
+    email = michal@wielunski.net
     signingkey = ~/.ssh/key.pub

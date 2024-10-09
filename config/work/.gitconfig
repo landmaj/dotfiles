@@ -16,7 +16,3 @@
     name = Michał Wieluński
     email = michal.wielunski@audiotekagroup.com
     signingkey = ~/.ssh/key.pub
-[url "git@git.dcwp.pl:"]
-    insteadOf = https://git.dcwp.pl/
-[url "ssh://git@github.com"]
-    insteadOf = https://github.com
