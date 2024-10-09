@@ -12,6 +12,11 @@
       cleanup = "zap";
     };
 
+    brews = [
+      # https://github.com/NixOS/nixpkgs/issues/297655
+      "xcbeautify"
+    ];
+
     casks = [
       "bruno"
       "cyberduck"
@@ -30,5 +35,9 @@
       "sublime-merge"
       "visual-studio-code"
     ];
+
+    masApps = {
+      "Xcode" = 497799835;
+    };
   };
 }

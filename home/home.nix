@@ -18,11 +18,4 @@
     };
 
   };
-
-  programs = {
-    zsh.shellAliases = {
-      mkelixir = "nix flake init --template ~/GitHub/dotfiles#elixir";
-      xctest = "swift test | xcbeautify";
-    };
-  };
 }
