@@ -16,6 +16,7 @@
       "bruno"
       "cyberduck"
       "datagrip"
+      "deskpad"
       "firefox"
       "heynote"
       "karabiner-elements"
