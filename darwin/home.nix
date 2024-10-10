@@ -16,18 +16,13 @@
       "macos-fuse-t/homebrew-cask"
     ];
 
-    brews = [
-      # https://github.com/NixOS/nixpkgs/issues/297655
-      "xcbeautify"
-    ];
-
     casks = [
       "beekeeper-studio"
       "cyberduck"
+      "deskpad"
       "elmedia-player"
       "firefox"
       "fuse-t"
-      "google-chrome"
       "handbrake"
       "karabiner-elements"
       "keepassxc"
@@ -43,6 +38,7 @@
       "prusaslicer"
       "sf-symbols"
       "spotify"
+      "steam"
       "sublime-merge"
       "transmission"
       "visual-studio-code"

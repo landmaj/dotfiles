@@ -60,8 +60,6 @@
         mkgo = "nix flake init --template ~/GitHub/dotfiles#go";
         mkpython = "nix flake init --template ~/GitHub/dotfiles#python";
         mkelixir = "nix flake init --template ~/GitHub/dotfiles#elixir";
-        
-        xctest = "swift test | xcbeautify";
       };
 
       initExtra = ''
