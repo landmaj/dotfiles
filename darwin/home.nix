@@ -21,6 +21,7 @@
       "cyberduck"
       "deskpad"
       "elmedia-player"
+      "fbreader"
       "firefox"
       "fuse-t"
       "handbrake"
