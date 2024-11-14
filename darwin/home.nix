@@ -37,6 +37,7 @@
       "postgres-unofficial"
       "proxy-audio-device"
       "prusaslicer"
+      "raspberry-pi-imager"
       "sf-symbols"
       "spotify"
       "steam"

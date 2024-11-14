@@ -13,6 +13,7 @@
       git-repo-updater
       graphviz
       httpie
+      iperf
       jq
       tldr
       vim
