@@ -15,6 +15,7 @@
       httpie
       iperf
       jq
+      pv
       tldr
       vim
       wget
