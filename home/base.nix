@@ -13,6 +13,7 @@
       git-repo-updater
       graphviz
       httpie
+      imagemagick
       iperf
       jq
       pv
