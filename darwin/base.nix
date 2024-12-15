@@ -28,7 +28,7 @@
 
   fonts.packages = with pkgs; [
     recursive
-    (nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
+    nerd-fonts.jetbrains-mono
   ];
 
   programs.zsh.enable = true;
