@@ -32,6 +32,7 @@
       "obsidian"
       "onyx"
       "orbstack"
+      "pearcleaner"
       "platypus"
       "postgres-unofficial"
       "proxy-audio-device"
