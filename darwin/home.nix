@@ -19,7 +19,6 @@
     casks = [
       "beekeeper-studio"
       "cyberduck"
-      "deskpad"
       "elmedia-player"
       "firefox"
       "fuse-t"
@@ -38,7 +37,6 @@
       "proxy-audio-device"
       "prusaslicer"
       "raspberry-pi-imager"
-      "sf-symbols"
       "spotify"
       "steam"
       "sublime-merge"
@@ -51,7 +49,6 @@
       "Keynote" = 409183694;
       "Numbers" = 409203825;
       "Pages" = 409201541;
-      "Xcode" = 497799835;
     };
   };
 }
