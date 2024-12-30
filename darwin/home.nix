@@ -16,6 +16,10 @@
       "macos-fuse-t/homebrew-cask"
     ];
 
+    brews = [
+      "swiftdraw"
+    ];
+
     casks = [
       "beekeeper-studio"
       "cyberduck"
