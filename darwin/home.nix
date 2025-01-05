@@ -27,9 +27,11 @@
       "firefox"
       "fuse-t"
       "handbrake"
+      "inkscape"
       "karabiner-elements"
       "keepassxc"
       "livebook"
+      "macsymbolicator"
       "monitorcontrol"
       "mos"
       "obsidian"
@@ -41,15 +43,13 @@
       "proxy-audio-device"
       "prusaslicer"
       "raspberry-pi-imager"
+      "sf-symbols"
       "spotify"
       "steam"
       "sublime-merge"
       "transmission"
       "visual-studio-code"
       "yaak"
-      # Xcode
-      "macsymbolicator"
-      "sf-symbols"
     ];
 
     masApps = {
