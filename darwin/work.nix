@@ -21,7 +21,6 @@
       "karabiner-elements"
       "keepassxc"
       "macsymbolicator"
-      "mediamate"
       "microsoft-teams"
       "monitorcontrol"
       "mos"
