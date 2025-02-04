@@ -58,8 +58,8 @@
           specialArgs = { inherit inputs; };
         };
 
-        "Valtrois" = darwin.lib.darwinSystem {
-          system = "x86_64-darwin";
+        "Oculeth" = darwin.lib.darwinSystem {
+          system = "aarch64-darwin";
           modules = [
             ./darwin/work.nix
             home-manager.darwinModules.home-manager
