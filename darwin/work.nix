@@ -12,6 +12,10 @@
       cleanup = "zap";
     };
 
+    brews = [
+      "swiftdraw"
+    ];
+
     casks = [
       "cyberduck"
       "datagrip"
