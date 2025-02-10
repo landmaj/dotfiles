@@ -6,7 +6,9 @@
 
 #### Install Nix
 
-[The Determinate Nix Installer](https://determinate.systems/oss/)
+```sh
+sh <(curl -L https://nixos.org/nix/install)
+```
 
 #### Install Homebrew
 
@@ -29,7 +31,7 @@ In System Settings change hostname to one of the specified in
 #### Run Nix
 
 ```sh
-nix run nix-darwin -- switch --flake .
+nix --extra-experimental-features "nix-command flakes" run nix-darwin -- switch --flake .
 ```
 
 ## Update
