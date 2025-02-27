@@ -53,6 +53,7 @@
         pull = "git pull";
         push = "git push";
         status = "git status";
+        amen = "git commit --amend --no-edit";
 
         j = "z";
         tree = "eza -T";
