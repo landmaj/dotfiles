@@ -7,7 +7,6 @@
 
   environment.darwinConfig = "$HOME/GitHub/dotfiles";
 
-  services.nix-daemon.enable = true;
   nix = {
     package = pkgs.nixVersions.stable;
     settings = {
@@ -24,7 +23,7 @@
     };
   };
 
-  system.stateVersion = 4;
+  system.stateVersion = 5;
 
   fonts.packages = with pkgs; [
     recursive
@@ -34,7 +33,7 @@
   programs.zsh.enable = true;
 
   security = {
-    pam.enableSudoTouchIdAuth = true;
+    pam.services.sudo_local.touchIdAuth = true;
     sudo.extraConfig = "%admin ALL = (ALL) NOPASSWD: ALL";
   };
 
