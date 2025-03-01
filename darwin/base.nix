@@ -23,8 +23,6 @@
     };
   };
 
-  system.stateVersion = 5;
-
   fonts.packages = with pkgs; [
     recursive
     nerd-fonts.jetbrains-mono

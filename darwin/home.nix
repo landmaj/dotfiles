@@ -3,6 +3,9 @@
     ./base.nix
   ];
 
+  # TODO: change to 5 after reinstallation
+  system.stateVersion = 4;
+
   homebrew = {
     enable = true;
 

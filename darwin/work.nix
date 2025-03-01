@@ -3,6 +3,8 @@
     ./base.nix
   ];
 
+  system.stateVersion = 5;
+
   homebrew = {
     enable = true;
 
