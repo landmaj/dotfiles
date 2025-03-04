@@ -30,6 +30,7 @@
       "firefox"
       "fuse-t"
       "handbrake"
+      "hex-fiend"
       "inkscape"
       "karabiner-elements"
       "keepassxc"

@@ -24,6 +24,7 @@
       "deskpad"
       "elmedia-player"
       "firefox"
+      "hex-fiend"
       "karabiner-elements"
       "keepassxc"
       "macsymbolicator"
