@@ -21,26 +21,31 @@
     casks = [
       "cyberduck"
       "datagrip"
-      "deskpad"
       "elmedia-player"
       "firefox"
       "hex-fiend"
       "karabiner-elements"
       "keepassxc"
-      "macsymbolicator"
       "microsoft-teams"
       "monitorcontrol"
       "mos"
-      "onyx"
       "openvpn-connect"
       "orbstack"
       "proxy-audio-device"
       "redisinsight"
-      "sf-symbols"
       "spotify"
       "sublime-merge"
       "visual-studio-code"
       "yaak"
+      # xcode
+      "github-copilot-for-xcode"
+      "macsymbolicator"
+      "sf-symbols"
+      # cleanup
+      "devcleaner"
+      "knockknock"
+      "onyx"
+      "pearcleaner"
     ];
 
     masApps = {
