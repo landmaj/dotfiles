@@ -43,7 +43,6 @@
       "prusaslicer"
       "raspberry-pi-imager"
       "spotify"
-      "steam"
       "sublime-merge"
       "transmission"
       "visual-studio-code"
