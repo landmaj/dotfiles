@@ -70,4 +70,50 @@
       "com.apple.swipescrolldirection" = false;
     };
   };
+
+  homebrew = {
+    enable = true;
+
+    onActivation = {
+      autoUpdate = false;
+      upgrade = false;
+      cleanup = "zap";
+    };
+
+    brews = [
+      "swiftdraw"
+    ];
+
+    casks = [
+      "cyberduck"
+      "firefox"
+      "gimp"
+      "hex-fiend"
+      "karabiner-elements"
+      "keepassxc"
+      "monitorcontrol"
+      "mos"
+      "orbstack"
+      "proxy-audio-device"
+      "sublime-merge"
+      "visual-studio-code"
+      "yaak"
+      # xcode
+      "github-copilot-for-xcode"
+      "macsymbolicator"
+      "sf-symbols"
+      # cleanup
+      "devcleaner"
+      "knockknock"
+      "onyx"
+      "pearcleaner"
+    ];
+
+    masApps = {
+      "Keynote" = 409183694;
+      "Numbers" = 409203825;
+      "Pages" = 409201541;
+      "Xcode" = 497799835;
+    };
+  };
 }
