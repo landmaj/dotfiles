@@ -66,7 +66,7 @@
         mkelixir = "nix flake init --template ~/GitHub/dotfiles#elixir";
       };
 
-      initExtra = ''
+      initContent = ''
         chpwd() eza --group-directories-first --icons=auto
 
         if [[ $(uname -m) == 'arm64' ]]; then
