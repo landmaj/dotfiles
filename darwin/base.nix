@@ -98,6 +98,7 @@
       "sublime-merge"
       "visual-studio-code"
       "yaak"
+      "zed"
       # xcode
       "github-copilot-for-xcode"
       "macsymbolicator"

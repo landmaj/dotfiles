@@ -20,6 +20,10 @@
       tldr
       vim
       wget
+      # programming
+      elixir
+      go
+      python3
     ];
 
     file = {

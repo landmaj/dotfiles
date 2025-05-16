@@ -17,6 +17,5 @@
       ".gitconfig".source = ../config/home/.gitconfig;
       ".ssh/key.pub".source = ../config/home/key.pub;
     };
-
   };
 }
