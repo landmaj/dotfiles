@@ -11,6 +11,7 @@
       "microsoft-teams"
       "openvpn-connect"
       "redisinsight"
+      "zed"
     ];
   };
 }
