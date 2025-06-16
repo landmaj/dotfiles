@@ -4,7 +4,7 @@ bootstrap:
 	nix run nix-darwin -- switch --flake .
 
 build:
-	darwin-rebuild switch --flake .
+	sudo darwin-rebuild switch --flake .
 
 update-brew:
 	brew update && brew upgrade

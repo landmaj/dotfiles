@@ -4,6 +4,7 @@
   ];
 
   system.stateVersion = 5;
+  system.primaryUser = "mwielunski";
 
   homebrew = {
     casks = [
