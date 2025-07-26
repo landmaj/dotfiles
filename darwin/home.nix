@@ -14,6 +14,7 @@
 
     casks = [
       "beekeeper-studio"
+      "cryptomator"
       "elmedia-player"
       "fuse-t"
       "livebook"
