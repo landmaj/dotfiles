@@ -10,6 +10,14 @@
   homebrew = {
     taps = [
       "macos-fuse-t/homebrew-cask"
+      "rfidresearchgroup/proxmark3"
+    ];
+
+    brews = [
+      {
+        name = "proxmark3";
+        args = [ "with-generic" ];
+      }
     ];
 
     casks = [
