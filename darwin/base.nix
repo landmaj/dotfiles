@@ -85,8 +85,10 @@
     ];
 
     casks = [
+      "cameracontroller"
       "cyberduck"
       "firefox"
+      "ghostty"
       "gimp"
       "hex-fiend"
       "karabiner-elements"
