@@ -80,10 +80,6 @@
       cleanup = "zap";
     };
 
-    brews = [
-      "swiftdraw"
-    ];
-
     casks = [
       "cameracontroller"
       "cyberduck"
@@ -100,22 +96,15 @@
       "sublime-merge"
       "visual-studio-code"
       "yaak"
-      # xcode
-      "github-copilot-for-xcode"
-      "macsymbolicator"
-      "sf-symbols"
       # cleanup
-      "devcleaner"
       "knockknock"
       "onyx"
       "pearcleaner"
     ];
 
     masApps = {
-      "Keynote" = 409183694;
       "Numbers" = 409203825;
       "Pages" = 409201541;
-      "Xcode" = 497799835;
     };
   };
 }
