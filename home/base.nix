@@ -32,6 +32,7 @@
       ".config/karabiner/karabiner.json".source = ../config/karabiner/karabiner.json;
       ".ideavimrc".source = ../config/vim/.ideavimrc;
       ".vimrc".source = ../config/vim/.vimrc;
+      ".config/ghostty/config".source = ../config/ghostty/config;
     };
 
   };
