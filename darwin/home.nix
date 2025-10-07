@@ -26,6 +26,7 @@
       "elmedia-player"
       "fuse-t"
       "livebook"
+      "nvidia-geforce-now"
       "obsidian"
       "platypus"
       "postgres-unofficial"
