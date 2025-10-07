@@ -14,6 +14,7 @@
     ];
 
     brews = [
+      "displayplacer"
       {
         name = "proxmark3";
         args = [ "with-generic" ];
