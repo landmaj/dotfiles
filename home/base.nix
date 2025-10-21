@@ -16,6 +16,7 @@
       imagemagick
       iperf
       jq
+      mitmproxy
       pv
       tldr
       vim
