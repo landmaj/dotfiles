@@ -11,7 +11,7 @@
       "datagrip"
       "microsoft-teams"
       "openvpn-connect"
-      "redisinsight"
+      "redis-insight"
     ];
   };
 }

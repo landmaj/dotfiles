@@ -63,9 +63,14 @@
         amen = "git commit --amend --no-edit";
 
         j = "z";
-        tree = "eza -T";
         pip = "uv pip";
         ldd = "otool -L";
+
+        ls = "eza";
+        ll = "eza -l";
+        la = "eza -a";
+        lla = "eza -la";
+        tree = "eza -T";
 
         mkshell = "nix flake init --template ~/GitHub/dotfiles#blank";
         mkgo = "nix flake init --template ~/GitHub/dotfiles#go";
@@ -107,7 +112,7 @@
 
     eza = {
       enable = true;
-      enableZshIntegration = true;
+      enableZshIntegration = false; # disabled due to alias conflicting with localtunnel
       git = true;
       icons = "auto";
       extraOptions = [
