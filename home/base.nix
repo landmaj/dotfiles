@@ -7,6 +7,7 @@
     packages = with pkgs; [
       atool
       bat
+      cloudflared
       d2
       dive
       git
@@ -17,7 +18,6 @@
       iperf
       jq
       mitmproxy
-      nodePackages.localtunnel
       pv
       tldr
       vim
@@ -65,12 +65,7 @@
         j = "z";
         pip = "uv pip";
         ldd = "otool -L";
-
-        ls = "eza";
-        ll = "eza -l";
-        la = "eza -a";
-        lla = "eza -la";
-        tree = "eza -T";
+        tunnel = "cloudflared tunnel --url";
 
         mkshell = "nix flake init --template ~/GitHub/dotfiles#blank";
         mkgo = "nix flake init --template ~/GitHub/dotfiles#go";
@@ -112,7 +107,7 @@
 
     eza = {
       enable = true;
-      enableZshIntegration = false; # disabled due to alias conflicting with localtunnel
+      enableZshIntegration = true;
       git = true;
       icons = "auto";
       extraOptions = [
