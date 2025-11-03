@@ -17,6 +17,7 @@
       iperf
       jq
       mitmproxy
+      nodePackages.localtunnel
       pv
       tldr
       vim
