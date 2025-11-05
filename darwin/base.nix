@@ -83,6 +83,7 @@
     casks = [
       "cameracontroller"
       "cyberduck"
+      "datagrip"
       "firefox"
       "ghostty"
       "gimp"
@@ -93,6 +94,7 @@
       "mos"
       "orbstack"
       "proxy-audio-device"
+      "stillcolor"
       "sublime-merge"
       "visual-studio-code"
       "yaak"

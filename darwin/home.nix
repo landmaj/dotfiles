@@ -22,7 +22,7 @@
     ];
 
     casks = [
-      "beekeeper-studio"
+      "balenaetcher"
       "cryptomator"
       "elmedia-player"
       "fuse-t"
@@ -32,7 +32,6 @@
       "platypus"
       "postgres-unofficial"
       "prusaslicer"
-      "raspberry-pi-imager"
       "spotify"
       "steam"
       "transmission"

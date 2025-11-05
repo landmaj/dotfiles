@@ -7,7 +7,6 @@
 
   home = {
     packages = with pkgs; [
-      f3
       restic
       vdirsyncer
       yt-dlp

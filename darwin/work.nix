@@ -8,7 +8,6 @@
 
   homebrew = {
     casks = [
-      "datagrip"
       "microsoft-teams"
       "openvpn-connect"
       "redis-insight"

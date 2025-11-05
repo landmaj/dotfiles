@@ -48,14 +48,12 @@ darwin-rebuild switch --flake .
 
 - Remove everything from Dock: `defaults write "com.apple.dock" "persistent-apps" -array
 killall Dock`.
-- Terminal:
-  - Install theme by opening `Afterglow.terminal` file and setting it as default profile.
-  - Change font to JetBrainsMono Nerd Font Regular 12pt.
 - KeePassXC:
   - browser integration
   - ssh agent
   - minimize instead of exit
   - minimize to system tray
+  - use alternative saving method (temporary file moved into place)
 - Firefox:
   - KeePassXC-Browser, uBlock Origin, SponsorBlock, Kill Sticky
   - disable password saving
@@ -65,7 +63,6 @@ killall Dock`.
 - Open and configure Proxy Audio Device.
 - Install printer/scanner drivers.
 - Setup backup script using Platypus.
-- Install [Stillcolor](https://github.com/aiaf/Stillcolor)
 
 #### System Settings
 
