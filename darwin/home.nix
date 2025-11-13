@@ -15,6 +15,7 @@
 
     brews = [
       "displayplacer"
+      "lsusb-laniksj"
       {
         name = "proxmark3";
         args = [ "with-generic" ];
