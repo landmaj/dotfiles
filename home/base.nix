@@ -7,6 +7,7 @@
     packages = with pkgs; [
       atool
       bat
+      cloc
       cloudflared
       d2
       dive
