@@ -102,6 +102,9 @@
       "knockknock"
       "onyx"
       "pearcleaner"
+      # waiting for Steam Machine
+      "nvidia-geforce-now"
+      "steam"
     ];
 
     masApps = {
