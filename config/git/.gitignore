@@ -22,3 +22,6 @@ xcuserdata/
 
 # macOS
 .DS_Store
+
+# agent instructions
+.github/instructions/private/
