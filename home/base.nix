@@ -20,6 +20,7 @@
       jq
       mitmproxy
       pv
+      tio
       tldr
       vim
       wget
