@@ -9,7 +9,6 @@
       bat
       cloc
       cloudflared
-      d2
       dive
       git
       git-repo-updater
