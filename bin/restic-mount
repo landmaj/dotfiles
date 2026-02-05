@@ -1,0 +1,11 @@
+export RESTIC_REPOSITORY="$(security find-generic-password -s "com.landmaj.restic" -a "restic-repository" -w)"
+export RESTIC_PASSWORD="$(security find-generic-password -s "com.landmaj.restic" -a "restic-password" -w)"
+export AWS_ACCESS_KEY_ID="$(security find-generic-password -s "com.landmaj.restic" -a "aws-key-id" -w)"
+export AWS_SECRET_ACCESS_KEY="$(security find-generic-password -s "com.landmaj.restic" -a "aws-access-key" -w)"
+
+DIR="$HOME/restic"
+
+mkdir -p $DIR
+open -a Finder $DIR
+restic mount $DIR
+rmdir $DIR
