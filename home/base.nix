@@ -4,6 +4,10 @@
   home = {
     stateVersion = "23.11";
 
+    sessionPath = [
+      "$HOME/.local/bin"
+    ];
+
     packages = with pkgs; [
       atool
       bat
