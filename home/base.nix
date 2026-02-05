@@ -34,11 +34,13 @@
     ];
 
     file = {
+      ".gitconfig".source = ../config/git/.gitconfig;
       ".config/git/.gitignore".source = ../config/git/.gitignore;
-      ".config/git/allowed_signers".source = ../config/git/allowed_signers;
-      ".config/karabiner/karabiner.json".source = ../config/karabiner/karabiner.json;
-      ".ideavimrc".source = ../config/vim/.ideavimrc;
+
       ".vimrc".source = ../config/vim/.vimrc;
+      ".ideavimrc".source = ../config/vim/.ideavimrc;
+
+      ".config/karabiner/karabiner.json".source = ../config/karabiner/karabiner.json;
       ".config/ghostty/config".source = ../config/ghostty/config;
     };
 

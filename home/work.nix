@@ -7,8 +7,7 @@
 
   home = {
     file = {
-      ".gitconfig".source = ../config/work/.gitconfig;
-      ".ssh/key.pub".source = ../config/work/key.pub;
+      ".ssh/key.pub".source = ../config/ssh/work.pub;
     };
   };
 

@@ -13,11 +13,7 @@
     allowedSignersFile = ~/.config/git/allowed_signers
 
 [user]
-    name = Michał Wieluński
-    email = michal.wielunski@audiotekagroup.com
     signingkey = ~/.ssh/key.pub
-[url "git@git.dcwp.pl:"]
-	insteadOf = https://git.dcwp.pl/
 
-[includeIf "gitdir:~/GitHub/"]
-  path = ~/GitHub/.gitconfig
+[include]
+    path = ~/.config/git/.gitconfig.private
