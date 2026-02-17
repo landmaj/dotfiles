@@ -1,10 +1,6 @@
-{ pkgs, lib, ... }:
+{ pkgs, ... }:
 
 {
-  nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg) [
-    "claude-code"
-  ];
-
   home = {
     # Check release notes for breaking changes when bumping this:
     # https://nix-community.github.io/home-manager/release-notes.xhtml
