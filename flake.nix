@@ -64,7 +64,7 @@
           "Shandris" = mkDarwin {
             hostname = "Shandris";
             user = "landmaj";
-            stateVersion = 4; # TODO: change to 5 after reinstallation
+            stateVersion = 4; # TODO: change to 6 after reinstallation
             darwinModule = ./darwin/home.nix;
             homeModule = ./home/home.nix;
           };
@@ -72,7 +72,7 @@
           "Oculeth" = mkDarwin {
             hostname = "Oculeth";
             user = "mwielunski";
-            stateVersion = 5;
+            stateVersion = 6;
             darwinModule = ./darwin/work.nix;
             homeModule = ./home/work.nix;
           };
