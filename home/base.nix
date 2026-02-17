@@ -1,6 +1,10 @@
-{ pkgs, ... }:
+{ pkgs, lib, ... }:
 
 {
+  nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg) [
+    "claude-code"
+  ];
+
   home = {
     stateVersion = "23.11";
 
@@ -31,6 +35,9 @@
       elixir
       go
       python3
+      # ai
+      claude-code
+      claude-monitor
     ];
 
     file = {
