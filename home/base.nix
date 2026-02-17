@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, lib, ... }:
 
 {
   home = {
@@ -83,13 +83,10 @@
         mkelixir = "nix flake init --template ~/GitHub/dotfiles#elixir";
       };
 
-      initContent = ''
+      initContent = lib.optionalString pkgs.stdenv.hostPlatform.isAarch64 ''
+        eval "$(/opt/homebrew/bin/brew shellenv)"
+      '' + ''
         chpwd() eza --group-directories-first --icons=auto
-
-        if [[ $(uname -m) == 'arm64' ]]; then
-          eval "$(/opt/homebrew/bin/brew shellenv)"
-        fi
-
         [[ "$TERM_PROGRAM" == "vscode" ]] && . "$(code --locate-shell-integration-path zsh)"
       '';
     };

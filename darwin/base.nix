@@ -17,7 +17,7 @@
   nix = {
     package = pkgs.nixVersions.stable;
     settings = {
-      "extra-experimental-features" = [ "nix-command" "flakes" ];
+      experimental-features = [ "nix-command" "flakes" ];
     };
     optimise = {
       automatic = true;
@@ -25,7 +25,7 @@
     };
     gc = {
       automatic = true;
-      interval = { Weekday = 0; Hour = 0; Minute = 0; };
+      interval = { Weekday = 0; Hour = 2; Minute = 0; };
       options = "--delete-older-than 30d";
     };
   };
@@ -43,12 +43,12 @@
   };
 
   system.defaults = {
-    dock.wvous-tl-corner = 1;
-    dock.wvous-tr-corner = 1;
-    dock.wvous-bl-corner = 1;
-    dock.wvous-br-corner = 1;
-
     dock = {
+      wvous-tl-corner = 1;
+      wvous-tr-corner = 1;
+      wvous-bl-corner = 1;
+      wvous-br-corner = 1;
+
       autohide = true;
       orientation = "left";
       show-recents = false;
