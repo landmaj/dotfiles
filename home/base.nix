@@ -6,7 +6,9 @@
   ];
 
   home = {
-    stateVersion = "23.11";
+    # Check release notes for breaking changes when bumping this:
+    # https://nix-community.github.io/home-manager/release-notes.xhtml
+    stateVersion = "25.11";
 
     sessionPath = [
       "$HOME/.local/bin"
