@@ -112,10 +112,5 @@
       "nvidia-geforce-now"
       "steam"
     ];
-
-    masApps = {
-      "Numbers" = 409203825;
-      "Pages" = 409201541;
-    };
   };
 }

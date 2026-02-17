@@ -25,11 +25,15 @@
       "fuse-t"
       "livebook"
       "obsidian"
-      "platypus"
       "postgres-unofficial"
       "prusaslicer"
       "spotify"
       "transmission"
     ];
+
+    masApps = {
+      "Numbers" = 409203825;
+      "Pages" = 409201541;
+    };
   };
 }
