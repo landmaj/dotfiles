@@ -81,7 +81,6 @@
     };
 
     casks = [
-      "cameracontroller"
       "cyberduck"
       "datagrip"
       "firefox"

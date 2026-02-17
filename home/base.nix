@@ -50,11 +50,9 @@
       ".config/karabiner/karabiner.json".source = ../config/karabiner/karabiner.json;
       ".config/ghostty/config".source = ../config/ghostty/config;
     };
-
   };
 
   programs = {
-
     zsh = {
       enable = true;
       enableCompletion = true;
@@ -130,6 +128,5 @@
         "--group-directories-first"
       ];
     };
-
   };
 }

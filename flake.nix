@@ -42,37 +42,41 @@
         };
       });
 
-      darwinConfigurations = {
-        "Shandris" = darwin.lib.darwinSystem {
-          system = "aarch64-darwin";
-          modules = [
-            ./darwin/home.nix
-            home-manager.darwinModules.home-manager
-            {
-              home-manager = {
-                users.landmaj = import ./home/home.nix;
-              };
-              users.users.landmaj.home = "/Users/landmaj";
-            }
-          ];
-          specialArgs = { inherit inputs; };
-        };
+      darwinConfigurations =
+        let
+          mkDarwin = { hostname, user, darwinModule, homeModule, stateVersion }:
+            darwin.lib.darwinSystem {
+              system = "aarch64-darwin";
+              modules = [
+                darwinModule
+                home-manager.darwinModules.home-manager
+                {
+                  system.stateVersion = stateVersion;
+                  system.primaryUser = user;
+                  home-manager.users.${user} = import homeModule;
+                  users.users.${user}.home = "/Users/${user}";
+                }
+              ];
+              specialArgs = { inherit inputs; };
+            };
+        in
+        {
+          "Shandris" = mkDarwin {
+            hostname = "Shandris";
+            user = "landmaj";
+            stateVersion = 4; # TODO: change to 5 after reinstallation
+            darwinModule = ./darwin/home.nix;
+            homeModule = ./home/home.nix;
+          };
 
-        "Oculeth" = darwin.lib.darwinSystem {
-          system = "aarch64-darwin";
-          modules = [
-            ./darwin/work.nix
-            home-manager.darwinModules.home-manager
-            {
-              home-manager = {
-                users.mwielunski = import ./home/work.nix;
-              };
-              users.users.mwielunski.home = "/Users/mwielunski";
-            }
-          ];
-          specialArgs = { inherit inputs; };
+          "Oculeth" = mkDarwin {
+            hostname = "Oculeth";
+            user = "mwielunski";
+            stateVersion = 5;
+            darwinModule = ./darwin/work.nix;
+            homeModule = ./home/work.nix;
+          };
         };
-      };
 
       templates = {
         blank = {
