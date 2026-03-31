@@ -47,6 +47,7 @@
 
       ".config/karabiner/karabiner.json".source = ../config/karabiner/karabiner.json;
       ".config/ghostty/config".source = ../config/ghostty/config;
+      ".config/uv/uv.toml".source = ../config/uv/uv.toml;
     };
   };
 
