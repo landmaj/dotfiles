@@ -16,12 +16,10 @@ flake.nix
 
 # IDE
 *.code-workspace
+.claude/
 .idea/
 .vscode/
 xcuserdata/
 
 # macOS
 .DS_Store
-
-# agent instructions
-.github/instructions/private/
