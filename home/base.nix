@@ -35,7 +35,6 @@
       python3
       # ai
       claude-code
-      claude-monitor
     ];
 
     file = {
